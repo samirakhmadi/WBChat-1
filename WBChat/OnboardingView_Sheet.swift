@@ -12,7 +12,7 @@ struct OnboardingView_Sheet: View {
     var body: some View {
         ZStack {
             ViewBackgroundColor()
-            VStack(alignment: .trailing, spacing: 0) {
+            VStack {
                 Spacer()
                 closeSheetButton
             }

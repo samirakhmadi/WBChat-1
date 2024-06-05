@@ -15,7 +15,7 @@ struct OnboardingView: View {
         NavigationStack {
             ZStack {
                 ViewBackgroundColor()
-                VStack(spacing: 0) {
+                VStack {
                     onboardingImage
                     onboardingTitle
                     termsOfUseButton
