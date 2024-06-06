@@ -11,20 +11,20 @@ struct CapsuleButton: View {
     var title: String
     var action: () -> Void
     var body: some View {
-        Button(action: {
-            action()
-        }, label: {
-            Text(title)
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 12)
-                .padding(.horizontal, 98.5)
-                .background(
-                    Capsule()
-                        .fill(.brand)
-                )
-                .foregroundStyle(.white)
-                .font(.system(size: 16).weight(.semibold))
-        })
+        Button { action() }
+    label: {
+        Text(title)
+            .font(.system(size: 16).weight(.semibold))
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 12)
+            .padding(.horizontal, 98.5)
+            .frame(height: 52)
+            .background(
+                Capsule()
+                    .fill(.brand)
+            )
+            .foregroundStyle(.white)
+    }
     }
 }
 
