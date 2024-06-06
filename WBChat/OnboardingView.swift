@@ -13,15 +13,14 @@ struct OnboardingView: View {
     
     var body: some View {
         NavigationStack {
-            ZStack {
-                ViewBackgroundColor()
-                VStack {
-                    onboardingImage
-                    onboardingTitle
-                    termsOfUseButton
-                    startButton
-                }
+            VStack {
+                onboardingImage
+                onboardingTitle
+                termsOfUseButton
+                startButton
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(ViewBackgroundColor())
             .sheet(isPresented: $showSheetView){
                 OnboardingView_Sheet()
             }

@@ -10,13 +10,12 @@ import SwiftUI
 struct OnboardingView_Sheet: View {
     @Environment(\.dismiss) private var dismiss
     var body: some View {
-        ZStack {
-            ViewBackgroundColor()
-            VStack {
-                Spacer()
-                closeSheetButton
-            }
+        VStack {
+            Spacer()
+            closeSheetButton
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(ViewBackgroundColor())
     }
 }
 
