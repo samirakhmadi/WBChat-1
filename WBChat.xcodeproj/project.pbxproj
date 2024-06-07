@@ -18,6 +18,7 @@
 		59F5A8102C10C418009051FE /* Extension+HStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A80F2C10C418009051FE /* Extension+HStack.swift */; };
 		59F5A8392C1367E0009051FE /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A8382C1367E0009051FE /* ContactsView.swift */; };
 		59F5A83B2C13682A009051FE /* NewContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A83A2C13682A009051FE /* NewContactView.swift */; };
+		59F5A8402C136E57009051FE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A83F2C136E57009051FE /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		59F5A80F2C10C418009051FE /* Extension+HStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+HStack.swift"; sourceTree = "<group>"; };
 		59F5A8382C1367E0009051FE /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		59F5A83A2C13682A009051FE /* NewContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewContactView.swift; sourceTree = "<group>"; };
+		59F5A83F2C136E57009051FE /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		59F5A83D2C136B60009051FE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				59F5A83F2C136E57009051FE /* Contact.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			files = (
 				59F5A7FA2C10C027009051FE /* OnboardingView.swift in Sources */,
 				59F5A80B2C10C08B009051FE /* ViewBackgroundColor.swift in Sources */,
+				59F5A8402C136E57009051FE /* Contact.swift in Sources */,
 				59F5A8102C10C418009051FE /* Extension+HStack.swift in Sources */,
 				59F5A8062C10C069009051FE /* OnboardingView_Sheet.swift in Sources */,
 				59F5A7F82C10C027009051FE /* WBChatApp.swift in Sources */,
