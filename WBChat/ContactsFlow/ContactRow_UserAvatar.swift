@@ -11,12 +11,11 @@ struct ContactRow_UserAvatar: View {
     var contact: Contact
     
     var body: some View {
-        contactInitialsView(contactName: contact.name, hasNewStories: contact.hasNewStories)
-            .overlay {
-                if let avatar = contact.avatar {
-                    contactImageView(avatar: avatar, hasNewStories: contact.hasNewStories)
-                }
-            }
+        if let avatar = contact.avatar {
+            contactImageView(avatar: avatar, hasNewStories: contact.hasNewStories)
+        } else {
+            contactInitialsView(contactName: contact.name, hasNewStories: contact.hasNewStories)
+        }
     }
 }
 
