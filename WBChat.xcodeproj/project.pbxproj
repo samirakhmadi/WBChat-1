@@ -21,6 +21,7 @@
 		59F5A8402C136E57009051FE /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A83F2C136E57009051FE /* Contact.swift */; };
 		59F5A8422C137450009051FE /* ContactsView_ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A8412C137450009051FE /* ContactsView_ContactRow.swift */; };
 		59F5A8442C137756009051FE /* ContactRow_UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A8432C137756009051FE /* ContactRow_UserAvatar.swift */; };
+		59F5A85B2C14BB81009051FE /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A85A2C14BB81009051FE /* Extension+String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		59F5A83F2C136E57009051FE /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		59F5A8412C137450009051FE /* ContactsView_ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView_ContactRow.swift; sourceTree = "<group>"; };
 		59F5A8432C137756009051FE /* ContactRow_UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow_UserAvatar.swift; sourceTree = "<group>"; };
+		59F5A85A2C14BB81009051FE /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				59F5A80D2C10C3F9009051FE /* Extension+VStack.swift */,
 				59F5A80F2C10C418009051FE /* Extension+HStack.swift */,
+				59F5A85A2C14BB81009051FE /* Extension+String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59F5A85B2C14BB81009051FE /* Extension+String.swift in Sources */,
 				59F5A7FA2C10C027009051FE /* OnboardingView.swift in Sources */,
 				59F5A80B2C10C08B009051FE /* ViewBackgroundColor.swift in Sources */,
 				59F5A8402C136E57009051FE /* Contact.swift in Sources */,
