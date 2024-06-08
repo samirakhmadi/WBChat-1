@@ -43,7 +43,7 @@ private extension ContactRow_UserAvatar {
 
 private extension ContactRow_UserAvatar {
     func contactInitialsView(contactName: String, hasNewStories: Bool) -> some View {
-        Text(contactName.prefix(2).uppercased())
+        Text(contactName.firstTwoInitials().uppercased())
             .font(.system(size: 14).bold())
             .foregroundStyle(.white)
             .frame(width: 48, height: 48)
