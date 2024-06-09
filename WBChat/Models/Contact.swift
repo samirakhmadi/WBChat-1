@@ -10,6 +10,7 @@ import SwiftUI
 struct Contact: Identifiable {
     var id = UUID()
     var name: String = ""
+    var phoneNumber: String = ""
     var status: String = ""
     var isOnline: Bool = false
     var hasNewStories: Bool = false
@@ -20,6 +21,7 @@ extension Contact {
     static let contacts: [Contact] = [
         .init(
             name: "Анастасия Иванова",
+            phoneNumber: "1111111111",
             status: "Last seen yesterday",
             isOnline: false,
             hasNewStories: false,
@@ -27,6 +29,7 @@ extension Contact {
         ),
         .init(
             name: "Петя",
+            phoneNumber: "2222222222",
             status: "Online",
             isOnline: true,
             hasNewStories: false,
@@ -34,6 +37,7 @@ extension Contact {
         ),
         .init(
             name: "Маман",
+            phoneNumber: "3333333333",
             status: "Last seen 3 hours ago",
             isOnline: false,
             hasNewStories: true,
@@ -41,20 +45,23 @@ extension Contact {
         ),
         .init(
             name: "Арбуз Дыня",
-            status: "Last seen yesterday",
+            phoneNumber: "4444444444",
+            status: "Online",
             isOnline: true,
             hasNewStories: false,
             avatar: .Avatars.arbuz
         ),
         .init(
             name: "Иван Иванов",
-            status: "Last seen yesterday",
+            phoneNumber: "5555555555",
+            status: "Online",
             isOnline: true,
             hasNewStories: false,
             avatar: nil
         ),
         .init(
             name: "Лиса Алиса",
+            phoneNumber: "6666666666",
             status: "Last seen yesterday",
             isOnline: false,
             hasNewStories: true,
@@ -62,3 +69,5 @@ extension Contact {
         ),
     ]
 }
+
+extension Contact: Hashable {}
