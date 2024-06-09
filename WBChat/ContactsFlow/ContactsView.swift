@@ -15,10 +15,16 @@ struct ContactsView: View {
         ScrollView(.vertical) {
             LazyVStack(spacing: 0) {
                 ForEach(Contact.contacts.indices, id: \.self) { index in
-                    ContactsView_ContactRow(
-                        contact: Contact.contacts[index],
-                        isNeedTopPadding: index != 0)
+                    let contact = Contact.contacts[index]
+                    NavigationLink(value: contact) {
+                        ContactsView_ContactRow(
+                            contact: contact,
+                            isNeedTopPadding: index != 0)
+                    }
                 }
+            }
+            .navigationDestination(for: Contact.self) { contact in
+                DetailContactView(contact: contact)
             }
         }
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .automatic)
@@ -34,6 +40,13 @@ struct ContactsView: View {
             }
         }
         .navigationBarBackButtonHidden()
+        .navigationTitle("Контакты")
+        .navigationBarTitleDisplayMode(.inline)
+        .onAppear {
+            UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.neutral]
+            UINavigationBar.appearance().barTintColor =  UIColor.neutralText
+        }
+        
     }
 }
 

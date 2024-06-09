@@ -14,6 +14,7 @@ struct WBChatApp: App {
             NavigationStack{
                 ContactsView()
             }
+            .tint(.neutralText)
         }
     }
 }
