@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContactsView_ContactRow: View {
     let contact: Contact
+    let isNeedTopPadding: Bool
     var body: some View {
         VStack {
             HStack(alignment: .top, spacing: 12) {
@@ -19,7 +20,9 @@ struct ContactsView_ContactRow: View {
                 userInfo
                 Spacer()
             }
+            .padding(.top, isNeedTopPadding ? 12 : 0)
             .padding(.bottom, 12)
+            .padding(.horizontal, 24)
             Divider()
         }
     }
@@ -80,7 +83,7 @@ private extension ContactsView_ContactRow {
         ]
         var body: some View {
             ForEach(contacts) { contact in
-                ContactsView_ContactRow(contact: contact)
+                ContactsView_ContactRow(contact: contact, isNeedTopPadding: true)
             }
             .padding(.horizontal)
         }
