@@ -9,24 +9,19 @@ import SwiftUI
 
 struct ContactsView: View {
     
-    @State private  var searchText: String = ""
+    @State private var searchText: String = ""
 
     var body: some View {
-        List(Contact.contacts.indices, id: \.self) { index in ContactsView_ContactRow(contact: Contact.contacts[index])
-                .listRowSeparator(.hidden, edges: .all)
-                .listRowBackground(ViewBackgroundColor())
-                .listRowInsets(
-                    .init(
-                        top: 0,
-                        leading: 0,
-                        bottom: 0,
-                        trailing: 0)
-                )
-                .padding(.top, index != 0 ? 16 : 0)
-                .padding(.horizontal, 24)
+        ScrollView(.vertical) {
+            LazyVStack(spacing: 0) {
+                ForEach(Contact.contacts.indices, id: \.self) { index in
+                    ContactsView_ContactRow(
+                        contact: Contact.contacts[index],
+                        isNeedTopPadding: index != 0)
+                }
+            }
         }
-        .listStyle(.plain)
-        .searchable(text: $searchText,placement: .navigationBarDrawer(displayMode: .automatic)
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .automatic)
         )
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(ViewBackgroundColor())
