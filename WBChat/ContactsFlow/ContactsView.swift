@@ -24,7 +24,7 @@ struct ContactsView: View {
                 }
             }
             .navigationDestination(for: Contact.self) { contact in
-                DetailContactView(contact: contact)
+                ContactDetailView(contact: contact)
             }
         }
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .automatic)
