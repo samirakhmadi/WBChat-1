@@ -18,7 +18,7 @@ struct ContactRow_UserAvatar: View {
         }
     }
 }
-
+//MARK: ImageView
 private extension ContactRow_UserAvatar {
     func contactImageView(avatar: ImageResource, hasNewStories: Bool) -> some View {
         Image(avatar)
@@ -41,6 +41,7 @@ private extension ContactRow_UserAvatar {
     }
 }
 
+//MARK: InitialsView
 private extension ContactRow_UserAvatar {
     func contactInitialsView(contactName: String, hasNewStories: Bool) -> some View {
         Text(contactName.firstTwoInitials().uppercased())

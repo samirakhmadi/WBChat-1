@@ -7,15 +7,12 @@
 
 import SwiftUI
 
-
-
 struct ContactDetailView: View {
     @Environment(\.dismiss) private var dismiss
     let contact: Contact
     var body: some View {
         VStack {
-            ContactDetailView_UserAvatar(contact: contact)
-                .padding(.top, 40)
+            contactAvatar
             textContainer
             socialsStack
             Spacer()
@@ -40,7 +37,7 @@ struct ContactDetailView: View {
 }
 
 
-
+//MARK: Toolbar item'ы
 private extension ContactDetailView {
     var backButton: some View {
         Button{
@@ -55,7 +52,6 @@ private extension ContactDetailView {
         .tint(.neutralText)
     }
     
-    
     var title: some View {
         HStack{
             Text("Профиль")
@@ -67,13 +63,33 @@ private extension ContactDetailView {
     }
     
     var editButton: some View {
-        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+        Button {
+        } label: {
             Image(.edit)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 24, height: 24)
-        })
+        }
         .tint(.neutralText)
+    }
+}
+
+//MARK: SubViews
+private extension ContactDetailView {
+    var contactAvatar: some View {
+        ContactDetailView_UserAvatar(contact: contact)
+            .padding(.top, 40)
+    }
+    
+    var textContainer: some View {
+        VStack(spacing: 4){
+            Text(contact.name)
+                .font(.system(size: 24).weight(.semibold))
+            Text(contact.phoneNumber.formatCustomNumber(mask: "+X XXX XXX-XX-XX"))
+                .font(.system(size: 16))
+                .foregroundStyle(.neutralDisabled)
+        }
+        .padding(.top, 20)
     }
     
     var socialsStack: some View {
@@ -92,17 +108,6 @@ private extension ContactDetailView {
             }
         }
         .padding(.top, 40)
-    }
-    
-    var textContainer: some View {
-        VStack(spacing: 4){
-            Text(contact.name)
-                .font(.system(size: 24).weight(.semibold))
-            Text(contact.phoneNumber.formatCustomNumber(mask: "+X XXX XXX-XX-XX"))
-                .font(.system(size: 16))
-                .foregroundStyle(.neutralDisabled)
-        }
-        .padding(.top, 20)
     }
 }
 

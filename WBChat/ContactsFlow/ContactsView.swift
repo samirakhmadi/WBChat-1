@@ -40,13 +40,7 @@ struct ContactsView: View {
             }
         }
         .navigationBarBackButtonHidden()
-        .navigationTitle("Контакты")
         .navigationBarTitleDisplayMode(.inline)
-        .onAppear {
-            UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.neutral]
-            UINavigationBar.appearance().barTintColor =  UIColor.neutralText
-        }
-        
     }
 }
 

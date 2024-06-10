@@ -19,6 +19,7 @@ struct ContactDetailView_UserAvatar: View {
 }
 
 
+//MARK: ImageView
 private extension ContactDetailView_UserAvatar {
     func contactImageView(avatar: ImageResource) -> some View {
         Image(avatar)
@@ -28,6 +29,7 @@ private extension ContactDetailView_UserAvatar {
     }
 }
 
+//MARK: InitialsView
 private extension ContactDetailView_UserAvatar {
     func contactInitialsView(contactName: String) -> some View {
         Text(contactName.firstTwoInitials().uppercased())

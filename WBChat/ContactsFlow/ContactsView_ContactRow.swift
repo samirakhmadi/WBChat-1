@@ -28,8 +28,8 @@ struct ContactsView_ContactRow: View {
     }
 }
 
+//MARK: Subviews
 private extension ContactsView_ContactRow {
-    
     var userAvatar: some View {
         ContactRow_UserAvatar(contact: contact)
     }
