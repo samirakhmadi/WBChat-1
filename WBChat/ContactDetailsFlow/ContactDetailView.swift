@@ -98,7 +98,7 @@ private extension ContactDetailView {
         VStack(spacing: 4){
             Text(contact.name)
                 .font(.system(size: 24).weight(.semibold))
-            Text("+7\(contact.phoneNumber)")
+            Text(contact.phoneNumber.formatCustomNumber(mask: "+X XXX XXX-XX-XX"))
                 .font(.system(size: 16))
                 .foregroundStyle(.neutralDisabled)
         }
@@ -114,7 +114,7 @@ private extension ContactDetailView {
                 ContactDetailView(
                     contact: .init(
                         name: "Петя",
-                        phoneNumber: "6666666666",
+                        phoneNumber: "79999999999",
                         status: "Онлайн",
                         isOnline: true,
                         hasNewStories: true,
