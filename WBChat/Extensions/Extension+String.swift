@@ -58,3 +58,35 @@ extension String {
         return initials
     }
 }
+
+extension String {
+    /// Форматирует строку, содержащую числовые данные, в соответствии с заданной маской.
+    ///
+    /// Метод удаляет все нецифровые символы из строки и применяет маску, вставляя цифры в соответствующие позиции.
+    ///
+    /// # Пример использования:
+    /// ```
+    /// let phoneNumber = "71234567890"
+    /// let formattedNumber = phoneNumber.formatCustomNumber("+X XXX XXX-XX-XX") // "+7 123 456-78-90"
+    /// ```
+    /// - Parameter mask:
+    /// Маска для форматирования, например, +X XXX XXX-XX-XX
+    func formatCustomNumber(mask: String) -> String {
+        let cleanNumber = components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
+            
+        var result = ""
+        var startIndex = cleanNumber.startIndex
+        let endIndex = cleanNumber.endIndex
+        
+        for char in mask where startIndex < endIndex {
+            if char == "X" {
+                result.append(cleanNumber[startIndex])
+                startIndex = cleanNumber.index(after: startIndex)
+            } else {
+                result.append(char)
+            }
+        }
+        return result
+    }
+}
+
