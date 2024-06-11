@@ -11,10 +11,7 @@ import SwiftUI
 struct WBChatApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationStack{
-                ContactsView()
-            }
-            .tint(.neutralText)
+            CustomTabView()
         }
     }
 }

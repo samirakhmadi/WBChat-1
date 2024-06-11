@@ -10,7 +10,7 @@ import SwiftUI
 struct ContactsView: View {
     
     @State private var searchText: String = ""
-
+    @Binding var isDetailShowing: Bool
     var body: some View {
         ScrollView(.vertical) {
             LazyVStack(spacing: 0) {
@@ -24,7 +24,7 @@ struct ContactsView: View {
                 }
             }
             .navigationDestination(for: Contact.self) { contact in
-                ContactDetailView(contact: contact)
+                ContactDetailView(isDetailShowing: $isDetailShowing, contact: contact)
             }
         }
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .automatic)
@@ -64,6 +64,6 @@ private extension ContactsView {
 
 #Preview {
     NavigationStack {
-        ContactsView()
+        ContactsView(isDetailShowing: .constant(false))
     }
 }

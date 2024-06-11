@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		591E5A542C18D43A00B73DAC /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E5A532C18D43A00B73DAC /* Tab.swift */; };
+		591E5A572C18D46A00B73DAC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E5A562C18D46A00B73DAC /* Router.swift */; };
+		59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB3062C1891A80071CE2B /* CustomTabView.swift */; };
+		59AFB30C2C189BBD0071CE2B /* CustomTabView_TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */; };
 		59E579472C17265E00641B7A /* ContactDetailView_UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */; };
 		59E5794A2C173DC200641B7A /* Socials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E579492C173DC200641B7A /* Socials.swift */; };
 		59F5A7F82C10C027009051FE /* WBChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A7F72C10C027009051FE /* WBChatApp.swift */; };
@@ -27,6 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		591E5A532C18D43A00B73DAC /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		591E5A562C18D46A00B73DAC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		59AFB3062C1891A80071CE2B /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView_TabItem.swift; sourceTree = "<group>"; };
 		59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView_UserAvatar.swift; sourceTree = "<group>"; };
 		59E579492C173DC200641B7A /* Socials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socials.swift; sourceTree = "<group>"; };
 		59F5A7F42C10C027009051FE /* WBChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +66,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		591E5A552C18D45400B73DAC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				591E5A562C18D46A00B73DAC /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		59AFB3052C1890E90071CE2B /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				59AFB3062C1891A80071CE2B /* CustomTabView.swift */,
+				59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */,
+				591E5A532C18D43A00B73DAC /* Tab.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
 		59E579482C173D8100641B7A /* ContactDetailsFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,11 +114,13 @@
 			isa = PBXGroup;
 			children = (
 				59F5A7F72C10C027009051FE /* WBChatApp.swift */,
+				59AFB3052C1890E90071CE2B /* TabView */,
 				59F5A8362C136711009051FE /* OnboardingFlow */,
 				59F5A8372C13671F009051FE /* ContactsFlow */,
 				59E579482C173D8100641B7A /* ContactDetailsFlow */,
 				59F5A8072C10C06E009051FE /* UIComponents */,
 				59F5A83D2C136B60009051FE /* Models */,
+				591E5A552C18D45400B73DAC /* Service */,
 				59F5A80C2C10C3E5009051FE /* Extensions */,
 				59F5A7FB2C10C029009051FE /* Assets.xcassets */,
 				59F5A7FD2C10C029009051FE /* Preview Content */,
@@ -226,17 +254,21 @@
 			files = (
 				59F5A85B2C14BB81009051FE /* Extension+String.swift in Sources */,
 				59F5A7FA2C10C027009051FE /* OnboardingView.swift in Sources */,
+				59AFB30C2C189BBD0071CE2B /* CustomTabView_TabItem.swift in Sources */,
 				59F5A80B2C10C08B009051FE /* ViewBackgroundColor.swift in Sources */,
 				59F5A8402C136E57009051FE /* Contact.swift in Sources */,
 				59E579472C17265E00641B7A /* ContactDetailView_UserAvatar.swift in Sources */,
+				591E5A572C18D46A00B73DAC /* Router.swift in Sources */,
 				59F5A8442C137756009051FE /* ContactRow_UserAvatar.swift in Sources */,
 				59F5A8102C10C418009051FE /* Extension+HStack.swift in Sources */,
 				59F5A8062C10C069009051FE /* OnboardingView_Sheet.swift in Sources */,
 				59F5A7F82C10C027009051FE /* WBChatApp.swift in Sources */,
 				59F5A83B2C13682A009051FE /* ContactDetailView.swift in Sources */,
 				59F5A8092C10C082009051FE /* CapsuleButton.swift in Sources */,
+				59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */,
 				59F5A8422C137450009051FE /* ContactsView_ContactRow.swift in Sources */,
 				59E5794A2C173DC200641B7A /* Socials.swift in Sources */,
+				591E5A542C18D43A00B73DAC /* Tab.swift in Sources */,
 				59F5A80E2C10C3F9009051FE /* Extension+VStack.swift in Sources */,
 				59F5A8392C1367E0009051FE /* ContactsView.swift in Sources */,
 			);
