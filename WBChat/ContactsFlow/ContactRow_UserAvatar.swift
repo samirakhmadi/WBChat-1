@@ -11,9 +11,10 @@ struct ContactRow_UserAvatar: View {
     var contact: Contact
     
     var body: some View {
-        if let avatar = contact.avatar {
+        switch contact.avatar {
+        case .some(let avatar):
             contactImageView(avatar: avatar, hasNewStories: contact.hasNewStories)
-        } else {
+        case .none:
             contactInitialsView(contactName: contact.name, hasNewStories: contact.hasNewStories)
         }
     }
