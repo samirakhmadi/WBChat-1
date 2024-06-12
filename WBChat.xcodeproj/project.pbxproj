@@ -13,6 +13,7 @@
 		599897DF2C19F43500950A68 /* RectangleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DE2C19F43500950A68 /* RectangleAnimator.swift */; };
 		599897F32C1A260800950A68 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897F22C1A260800950A68 /* SuccessView.swift */; };
 		599897F72C1A272900950A68 /* FailureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897F62C1A272900950A68 /* FailureView.swift */; };
+		599897F92C1A275A00950A68 /* UsersOnlineIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897F82C1A275A00950A68 /* UsersOnlineIntent.swift */; };
 		59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB3062C1891A80071CE2B /* CustomTabView.swift */; };
 		59AFB30C2C189BBD0071CE2B /* CustomTabView_TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */; };
 		59E579472C17265E00641B7A /* ContactDetailView_UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */; };
@@ -42,6 +43,7 @@
 		599897DE2C19F43500950A68 /* RectangleAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleAnimator.swift; sourceTree = "<group>"; };
 		599897F22C1A260800950A68 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		599897F62C1A272900950A68 /* FailureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureView.swift; sourceTree = "<group>"; };
+		599897F82C1A275A00950A68 /* UsersOnlineIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersOnlineIntent.swift; sourceTree = "<group>"; };
 		59AFB3062C1891A80071CE2B /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView_TabItem.swift; sourceTree = "<group>"; };
 		59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView_UserAvatar.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				599897F22C1A260800950A68 /* SuccessView.swift */,
 				599897F62C1A272900950A68 /* FailureView.swift */,
+				599897F82C1A275A00950A68 /* UsersOnlineIntent.swift */,
 			);
 			path = UsersOnline;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				59F5A8422C137450009051FE /* ContactsView_ContactRow.swift in Sources */,
 				599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */,
 				59E5794A2C173DC200641B7A /* Socials.swift in Sources */,
+				599897F92C1A275A00950A68 /* UsersOnlineIntent.swift in Sources */,
 				59F5A80E2C10C3F9009051FE /* Extension+VStack.swift in Sources */,
 				599897F32C1A260800950A68 /* SuccessView.swift in Sources */,
 				59F5A8392C1367E0009051FE /* ContactsView.swift in Sources */,
