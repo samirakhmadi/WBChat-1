@@ -9,21 +9,20 @@ import SwiftUI
 
 struct CustomTabView: View {
     
-    @StateObject var router: Router = .init()
     @State private var isDetailShowing: Bool = false
+    @EnvironmentObject var router: Router
     
     var body: some View {
         VStack {
             TabView(selection: $router.selectedTab) {
-                NavigationStack{
-                    ContactsView(isDetailShowing: $isDetailShowing.animation(
-                        .spring(
-                            response: 0.2,
-                            dampingFraction: 0.8)))
-                        .tag(Tab.contacts)
-                        .toolbar(.hidden, for: .tabBar)
-                }
-                .tint(.neutralText)
+                ContactsView(isDetailShowing: $isDetailShowing.animation(
+                    .spring(
+                        response: 0.2,
+                        dampingFraction: 0.8)))
+                .tag(Tab.contacts)
+                .toolbar(.hidden, for: .tabBar)
+                .environmentObject(router)
+                
                 Text("Чаты")
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(ViewBackgroundColor())
@@ -67,4 +66,5 @@ private extension CustomTabView {
 
 #Preview {
     CustomTabView()
+        .environmentObject(Router())
 }

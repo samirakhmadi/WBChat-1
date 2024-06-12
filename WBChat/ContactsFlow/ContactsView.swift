@@ -11,36 +11,46 @@ struct ContactsView: View {
     
     @State private var searchText: String = ""
     @Binding var isDetailShowing: Bool
+    @EnvironmentObject var router: Router
+    
     var body: some View {
-        ScrollView(.vertical) {
-            LazyVStack(spacing: 0) {
-                ForEach(Contact.contacts.indices, id: \.self) { index in
-                    let contact = Contact.contacts[index]
-                    NavigationLink(value: contact) {
-                        ContactsView_ContactRow(
-                            contact: contact,
-                            isNeedTopPadding: index != 0)
+        NavigationStack(path: $router.homeRoutes){
+            ScrollView(.vertical) {
+                LazyVStack(spacing: 0) {
+                    ForEach(Contact.contacts.indices, id: \.self) { index in
+                        let contact = Contact.contacts[index]
+                        contactButton(contact: contact, isNeedTopPadding: index != 0)
+                    }
+                }
+                .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .automatic)
+                )
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        viewTitle
+                    }
+                    ToolbarItem(placement: .topBarTrailing) {
+                        addButton
+                    }
+                }
+                .navigationBarBackButtonHidden()
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationDestination(for: ContactsRoutes.self) { route in
+                    switch route {
+                    case .contactDetail(let contact):
+                        ContactDetailView(
+                            isDetailShowing: $isDetailShowing,
+                            contact: contact
+                        )
+                    case .addContact:
+                        Text("Добавить контакт")
+                            
                     }
                 }
             }
-            .navigationDestination(for: Contact.self) { contact in
-                ContactDetailView(isDetailShowing: $isDetailShowing, contact: contact)
-            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(ViewBackgroundColor())
         }
-        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .automatic)
-        )
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(ViewBackgroundColor())
-        .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
-                viewTitle
-            }
-            ToolbarItem(placement: .topBarTrailing) {
-                addButton
-            }
-        }
-        .navigationBarBackButtonHidden()
-        .navigationBarTitleDisplayMode(.inline)
+        .tint(.neutralText)
     }
 }
 
@@ -51,9 +61,19 @@ private extension ContactsView {
             .foregroundStyle(.neutralText)
     }
     
+    func contactButton(contact: Contact, isNeedTopPadding: Bool) -> some View {
+        Button {
+            router.homeRoutes.append(ContactsRoutes.contactDetail(contact))
+        } label: {
+            ContactsView_ContactRow(
+                contact: contact,
+                isNeedTopPadding: isNeedTopPadding)
+        }
+    }
+    
     var addButton: some View {
         Button("", systemImage: "plus") {
-
+            router.homeRoutes.append(ContactsRoutes.addContact)
         }
         .frame(width: 24, height: 24)
         .fontWeight(.black)
@@ -65,5 +85,6 @@ private extension ContactsView {
 #Preview {
     NavigationStack {
         ContactsView(isDetailShowing: .constant(false))
+            .environmentObject(Router())
     }
 }
