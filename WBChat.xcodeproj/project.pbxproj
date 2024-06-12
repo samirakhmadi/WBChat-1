@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59AFB2FA2C1768070071CE2B /* StartPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB2F92C1768070071CE2B /* StartPoint.swift */; };
+		59AFB2FC2C1777E40071CE2B /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB2FB2C1777E40071CE2B /* DestinationViewController.swift */; };
+		59AFB2FE2C1778140071CE2B /* RectangleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB2FD2C1778140071CE2B /* RectangleAnimator.swift */; };
 		591E5A572C18D46A00B73DAC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E5A562C18D46A00B73DAC /* Router.swift */; };
 		59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB3062C1891A80071CE2B /* CustomTabView.swift */; };
 		59AFB30C2C189BBD0071CE2B /* CustomTabView_TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */; };
@@ -30,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59AFB2F92C1768070071CE2B /* StartPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPoint.swift; sourceTree = "<group>"; };
+		59AFB2FB2C1777E40071CE2B /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
+		59AFB2FD2C1778140071CE2B /* RectangleAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleAnimator.swift; sourceTree = "<group>"; };
 		591E5A562C18D46A00B73DAC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		59AFB3062C1891A80071CE2B /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView_TabItem.swift; sourceTree = "<group>"; };
@@ -64,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59AFB2F82C1767C00071CE2B /* UIKit+CustomTransition */ = {
+			isa = PBXGroup;
+			children = (
+				59AFB2F92C1768070071CE2B /* StartPoint.swift */,
+				59AFB2FB2C1777E40071CE2B /* DestinationViewController.swift */,
+				59AFB2FD2C1778140071CE2B /* RectangleAnimator.swift */,
+			);
+			path = "UIKit+CustomTransition";
 		591E5A552C18D45400B73DAC /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				59F5A7F72C10C027009051FE /* WBChatApp.swift */,
+				59AFB2F82C1767C00071CE2B /* UIKit+CustomTransition */,
 				59AFB3052C1890E90071CE2B /* TabView */,
 				59F5A8362C136711009051FE /* OnboardingFlow */,
 				59F5A8372C13671F009051FE /* ContactsFlow */,
@@ -253,14 +268,17 @@
 				59F5A7FA2C10C027009051FE /* OnboardingView.swift in Sources */,
 				59AFB30C2C189BBD0071CE2B /* CustomTabView_TabItem.swift in Sources */,
 				59F5A80B2C10C08B009051FE /* ViewBackgroundColor.swift in Sources */,
+				59AFB2FA2C1768070071CE2B /* StartPoint.swift in Sources */,
 				59F5A8402C136E57009051FE /* Contact.swift in Sources */,
 				59E579472C17265E00641B7A /* ContactDetailView_UserAvatar.swift in Sources */,
 				591E5A572C18D46A00B73DAC /* Router.swift in Sources */,
 				59F5A8442C137756009051FE /* ContactRow_UserAvatar.swift in Sources */,
 				59F5A8102C10C418009051FE /* Extension+HStack.swift in Sources */,
+				59AFB2FE2C1778140071CE2B /* RectangleAnimator.swift in Sources */,
 				59F5A8062C10C069009051FE /* OnboardingView_Sheet.swift in Sources */,
 				59F5A7F82C10C027009051FE /* WBChatApp.swift in Sources */,
 				59F5A83B2C13682A009051FE /* ContactDetailView.swift in Sources */,
+				59AFB2FC2C1777E40071CE2B /* DestinationViewController.swift in Sources */,
 				59F5A8092C10C082009051FE /* CapsuleButton.swift in Sources */,
 				59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */,
 				59F5A8422C137450009051FE /* ContactsView_ContactRow.swift in Sources */,
