@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		591E5A542C18D43A00B73DAC /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E5A532C18D43A00B73DAC /* Tab.swift */; };
 		591E5A572C18D46A00B73DAC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E5A562C18D46A00B73DAC /* Router.swift */; };
 		59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB3062C1891A80071CE2B /* CustomTabView.swift */; };
 		59AFB30C2C189BBD0071CE2B /* CustomTabView_TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */; };
@@ -31,7 +30,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		591E5A532C18D43A00B73DAC /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		591E5A562C18D46A00B73DAC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		59AFB3062C1891A80071CE2B /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView_TabItem.swift; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 			children = (
 				59AFB3062C1891A80071CE2B /* CustomTabView.swift */,
 				59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */,
-				591E5A532C18D43A00B73DAC /* Tab.swift */,
 			);
 			path = TabView;
 			sourceTree = "<group>";
@@ -268,7 +265,6 @@
 				59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */,
 				59F5A8422C137450009051FE /* ContactsView_ContactRow.swift in Sources */,
 				59E5794A2C173DC200641B7A /* Socials.swift in Sources */,
-				591E5A542C18D43A00B73DAC /* Tab.swift in Sources */,
 				59F5A80E2C10C3F9009051FE /* Extension+VStack.swift in Sources */,
 				59F5A8392C1367E0009051FE /* ContactsView.swift in Sources */,
 			);
