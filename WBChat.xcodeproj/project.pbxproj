@@ -11,6 +11,7 @@
 		599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DA2C19F3BF00950A68 /* StartPointViewController.swift */; };
 		599897DD2C19F3F100950A68 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DC2C19F3F100950A68 /* DestinationViewController.swift */; };
 		599897DF2C19F43500950A68 /* RectangleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DE2C19F43500950A68 /* RectangleAnimator.swift */; };
+		599897F32C1A260800950A68 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897F22C1A260800950A68 /* SuccessView.swift */; };
 		59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB3062C1891A80071CE2B /* CustomTabView.swift */; };
 		59AFB30C2C189BBD0071CE2B /* CustomTabView_TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */; };
 		59E579472C17265E00641B7A /* ContactDetailView_UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */; };
@@ -38,6 +39,7 @@
 		599897DA2C19F3BF00950A68 /* StartPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPointViewController.swift; sourceTree = "<group>"; };
 		599897DC2C19F3F100950A68 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 		599897DE2C19F43500950A68 /* RectangleAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleAnimator.swift; sourceTree = "<group>"; };
+		599897F22C1A260800950A68 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		59AFB3062C1891A80071CE2B /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView_TabItem.swift; sourceTree = "<group>"; };
 		59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView_UserAvatar.swift; sourceTree = "<group>"; };
@@ -90,6 +92,22 @@
 			path = "Дополнительно💻";
 			sourceTree = "<group>";
 		};
+		599897EE2C1A259200950A68 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				599897EF2C1A25A600950A68 /* UsersOnline */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		599897EF2C1A25A600950A68 /* UsersOnline */ = {
+			isa = PBXGroup;
+			children = (
+				599897F22C1A260800950A68 /* SuccessView.swift */,
+			);
+			path = UsersOnline;
+			sourceTree = "<group>";
+		};
 		59AFB3052C1890E90071CE2B /* TabView */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +158,7 @@
 		59F5A7F62C10C027009051FE /* WBChat */ = {
 			isa = PBXGroup;
 			children = (
+				599897EE2C1A259200950A68 /* Intents */,
 				599897D92C19F34200950A68 /* Дополнительно💻 */,
 				59F5A7F72C10C027009051FE /* WBChatApp.swift */,
 				59F5A8362C136711009051FE /* OnboardingFlow */,
@@ -297,6 +316,7 @@
 				599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */,
 				59E5794A2C173DC200641B7A /* Socials.swift in Sources */,
 				59F5A80E2C10C3F9009051FE /* Extension+VStack.swift in Sources */,
+				599897F32C1A260800950A68 /* SuccessView.swift in Sources */,
 				59F5A8392C1367E0009051FE /* ContactsView.swift in Sources */,
 				599897DD2C19F3F100950A68 /* DestinationViewController.swift in Sources */,
 			);
