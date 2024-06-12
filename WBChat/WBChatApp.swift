@@ -9,12 +9,13 @@ import SwiftUI
 
 @main
 struct WBChatApp: App {
+    
+    @StateObject private var router: Router = .init()
+    
     var body: some Scene {
         WindowGroup {
-            NavigationStack{
-                ContactsView()
-            }
-            .tint(.neutralText)
+            CustomTabView()
+                .environmentObject(router)
         }
     }
 }

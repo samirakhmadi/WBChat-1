@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContactDetailView: View {
     @Environment(\.dismiss) private var dismiss
+    @Binding var isDetailShowing: Bool
     let contact: Contact
     var body: some View {
         VStack {
@@ -32,6 +33,12 @@ struct ContactDetailView: View {
             ToolbarItem(placement: .topBarTrailing) {
                 editButton
             }
+        }
+        .onAppear {
+            isDetailShowing.toggle()
+        }
+        .onDisappear{
+            isDetailShowing.toggle()
         }
     }
 }
@@ -117,7 +124,7 @@ private extension ContactDetailView {
         var body: some View {
             NavigationStack {
                 ContactDetailView(
-                    contact: .init(
+                    isDetailShowing: .constant(false), contact: .init(
                         name: "Петя",
                         phoneNumber: "79999999999",
                         status: "Онлайн",

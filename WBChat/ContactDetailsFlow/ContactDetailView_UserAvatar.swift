@@ -10,9 +10,10 @@ import SwiftUI
 struct ContactDetailView_UserAvatar: View {
     var contact: Contact
     var body: some View {
-        if let avatar = contact.avatar {
+        switch contact.avatar {
+        case .some(let avatar):
             contactImageView(avatar: avatar)
-        } else {
+        case .none:
             contactInitialsView(contactName: contact.name)
         }
     }
