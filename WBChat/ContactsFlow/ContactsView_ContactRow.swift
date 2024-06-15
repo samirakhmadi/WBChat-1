@@ -22,7 +22,9 @@ struct ContactsView_ContactRow: View {
             }
             .padding(.top, isNeedTopPadding ? 12 : 0)
             .padding(.bottom, 12)
-            Divider()
+            Rectangle()
+                .fill(.neutralLine)
+                .frame(height: 1)
         }
         .padding(.horizontal, 24)
     }
