@@ -55,7 +55,6 @@ private extension ContactDetailView {
                 .scaledToFit()
         }
         .frame(width: 24, height: 24, alignment: .trailing)
-        .padding(6)
         .tint(.neutralText)
     }
     
@@ -67,6 +66,7 @@ private extension ContactDetailView {
                 .tint(.neutralText)
             Spacer()
         }
+        .padding(.leading, 8)
     }
     
     var editButton: some View {
