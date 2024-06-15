@@ -22,9 +22,9 @@ struct ContactsView_ContactRow: View {
             }
             .padding(.top, isNeedTopPadding ? 12 : 0)
             .padding(.bottom, 12)
-            .padding(.horizontal, 24)
             Divider()
         }
+        .padding(.horizontal, 24)
     }
 }
 
@@ -82,10 +82,13 @@ private extension ContactsView_ContactRow {
             ),
         ]
         var body: some View {
-            ForEach(contacts) { contact in
-                ContactsView_ContactRow(contact: contact, isNeedTopPadding: true)
+            VStack{
+                ForEach(contacts) { contact in
+                    ContactsView_ContactRow(contact: contact, isNeedTopPadding: true)
+                }
             }
             .padding(.horizontal)
+            .background(ViewBackgroundColor())
         }
     }
     return BindingViewPreviewContainer()
