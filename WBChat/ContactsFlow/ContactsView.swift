@@ -17,13 +17,12 @@ struct ContactsView: View {
         NavigationStack(path: $router.homeRoutes){
             ScrollView(.vertical) {
                 LazyVStack(spacing: 0) {
+                    searchField
                     ForEach(Contact.contacts.indices, id: \.self) { index in
                         let contact = Contact.contacts[index]
                         contactButton(contact: contact, isNeedTopPadding: index != 0)
                     }
                 }
-                .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .automatic)
-                )
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
                         viewTitle
@@ -55,6 +54,13 @@ struct ContactsView: View {
 }
 
 private extension ContactsView {
+    
+    var searchField: some View {
+        CustomSearchField(text: $searchText, placeholder: "Search")
+            .padding(.horizontal, 24)
+            .padding(.vertical, 16)
+    }
+    
     var viewTitle: some View {
         Text("Контакты")
             .font(.system(size: 18).weight(.semibold))
