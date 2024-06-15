@@ -42,7 +42,6 @@ struct ContactsView: View {
                         )
                     case .addContact:
                         Text("Добавить контакт")
-                            
                     }
                 }
             }
@@ -65,6 +64,7 @@ private extension ContactsView {
         Text("Контакты")
             .font(.system(size: 18).weight(.semibold))
             .foregroundStyle(.neutralText)
+            .padding(.leading, 6)
     }
     
     func contactButton(contact: Contact, isNeedTopPadding: Bool) -> some View {
@@ -78,13 +78,14 @@ private extension ContactsView {
     }
     
     var addButton: some View {
-        Button("", systemImage: "plus") {
+        Button {
             router.homeRoutes.append(ContactsRoutes.addContact)
+        } label: {
+            Image(systemName: "plus")
+                .font(.body.weight(.semibold))
+                .tint(.neutralText)
+                .padding(.trailing, 6)
         }
-        .frame(width: 24, height: 24)
-        .fontWeight(.black)
-        .labelStyle(.iconOnly)
-        .tint(.neutralText)
     }
 }
 
