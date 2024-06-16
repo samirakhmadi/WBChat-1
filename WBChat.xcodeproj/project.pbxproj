@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		591E5A572C18D46A00B73DAC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591E5A562C18D46A00B73DAC /* Router.swift */; };
-		599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DA2C19F3BF00950A68 /* StartPointViewController.swift */; };
-		599897DD2C19F3F100950A68 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DC2C19F3F100950A68 /* DestinationViewController.swift */; };
-		599897DF2C19F43500950A68 /* RectangleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DE2C19F43500950A68 /* RectangleAnimator.swift */; };
 		599897F32C1A260800950A68 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897F22C1A260800950A68 /* SuccessView.swift */; };
 		599897F72C1A272900950A68 /* FailureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897F62C1A272900950A68 /* FailureView.swift */; };
 		599897F92C1A275A00950A68 /* UsersOnlineIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897F82C1A275A00950A68 /* UsersOnlineIntent.swift */; };
@@ -38,9 +35,6 @@
 
 /* Begin PBXFileReference section */
 		591E5A562C18D46A00B73DAC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		599897DA2C19F3BF00950A68 /* StartPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPointViewController.swift; sourceTree = "<group>"; };
-		599897DC2C19F3F100950A68 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
-		599897DE2C19F43500950A68 /* RectangleAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleAnimator.swift; sourceTree = "<group>"; };
 		599897F22C1A260800950A68 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		599897F62C1A272900950A68 /* FailureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureView.swift; sourceTree = "<group>"; };
 		599897F82C1A275A00950A68 /* UsersOnlineIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersOnlineIntent.swift; sourceTree = "<group>"; };
@@ -84,16 +78,6 @@
 				591E5A562C18D46A00B73DAC /* Router.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		599897D92C19F34200950A68 /* Дополнительно💻 */ = {
-			isa = PBXGroup;
-			children = (
-				599897DA2C19F3BF00950A68 /* StartPointViewController.swift */,
-				599897DC2C19F3F100950A68 /* DestinationViewController.swift */,
-				599897DE2C19F43500950A68 /* RectangleAnimator.swift */,
-			);
-			path = "Дополнительно💻";
 			sourceTree = "<group>";
 		};
 		599897EE2C1A259200950A68 /* Intents */ = {
@@ -165,7 +149,6 @@
 			isa = PBXGroup;
 			children = (
 				599897EE2C1A259200950A68 /* Intents */,
-				599897D92C19F34200950A68 /* Дополнительно💻 */,
 				59F5A7F72C10C027009051FE /* WBChatApp.swift */,
 				59F5A8362C136711009051FE /* OnboardingFlow */,
 				59E3EBC92C23146C00897E6D /* ДЗ№2-NavigationAndRouting */,
@@ -318,15 +301,12 @@
 				59F5A83B2C13682A009051FE /* ContactDetailView.swift in Sources */,
 				59F5A8092C10C082009051FE /* CapsuleButton.swift in Sources */,
 				59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */,
-				599897DF2C19F43500950A68 /* RectangleAnimator.swift in Sources */,
 				59F5A8422C137450009051FE /* ContactsView_ContactRow.swift in Sources */,
-				599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */,
 				59E5794A2C173DC200641B7A /* Socials.swift in Sources */,
 				599897F92C1A275A00950A68 /* UsersOnlineIntent.swift in Sources */,
 				59F5A80E2C10C3F9009051FE /* Extension+VStack.swift in Sources */,
 				599897F32C1A260800950A68 /* SuccessView.swift in Sources */,
 				59F5A8392C1367E0009051FE /* ContactsView.swift in Sources */,
-				599897DD2C19F3F100950A68 /* DestinationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
