@@ -99,6 +99,18 @@
 			path = TabView;
 			sourceTree = "<group>";
 		};
+		59E3EBC92C23146C00897E6D /* ДЗ№2-NavigationAndRouting */ = {
+			isa = PBXGroup;
+			children = (
+				59AFB3052C1890E90071CE2B /* TabView */,
+				59F5A8372C13671F009051FE /* ContactsFlow */,
+				59E579482C173D8100641B7A /* ContactDetailsFlow */,
+				59F5A83D2C136B60009051FE /* Models */,
+				591E5A552C18D45400B73DAC /* Service */,
+			);
+			path = "ДЗ№2-NavigationAndRouting";
+			sourceTree = "<group>";
+		};
 		59E579482C173D8100641B7A /* ContactDetailsFlow */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,13 +142,9 @@
 			children = (
 				599897D92C19F34200950A68 /* Дополнительно💻 */,
 				59F5A7F72C10C027009051FE /* WBChatApp.swift */,
-				59AFB3052C1890E90071CE2B /* TabView */,
 				59F5A8362C136711009051FE /* OnboardingFlow */,
-				59F5A8372C13671F009051FE /* ContactsFlow */,
-				59E579482C173D8100641B7A /* ContactDetailsFlow */,
+				59E3EBC92C23146C00897E6D /* ДЗ№2-NavigationAndRouting */,
 				59F5A8072C10C06E009051FE /* UIComponents */,
-				59F5A83D2C136B60009051FE /* Models */,
-				591E5A552C18D45400B73DAC /* Service */,
 				59F5A80C2C10C3E5009051FE /* Extensions */,
 				59F5A7FB2C10C029009051FE /* Assets.xcassets */,
 				59F5A7FD2C10C029009051FE /* Preview Content */,
