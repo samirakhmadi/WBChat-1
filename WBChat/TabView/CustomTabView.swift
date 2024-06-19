@@ -37,7 +37,6 @@ struct CustomTabView: View {
             .overlay(alignment: .bottom) {
                 if !isDetailShowing {
                     customTabView()
-                        .background(ViewBackgroundColor())
                 }
             }
         }
@@ -49,8 +48,6 @@ struct CustomTabView: View {
 
 private extension CustomTabView {
     func customTabView() -> some View {
-        VStack {
-            Divider()
             HStack {
                 ForEach(Tab.allCases) { tab in
                     CustomTabView_TabItem (
@@ -61,7 +58,8 @@ private extension CustomTabView {
                     )
                 }
             }
-        }
+            .background(ViewBackgroundColor())
+            .shadow(color: .black.opacity(0.04), radius: 24, x: -1)
     }
 }
 
