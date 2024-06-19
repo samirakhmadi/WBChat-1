@@ -40,11 +40,6 @@ struct AmountInfoProvider: TimelineProvider {
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
     }
-    
-//    private func getAmount() -> Double {
-//        let defaults = UserDefaults.standard
-//        return defaults.double(forKey: "amount")
-//    }
 }
 
 struct CoffeeAmountEntry: TimelineEntry {
@@ -60,89 +55,14 @@ struct CoffeeCounterEntryView : View {
     var body: some View {
         switch widgetFamily {
         case .systemSmall:
-            systemSmallWidget
+            CoffeeCounter_SmallWidget(entry: entry)
         case .systemMedium:
-            systemMediumWidget
+            CoffeeCounter_MediumWidget(entry: entry)
         default:
-            systemSmallWidget
+            CoffeeCounter_SmallWidget(entry: entry)
         }
     }
 }
-
-private extension CoffeeCounterEntryView {
-    var systemSmallWidget: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                Image(.coffeeCup)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 40, height: 40)
-                Text(entry.amount.formattedVolume)
-                .contentTransition(.numericText())
-                .foregroundStyle(.primary)
-                .fontWeight(.semibold)
-            }
-            HStack(spacing: 8){
-                Button(intent: ResetCoffeeIntent()) {
-                   Image(systemName: "gobackward")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 25, height: 25)
-                        .fontWeight(.light)
-                        .padding()
-                        .background(Circle().stroke(.primary, lineWidth: 1))
-                }
-                Button(intent: IncreaseCoffeeIntent()) {
-                    Image(systemName: "plus")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 25, height: 25)
-                        .fontWeight(.light)
-                        .padding()
-                        .background(Circle().stroke(.primary, lineWidth: 1))
-                }
-            }
-            .buttonStyle(BorderlessButtonStyle())
-            .tint(.primary)
-        }
-    }
-    
-    
-    var systemMediumWidget: some View {
-        VStack {
-            Text("Сопоставимо по объему с:")
-                .fontWeight(.semibold)
-            HStack(alignment: .bottom, spacing: 2) {
-                ForEach(CoffeeSize.allCases.indices, id: \.self) { idx in
-                    let coffeeSize = CoffeeSize.allCases[idx]
-                    HStack {
-                        Rectangle()
-                            .frame(width: 1)
-                        VStack(spacing: 4) {
-                            Text("\(coffeeSize.cupVolume, format: .number.precision(.fractionLength(0))) мл")
-                            Image(coffeeSize.image)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 35, height: 35)
-                            Text("\(coffeeSize.cupName)")
-                            Text(entry.amount / coffeeSize.cupVolume, format: .number.precision(.fractionLength(2)))
-                                .font(.callout)
-                                .contentTransition(.numericText())
-                        }
-                        .frame(maxWidth: .infinity)
-                        .containerRelativeFrame(.vertical) { length, _ in
-                            length - 32
-                        }
-                        Rectangle()
-                            .frame(width: 1)
-                            .opacity(CoffeeSize.allCases.count - 1 != idx ? 0: 1)
-                    }
-                }
-            }
-        }
-    }
-}
-
 
 struct CoffeeCounter: Widget {
     let kind: String = "CoffeeCounter"
@@ -172,7 +92,6 @@ struct CoffeeCounter: Widget {
     CoffeeAmountEntry(date: .now, amount: 1000)
     CoffeeAmountEntry(date: .now, amount: 1200)
     CoffeeAmountEntry(date: .now, amount: 2500)
-
 }
 
 #Preview(as: .systemMedium) {

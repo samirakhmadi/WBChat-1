@@ -26,6 +26,8 @@
 		59E3EBA32C220D9E00897E6D /* Extension+HStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A80F2C10C418009051FE /* Extension+HStack.swift */; };
 		59E3EBA72C22106900897E6D /* Extension+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E3EBA52C22105E00897E6D /* Extension+Double.swift */; };
 		59E3EBAE2C22D79200897E6D /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E3EBAC2C22D71B00897E6D /* DataStorage.swift */; };
+		59E3EBC52C22EBA400897E6D /* CoffeeCounter_SmallWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E3EBC42C22EBA400897E6D /* CoffeeCounter_SmallWidget.swift */; };
+		59E3EBC72C22EFBB00897E6D /* CoffeeCounter_MediumWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E3EBC62C22EFBB00897E6D /* CoffeeCounter_MediumWidget.swift */; };
 		59E579472C17265E00641B7A /* ContactDetailView_UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */; };
 		59E5794A2C173DC200641B7A /* Socials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E579492C173DC200641B7A /* Socials.swift */; };
 		59ED2D602C1E10B2007FC636 /* CustomSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ED2D5F2C1E10B2007FC636 /* CustomSearchField.swift */; };
@@ -89,6 +91,8 @@
 		59E3EB9D2C220B2800897E6D /* CoffeeSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeSize.swift; sourceTree = "<group>"; };
 		59E3EBA52C22105E00897E6D /* Extension+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Double.swift"; sourceTree = "<group>"; };
 		59E3EBAC2C22D71B00897E6D /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
+		59E3EBC42C22EBA400897E6D /* CoffeeCounter_SmallWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCounter_SmallWidget.swift; sourceTree = "<group>"; };
+		59E3EBC62C22EFBB00897E6D /* CoffeeCounter_MediumWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCounter_MediumWidget.swift; sourceTree = "<group>"; };
 		59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView_UserAvatar.swift; sourceTree = "<group>"; };
 		59E579492C173DC200641B7A /* Socials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socials.swift; sourceTree = "<group>"; };
 		59ED2D5F2C1E10B2007FC636 /* CustomSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchField.swift; sourceTree = "<group>"; };
@@ -188,12 +192,13 @@
 		59E3EB892C220A3D00897E6D /* CoffeeCounter */ = {
 			isa = PBXGroup;
 			children = (
+				59E3EBC32C22EB9900897E6D /* Views */,
 				59E3EB8A2C220A3D00897E6D /* CoffeeCounterBundle.swift */,
 				59E3EB8C2C220A3D00897E6D /* CoffeeCounter.swift */,
 				59E3EB9D2C220B2800897E6D /* CoffeeSize.swift */,
-				59E3EBAB2C22D70200897E6D /* Services */,
 				59E3EBA42C22104800897E6D /* Extension */,
 				59E3EB982C220AC500897E6D /* Intents */,
+				59E3EBAB2C22D70200897E6D /* Services */,
 				59E3EB8E2C220A3E00897E6D /* Assets.xcassets */,
 				59E3EB902C220A3E00897E6D /* Info.plist */,
 			);
@@ -223,6 +228,15 @@
 				59E3EBAC2C22D71B00897E6D /* DataStorage.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		59E3EBC32C22EB9900897E6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59E3EBC42C22EBA400897E6D /* CoffeeCounter_SmallWidget.swift */,
+				59E3EBC62C22EFBB00897E6D /* CoffeeCounter_MediumWidget.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		59E579482C173D8100641B7A /* ContactDetailsFlow */ = {
@@ -427,8 +441,10 @@
 			files = (
 				59E3EBA72C22106900897E6D /* Extension+Double.swift in Sources */,
 				59E3EB8D2C220A3D00897E6D /* CoffeeCounter.swift in Sources */,
+				59E3EBC72C22EFBB00897E6D /* CoffeeCounter_MediumWidget.swift in Sources */,
 				59E3EBA02C220B7A00897E6D /* IncreaseCoffeeIntent.swift in Sources */,
 				59E3EBAE2C22D79200897E6D /* DataStorage.swift in Sources */,
+				59E3EBC52C22EBA400897E6D /* CoffeeCounter_SmallWidget.swift in Sources */,
 				59E3EBA32C220D9E00897E6D /* Extension+HStack.swift in Sources */,
 				59E3EBA12C220B7E00897E6D /* ResetCoffeeIntent.swift in Sources */,
 				59E3EB8B2C220A3D00897E6D /* CoffeeCounterBundle.swift in Sources */,
