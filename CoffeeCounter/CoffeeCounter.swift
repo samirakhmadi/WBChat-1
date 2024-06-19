@@ -83,21 +83,3 @@ struct CoffeeCounter: Widget {
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
-
-#Preview(as: .systemSmall) {
-    CoffeeCounter()
-} timeline: {
-    CoffeeAmountEntry(date: .now, amount: 440)
-    CoffeeAmountEntry(date: .now, amount: 980)
-    CoffeeAmountEntry(date: .now, amount: 1000)
-    CoffeeAmountEntry(date: .now, amount: 1200)
-    CoffeeAmountEntry(date: .now, amount: 2500)
-}
-
-#Preview(as: .systemMedium) {
-    CoffeeCounter()
-} timeline: {
-    CoffeeAmountEntry(date: .now, amount: 440)
-    CoffeeAmountEntry(date: .now, amount: 500)
-}
-
