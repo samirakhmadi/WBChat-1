@@ -37,6 +37,7 @@ struct CustomTabView: View {
             .overlay(alignment: .bottom) {
                 if !isDetailShowing {
                     customTabView()
+                        .background(ViewBackgroundColor())
                 }
             }
         }
