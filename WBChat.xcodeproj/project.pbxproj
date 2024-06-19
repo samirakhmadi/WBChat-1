@@ -19,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59C34C0F2C24880F005DFAEE /* WorkerAndPassport.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = WorkerAndPassport.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59F5A7F42C10C027009051FE /* WBChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F5A7F72C10C027009051FE /* WBChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBChatApp.swift; sourceTree = "<group>"; };
 		59F5A7F92C10C027009051FE /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -42,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59DE8DAD2C2333340096E2A7 /* ДЗ№5-Стек и куча */ = {
+			isa = PBXGroup;
+			children = (
+				59C34C0F2C24880F005DFAEE /* WorkerAndPassport.playground */,
+			);
+			path = "ДЗ№5-Стек и куча";
+			sourceTree = "<group>";
+		};
 		59F5A7EB2C10C027009051FE = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +70,7 @@
 		59F5A7F62C10C027009051FE /* WBChat */ = {
 			isa = PBXGroup;
 			children = (
+				59DE8DAD2C2333340096E2A7 /* ДЗ№5-Стек и куча */,
 				59F5A7F72C10C027009051FE /* WBChatApp.swift */,
 				59F5A7F92C10C027009051FE /* OnboardingView.swift */,
 				59F5A8052C10C069009051FE /* OnboardingView_Sheet.swift */,
