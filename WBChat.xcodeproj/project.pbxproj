@@ -19,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59BC95A22C2323130018E08D /* BankOnClasses.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BankOnClasses.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		59F5A7F42C10C027009051FE /* WBChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F5A7F72C10C027009051FE /* WBChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBChatApp.swift; sourceTree = "<group>"; };
 		59F5A7F92C10C027009051FE /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -42,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59E3EBCC2C231DF700897E6D /* ДЗ№4-Классы и структуры */ = {
+			isa = PBXGroup;
+			children = (
+				59BC95A22C2323130018E08D /* BankOnClasses.playground */,
+			);
+			name = "ДЗ№4-Классы и структуры";
+			path = "/Users/akist/Desktop/Development/SUI/WBChat/WBChat/ДЗ№4-Классы и структуры";
+			sourceTree = "<absolute>";
+		};
 		59F5A7EB2C10C027009051FE = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +71,7 @@
 		59F5A7F62C10C027009051FE /* WBChat */ = {
 			isa = PBXGroup;
 			children = (
+				59E3EBCC2C231DF700897E6D /* ДЗ№4-Классы и структуры */,
 				59F5A7F72C10C027009051FE /* WBChatApp.swift */,
 				59F5A7F92C10C027009051FE /* OnboardingView.swift */,
 				59F5A8052C10C069009051FE /* OnboardingView_Sheet.swift */,
