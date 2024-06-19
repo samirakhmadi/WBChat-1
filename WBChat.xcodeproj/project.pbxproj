@@ -13,6 +13,19 @@
 		599897F92C1A275A00950A68 /* UsersOnlineIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897F82C1A275A00950A68 /* UsersOnlineIntent.swift */; };
 		59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB3062C1891A80071CE2B /* CustomTabView.swift */; };
 		59AFB30C2C189BBD0071CE2B /* CustomTabView_TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */; };
+		59E3EB862C220A3D00897E6D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E3EB852C220A3D00897E6D /* WidgetKit.framework */; };
+		59E3EB882C220A3D00897E6D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E3EB872C220A3D00897E6D /* SwiftUI.framework */; };
+		59E3EB8B2C220A3D00897E6D /* CoffeeCounterBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E3EB8A2C220A3D00897E6D /* CoffeeCounterBundle.swift */; };
+		59E3EB8D2C220A3D00897E6D /* CoffeeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E3EB8C2C220A3D00897E6D /* CoffeeCounter.swift */; };
+		59E3EB8F2C220A3E00897E6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59E3EB8E2C220A3E00897E6D /* Assets.xcassets */; };
+		59E3EB932C220A3E00897E6D /* CoffeeCounterExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 59E3EB832C220A3D00897E6D /* CoffeeCounterExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		59E3EB9F2C220B5800897E6D /* CoffeeSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E3EB9D2C220B2800897E6D /* CoffeeSize.swift */; };
+		59E3EBA02C220B7A00897E6D /* IncreaseCoffeeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E3EB992C220ADE00897E6D /* IncreaseCoffeeIntent.swift */; };
+		59E3EBA12C220B7E00897E6D /* ResetCoffeeIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E3EB9B2C220AE900897E6D /* ResetCoffeeIntent.swift */; };
+		59E3EBA22C220D9C00897E6D /* Extension+VStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A80D2C10C3F9009051FE /* Extension+VStack.swift */; };
+		59E3EBA32C220D9E00897E6D /* Extension+HStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A80F2C10C418009051FE /* Extension+HStack.swift */; };
+		59E3EBA72C22106900897E6D /* Extension+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E3EBA52C22105E00897E6D /* Extension+Double.swift */; };
+		59E3EBAE2C22D79200897E6D /* DataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E3EBAC2C22D71B00897E6D /* DataStorage.swift */; };
 		59E579472C17265E00641B7A /* ContactDetailView_UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */; };
 		59E5794A2C173DC200641B7A /* Socials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E579492C173DC200641B7A /* Socials.swift */; };
 		59ED2D602C1E10B2007FC636 /* CustomSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ED2D5F2C1E10B2007FC636 /* CustomSearchField.swift */; };
@@ -33,6 +46,30 @@
 		59F5A85B2C14BB81009051FE /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A85A2C14BB81009051FE /* Extension+String.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		59E3EB912C220A3E00897E6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59F5A7EC2C10C027009051FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59E3EB822C220A3D00897E6D;
+			remoteInfo = CoffeeCounterExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		59E3EB942C220A3E00897E6D /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				59E3EB932C220A3E00897E6D /* CoffeeCounterExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		591E5A562C18D46A00B73DAC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		599897F22C1A260800950A68 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
@@ -40,6 +77,18 @@
 		599897F82C1A275A00950A68 /* UsersOnlineIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersOnlineIntent.swift; sourceTree = "<group>"; };
 		59AFB3062C1891A80071CE2B /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView_TabItem.swift; sourceTree = "<group>"; };
+		59E3EB832C220A3D00897E6D /* CoffeeCounterExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CoffeeCounterExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		59E3EB852C220A3D00897E6D /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		59E3EB872C220A3D00897E6D /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		59E3EB8A2C220A3D00897E6D /* CoffeeCounterBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCounterBundle.swift; sourceTree = "<group>"; };
+		59E3EB8C2C220A3D00897E6D /* CoffeeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCounter.swift; sourceTree = "<group>"; };
+		59E3EB8E2C220A3E00897E6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59E3EB902C220A3E00897E6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59E3EB992C220ADE00897E6D /* IncreaseCoffeeIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncreaseCoffeeIntent.swift; sourceTree = "<group>"; };
+		59E3EB9B2C220AE900897E6D /* ResetCoffeeIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetCoffeeIntent.swift; sourceTree = "<group>"; };
+		59E3EB9D2C220B2800897E6D /* CoffeeSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeSize.swift; sourceTree = "<group>"; };
+		59E3EBA52C22105E00897E6D /* Extension+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Double.swift"; sourceTree = "<group>"; };
+		59E3EBAC2C22D71B00897E6D /* DataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStorage.swift; sourceTree = "<group>"; };
 		59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView_UserAvatar.swift; sourceTree = "<group>"; };
 		59E579492C173DC200641B7A /* Socials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socials.swift; sourceTree = "<group>"; };
 		59ED2D5F2C1E10B2007FC636 /* CustomSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchField.swift; sourceTree = "<group>"; };
@@ -62,6 +111,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		59E3EB802C220A3D00897E6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59E3EB882C220A3D00897E6D /* SwiftUI.framework in Frameworks */,
+				59E3EB862C220A3D00897E6D /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59F5A7F12C10C027009051FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -117,6 +175,54 @@
 				591E5A552C18D45400B73DAC /* Service */,
 			);
 			path = "ДЗ№2-NavigationAndRouting";
+		};
+		59E3EB842C220A3D00897E6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59E3EB852C220A3D00897E6D /* WidgetKit.framework */,
+				59E3EB872C220A3D00897E6D /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59E3EB892C220A3D00897E6D /* CoffeeCounter */ = {
+			isa = PBXGroup;
+			children = (
+				59E3EB8A2C220A3D00897E6D /* CoffeeCounterBundle.swift */,
+				59E3EB8C2C220A3D00897E6D /* CoffeeCounter.swift */,
+				59E3EB9D2C220B2800897E6D /* CoffeeSize.swift */,
+				59E3EBAB2C22D70200897E6D /* Services */,
+				59E3EBA42C22104800897E6D /* Extension */,
+				59E3EB982C220AC500897E6D /* Intents */,
+				59E3EB8E2C220A3E00897E6D /* Assets.xcassets */,
+				59E3EB902C220A3E00897E6D /* Info.plist */,
+			);
+			path = CoffeeCounter;
+			sourceTree = "<group>";
+		};
+		59E3EB982C220AC500897E6D /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				59E3EB992C220ADE00897E6D /* IncreaseCoffeeIntent.swift */,
+				59E3EB9B2C220AE900897E6D /* ResetCoffeeIntent.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		59E3EBA42C22104800897E6D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				59E3EBA52C22105E00897E6D /* Extension+Double.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		59E3EBAB2C22D70200897E6D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				59E3EBAC2C22D71B00897E6D /* DataStorage.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		59E579482C173D8100641B7A /* ContactDetailsFlow */ = {
@@ -133,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				59F5A7F62C10C027009051FE /* WBChat */,
+				59E3EB892C220A3D00897E6D /* CoffeeCounter */,
+				59E3EB842C220A3D00897E6D /* Frameworks */,
 				59F5A7F52C10C027009051FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				59F5A7F42C10C027009051FE /* WBChat.app */,
+				59E3EB832C220A3D00897E6D /* CoffeeCounterExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,6 +327,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		59E3EB822C220A3D00897E6D /* CoffeeCounterExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59E3EB972C220A3E00897E6D /* Build configuration list for PBXNativeTarget "CoffeeCounterExtension" */;
+			buildPhases = (
+				59E3EB7F2C220A3D00897E6D /* Sources */,
+				59E3EB802C220A3D00897E6D /* Frameworks */,
+				59E3EB812C220A3D00897E6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoffeeCounterExtension;
+			productName = CoffeeCounterExtension;
+			productReference = 59E3EB832C220A3D00897E6D /* CoffeeCounterExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		59F5A7F32C10C027009051FE /* WBChat */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 59F5A8022C10C029009051FE /* Build configuration list for PBXNativeTarget "WBChat" */;
@@ -225,10 +351,12 @@
 				59F5A7F02C10C027009051FE /* Sources */,
 				59F5A7F12C10C027009051FE /* Frameworks */,
 				59F5A7F22C10C027009051FE /* Resources */,
+				59E3EB942C220A3E00897E6D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				59E3EB922C220A3E00897E6D /* PBXTargetDependency */,
 			);
 			name = WBChat;
 			productName = WBChat;
@@ -245,6 +373,9 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					59E3EB822C220A3D00897E6D = {
+						CreatedOnToolsVersion = 15.3;
+					};
 					59F5A7F32C10C027009051FE = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -264,11 +395,20 @@
 			projectRoot = "";
 			targets = (
 				59F5A7F32C10C027009051FE /* WBChat */,
+				59E3EB822C220A3D00897E6D /* CoffeeCounterExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		59E3EB812C220A3D00897E6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59E3EB8F2C220A3E00897E6D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59F5A7F22C10C027009051FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,6 +421,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		59E3EB7F2C220A3D00897E6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59E3EBA72C22106900897E6D /* Extension+Double.swift in Sources */,
+				59E3EB8D2C220A3D00897E6D /* CoffeeCounter.swift in Sources */,
+				59E3EBA02C220B7A00897E6D /* IncreaseCoffeeIntent.swift in Sources */,
+				59E3EBAE2C22D79200897E6D /* DataStorage.swift in Sources */,
+				59E3EBA32C220D9E00897E6D /* Extension+HStack.swift in Sources */,
+				59E3EBA12C220B7E00897E6D /* ResetCoffeeIntent.swift in Sources */,
+				59E3EB8B2C220A3D00897E6D /* CoffeeCounterBundle.swift in Sources */,
+				59E3EB9F2C220B5800897E6D /* CoffeeSize.swift in Sources */,
+				59E3EBA22C220D9C00897E6D /* Extension+VStack.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		59F5A7F02C10C027009051FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,7 +468,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		59E3EB922C220A3E00897E6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59E3EB822C220A3D00897E6D /* CoffeeCounterExtension */;
+			targetProxy = 59E3EB912C220A3E00897E6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		59E3EB952C220A3E00897E6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MG7VG49PJM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeeCounter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CoffeeCounter;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qqew.WBChat.CoffeeCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59E3EB962C220A3E00897E6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MG7VG49PJM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeeCounter/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CoffeeCounter;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qqew.WBChat.CoffeeCounter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		59F5A8002C10C029009051FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -435,6 +653,7 @@
 		59F5A8032C10C029009051FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +685,7 @@
 		59F5A8042C10C029009051FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -497,6 +717,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		59E3EB972C220A3E00897E6D /* Build configuration list for PBXNativeTarget "CoffeeCounterExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59E3EB952C220A3E00897E6D /* Debug */,
+				59E3EB962C220A3E00897E6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		59F5A7EF2C10C027009051FE /* Build configuration list for PBXProject "WBChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
