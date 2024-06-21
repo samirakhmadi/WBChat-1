@@ -78,8 +78,8 @@ struct CoffeeCounter: Widget {
                     .background()
             }
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Coffee Tracker")
+        .description("Виджет для отслеживания объема выпитого кофе в течение дня, помогающий контролировать потребление и поддерживать здоровье.")
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
