@@ -6,4 +6,6 @@ public protocol BankProtocol {
     func transfer(from fromAccountId: Int, to toAccountId: Int, amount: Double)
     func applyPercentToSavingsAccounts()
     func printAccounts()
+    func printTransactions()
+    func withdraw(from accountId: Int, amount: Double)
 }
