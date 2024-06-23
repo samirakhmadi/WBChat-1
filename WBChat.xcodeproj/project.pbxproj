@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59C34C142C24A808005DFAEE /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C34C132C24A808005DFAEE /* CalendarView.swift */; };
+		59D8C7162C25A19100FCA048 /* LocaleVariant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8C7152C25A19100FCA048 /* LocaleVariant.swift */; };
+		59D8C7232C25C26A00FCA048 /* DayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8C7222C25C26A00FCA048 /* DayInfo.swift */; };
+		59D8C7292C25DF1300FCA048 /* Extension+StringInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8C7282C25DF1300FCA048 /* Extension+StringInterpolation.swift */; };
+		59D8C72C2C25E0CB00FCA048 /* CalendarView_Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8C72B2C25E0CB00FCA048 /* CalendarView_Header.swift */; };
+		59D8C72E2C25E13A00FCA048 /* CalendarView_SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8C72D2C25E13A00FCA048 /* CalendarView_SelectionView.swift */; };
+		59D8C7302C25E25500FCA048 /* CalendarView_FormattedDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8C72F2C25E25500FCA048 /* CalendarView_FormattedDateView.swift */; };
+		59D8C7322C25E3BC00FCA048 /* CalendarView_InterpolatedDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8C7312C25E3BC00FCA048 /* CalendarView_InterpolatedDateView.swift */; };
 		59F5A7F82C10C027009051FE /* WBChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A7F72C10C027009051FE /* WBChatApp.swift */; };
 		59F5A7FA2C10C027009051FE /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A7F92C10C027009051FE /* OnboardingView.swift */; };
 		59F5A7FC2C10C029009051FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F5A7FB2C10C029009051FE /* Assets.xcassets */; };
@@ -19,6 +27,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59C34C132C24A808005DFAEE /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		59D8C7152C25A19100FCA048 /* LocaleVariant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleVariant.swift; sourceTree = "<group>"; };
+		59D8C7222C25C26A00FCA048 /* DayInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayInfo.swift; sourceTree = "<group>"; };
+		59D8C7282C25DF1300FCA048 /* Extension+StringInterpolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+StringInterpolation.swift"; sourceTree = "<group>"; };
+		59D8C72B2C25E0CB00FCA048 /* CalendarView_Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView_Header.swift; sourceTree = "<group>"; };
+		59D8C72D2C25E13A00FCA048 /* CalendarView_SelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView_SelectionView.swift; sourceTree = "<group>"; };
+		59D8C72F2C25E25500FCA048 /* CalendarView_FormattedDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView_FormattedDateView.swift; sourceTree = "<group>"; };
+		59D8C7312C25E3BC00FCA048 /* CalendarView_InterpolatedDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView_InterpolatedDateView.swift; sourceTree = "<group>"; };
 		59F5A7F42C10C027009051FE /* WBChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F5A7F72C10C027009051FE /* WBChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBChatApp.swift; sourceTree = "<group>"; };
 		59F5A7F92C10C027009051FE /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -42,6 +58,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59C34C122C24A729005DFAEE /* ДЗ6 - Interpolation-Expressible */ = {
+			isa = PBXGroup;
+			children = (
+				59D8C7332C25EC0E00FCA048 /* Views */,
+				59D8C7152C25A19100FCA048 /* LocaleVariant.swift */,
+				59D8C7222C25C26A00FCA048 /* DayInfo.swift */,
+				59D8C7282C25DF1300FCA048 /* Extension+StringInterpolation.swift */,
+			);
+			path = "ДЗ6 - Interpolation-Expressible";
+			sourceTree = "<group>";
+		};
+		59D8C7332C25EC0E00FCA048 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59C34C132C24A808005DFAEE /* CalendarView.swift */,
+				59D8C72B2C25E0CB00FCA048 /* CalendarView_Header.swift */,
+				59D8C72D2C25E13A00FCA048 /* CalendarView_SelectionView.swift */,
+				59D8C72F2C25E25500FCA048 /* CalendarView_FormattedDateView.swift */,
+				59D8C7312C25E3BC00FCA048 /* CalendarView_InterpolatedDateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		59F5A7EB2C10C027009051FE = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +103,7 @@
 				59F5A7F72C10C027009051FE /* WBChatApp.swift */,
 				59F5A7F92C10C027009051FE /* OnboardingView.swift */,
 				59F5A8052C10C069009051FE /* OnboardingView_Sheet.swift */,
+				59C34C122C24A729005DFAEE /* ДЗ6 - Interpolation-Expressible */,
 				59F5A8072C10C06E009051FE /* UIComponents */,
 				59F5A80C2C10C3E5009051FE /* Extensions */,
 				59F5A7FB2C10C029009051FE /* Assets.xcassets */,
@@ -168,11 +208,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59D8C7302C25E25500FCA048 /* CalendarView_FormattedDateView.swift in Sources */,
 				59F5A7FA2C10C027009051FE /* OnboardingView.swift in Sources */,
 				59F5A80B2C10C08B009051FE /* ViewBackgroundColor.swift in Sources */,
 				59F5A8102C10C418009051FE /* Extension+HStack.swift in Sources */,
+				59D8C72C2C25E0CB00FCA048 /* CalendarView_Header.swift in Sources */,
+				59D8C7162C25A19100FCA048 /* LocaleVariant.swift in Sources */,
 				59F5A8062C10C069009051FE /* OnboardingView_Sheet.swift in Sources */,
+				59C34C142C24A808005DFAEE /* CalendarView.swift in Sources */,
+				59D8C7322C25E3BC00FCA048 /* CalendarView_InterpolatedDateView.swift in Sources */,
+				59D8C7232C25C26A00FCA048 /* DayInfo.swift in Sources */,
+				59D8C7292C25DF1300FCA048 /* Extension+StringInterpolation.swift in Sources */,
 				59F5A7F82C10C027009051FE /* WBChatApp.swift in Sources */,
+				59D8C72E2C25E13A00FCA048 /* CalendarView_SelectionView.swift in Sources */,
 				59F5A8092C10C082009051FE /* CapsuleButton.swift in Sources */,
 				59F5A80E2C10C3F9009051FE /* Extension+VStack.swift in Sources */,
 			);
