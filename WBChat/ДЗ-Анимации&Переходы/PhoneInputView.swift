@@ -17,6 +17,7 @@ struct PhoneInputView: View {
         VStack{
             textBlock
             phoneInputField
+            continueButton
             Spacer()
         }
         .toolbar {
@@ -31,6 +32,7 @@ struct PhoneInputView: View {
     }
 }
 
+//MARK: SubViews
 private extension PhoneInputView {
     
     var textBlock: some View {
@@ -50,6 +52,25 @@ private extension PhoneInputView {
     
     var backButton: some View {
         NavigationBackButton()
+    }
+    
+    var continueButton: some View {
+        CapsuleButton(title: "Продолжить",
+                      isDisabled: !isPhoneNumberValid)
+        {}
+            .padding(.horizontal, 24)
+            .padding(.top, 69)
+    }
+}
+
+//MARK: Calculated Values
+private extension PhoneInputView {
+    var combinedPhoneNumber: String {
+        phoneCode + " " + phoneNumber
+    }
+    
+    var isPhoneNumberValid: Bool {
+        return combinedPhoneNumber.countDigits() == 11
     }
 }
 

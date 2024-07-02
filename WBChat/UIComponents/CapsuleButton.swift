@@ -9,10 +9,11 @@ import SwiftUI
 
 struct CapsuleButton: View {
     var title: String
+    var isDisabled: Bool = false
     var action: () -> Void
     var body: some View {
         Button { action() }
-    label: {
+        label: {
         Text(title)
             .font(.system(size: 16).weight(.semibold))
             .frame(maxWidth: .infinity)
@@ -21,10 +22,10 @@ struct CapsuleButton: View {
             .frame(height: 52)
             .background(
                 Capsule()
-                    .fill(.brand)
+                    .fill(isDisabled ? .brand.opacity(0.5) : .brand)
             )
             .foregroundStyle(.white)
-    }
+        }.disabled(isDisabled)
     }
 }
 

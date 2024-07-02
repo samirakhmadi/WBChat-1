@@ -90,3 +90,10 @@ extension String {
     }
 }
 
+extension String {
+    func countDigits() -> Int {
+        let regex = /[0-9]/
+        let matches = self.matches(of: regex)
+        return matches.count
+    }
+}
