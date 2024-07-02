@@ -16,12 +16,16 @@ struct TextBlockView: View {
             Text(title)
                 .foregroundStyle(.neutralText)
                 .font(.system(size: 24).weight(.bold))
-            if let subtitle {
-                Text(subtitle)
+            
+            switch subtitle {
+            case .some(let subtitleText):
+                Text(subtitleText)
                     .foregroundStyle(.neutralText)
                     .font(.system(size: 13))
                     .multilineTextAlignment(.center)
                     .lineSpacing(10.0)
+            case .none:
+                EmptyView()
             }
         }
     }
