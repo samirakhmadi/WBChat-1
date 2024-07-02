@@ -39,6 +39,8 @@ private extension PhoneInputView {
         TextBlockView(title: "Введите номер телефона", subtitle: "Мы вышлем код подтверждения на указанный номер")
             .padding(.horizontal, 42)
             .padding(.top, 79)
+            .offset(y: isPhoneNumberValid ? -400 : 0)
+            .animation(.easeInOut(duration: 1), value: isPhoneNumberValid)
     }
     
     var phoneInputField: some View {
@@ -60,6 +62,7 @@ private extension PhoneInputView {
         {}
             .padding(.horizontal, 24)
             .padding(.top, 69)
+            
     }
 }
 

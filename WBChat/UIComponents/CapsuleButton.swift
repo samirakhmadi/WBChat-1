@@ -25,7 +25,9 @@ struct CapsuleButton: View {
                     .fill(isDisabled ? .brand.opacity(0.5) : .brand)
             )
             .foregroundStyle(.white)
-        }.disabled(isDisabled)
+        }
+        .disabled(isDisabled)
+        .animation(.easeInOut, value: isDisabled)
     }
 }
 

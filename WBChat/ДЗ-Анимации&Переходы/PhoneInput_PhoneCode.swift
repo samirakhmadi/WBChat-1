@@ -19,6 +19,7 @@ struct PhoneInput_PhoneCode: View {
                 .frame(width: 16, height: 16)
             Text(phoneCode)
                 .foregroundStyle(phoneNumber.isEmpty ? .neutralDisabled : .neutralText)
+                .animation(.easeInOut, value: phoneNumber)
         }
         .padding(.horizontal, 8)
         .padding(.vertical, 10)
