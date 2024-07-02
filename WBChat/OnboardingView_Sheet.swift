@@ -21,7 +21,7 @@ struct OnboardingView_Sheet: View {
 
 private extension OnboardingView_Sheet {
     var closeSheetButton: some View {
-        CapsuleButton(title: "Закрыть") {
+        CapsuleButton(title: "closeText") {
             dismiss()
         }
         .padding(.top, 18)
