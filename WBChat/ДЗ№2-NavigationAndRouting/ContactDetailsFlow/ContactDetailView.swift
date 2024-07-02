@@ -47,15 +47,7 @@ struct ContactDetailView: View {
 //MARK: Toolbar item'ы
 private extension ContactDetailView {
     var backButton: some View {
-        Button{
-            dismiss()
-        } label: {
-            Image(.backIcon)
-                .resizable()
-                .scaledToFit()
-        }
-        .frame(width: 24, height: 24, alignment: .trailing)
-        .tint(.neutralText)
+        NavigationBackButton()
     }
     
     var title: some View {
