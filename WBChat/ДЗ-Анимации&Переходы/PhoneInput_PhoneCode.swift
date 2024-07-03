@@ -34,11 +34,6 @@ struct PhoneInput_PhoneCode: View {
                 showCodeMenu.toggle()
             }
         }
-        .overlay(alignment: .top) {
-            if showCodeMenu {
-                PhoneInput_PhoneCodeMenu(selectedCountry: $selectedCountry, showCodeMenu: $showCodeMenu)
-            }
-        }
     }
 }
 
