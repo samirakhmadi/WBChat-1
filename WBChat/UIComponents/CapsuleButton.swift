@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct CapsuleButton: View {
-    var title: String
+    var title: LocalizedStringKey
     var isDisabled: Bool = false
     var action: () -> Void
     var body: some View {
         Button { action() }
         label: {
-        Text(title)
+            Text(title, tableName: Localization.tableName)
             .font(.system(size: 16).weight(.semibold))
             .frame(maxWidth: .infinity)
             .padding(.vertical, 12)
@@ -32,5 +32,5 @@ struct CapsuleButton: View {
 }
 
 #Preview {
-    CapsuleButton(title: "Начать общаться", action: {})
+    CapsuleButton(title: Localization.startChattingText.rawValue, action: {})
 }

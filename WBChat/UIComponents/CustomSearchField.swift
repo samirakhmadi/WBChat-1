@@ -9,8 +9,8 @@ import SwiftUI
 
 struct CustomSearchField: View {
     @Binding var text: String
-    var placeholder: String
-    
+    var placeholder: LocalizedStringKey
+    @FocusState private var isFocused: Bool
     let placeholderColor: Color = .textFieldPlaceholder
     let textColor: Color = .primary
     
@@ -18,14 +18,18 @@ struct CustomSearchField: View {
         HStack(spacing: 8) {
             Image(systemName: "magnifyingglass")
                 .foregroundColor(placeholderColor)
-            ZStack(alignment: .leading) {
-                if text.isEmpty {
-                    Text(placeholder)
-                        .foregroundColor(placeholderColor)
+            TextField("", text: $text)
+                .foregroundColor(textColor)
+                .focused($isFocused)
+                .overlay(alignment: .leading) {
+                    if text.isEmpty {
+                        Text(placeholder, tableName: Localization.tableName)
+                            .foregroundColor(placeholderColor)
+                            .onTapGesture {
+                                isFocused = true
+                            }
+                    }
                 }
-                TextField("", text: $text)
-                    .foregroundColor(textColor)
-            }
         }
         .font(.system(size: 14))
         .fontWeight(.semibold)
@@ -43,10 +47,9 @@ struct CustomSearchField: View {
         var body: some View {
             ZStack{
                 ViewBackgroundColor()
-                CustomSearchField(text: $text, placeholder: "Search")
+                CustomSearchField(text: $text, placeholder: Localization.searchPlaceholderText.rawValue)
                     .padding(.horizontal, 24)
             }
-            
         }
     }
     return BindingViewPreviewContainer()

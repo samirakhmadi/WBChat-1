@@ -8,18 +8,18 @@
 import SwiftUI
 
 struct TextBlockView: View {
-    var title: String
-    var subtitle: String?
+    var title: LocalizedStringKey
+    var subtitle: LocalizedStringKey?
     
     var body: some View {
         VStack(alignment: .center, spacing: 8){
-            Text(title)
+            Text(title, tableName: Localization.tableName)
                 .foregroundStyle(.neutralText)
                 .font(.system(size: 24).weight(.bold))
             
             switch subtitle {
             case .some(let subtitleText):
-                Text(subtitleText)
+                Text(subtitleText, tableName: Localization.tableName)
                     .foregroundStyle(.neutralText)
                     .font(.system(size: 13))
                     .multilineTextAlignment(.center)
@@ -32,6 +32,8 @@ struct TextBlockView: View {
 }
 
 #Preview {
-    TextBlockView(title: "Введите номер телефона", subtitle: "Мы вышлем код подтверждения на указаннный номер")
+    TextBlockView(
+        title: Localization.inputPhoneText.rawValue,
+        subtitle: Localization.inputPhoneDescriptionText.rawValue)
         .padding(.horizontal, 42)
 }

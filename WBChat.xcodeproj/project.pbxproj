@@ -17,6 +17,7 @@
 		5945775C2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945775B2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift */; };
 		5945775E2C35B2BD00ED7066 /* AppLocalization.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5945775D2C35B2BD00ED7066 /* AppLocalization.xcstrings */; };
 		594577602C35C09300ED7066 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945775F2C35C09300ED7066 /* Localization.swift */; };
+		594577632C35C6D000ED7066 /* PlainTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594577622C35C6D000ED7066 /* PlainTextButton.swift */; };
 		599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DA2C19F3BF00950A68 /* StartPointViewController.swift */; };
 		599897DD2C19F3F100950A68 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DC2C19F3F100950A68 /* DestinationViewController.swift */; };
 		599897DF2C19F43500950A68 /* RectangleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DE2C19F43500950A68 /* RectangleAnimator.swift */; };
@@ -53,6 +54,7 @@
 		5945775B2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInput_PhoneCodeMenu.swift; sourceTree = "<group>"; };
 		5945775D2C35B2BD00ED7066 /* AppLocalization.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppLocalization.xcstrings; sourceTree = "<group>"; };
 		5945775F2C35C09300ED7066 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		594577622C35C6D000ED7066 /* PlainTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTextButton.swift; sourceTree = "<group>"; };
 		599897DA2C19F3BF00950A68 /* StartPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPointViewController.swift; sourceTree = "<group>"; };
 		599897DC2C19F3F100950A68 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 		599897DE2C19F43500950A68 /* RectangleAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleAnimator.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				59ED2D5F2C1E10B2007FC636 /* CustomSearchField.swift */,
 				59201D7A2C3489AD00581E7B /* TextBlockView.swift */,
 				59201D802C348DA700581E7B /* NavigationBackButton.swift */,
+				594577622C35C6D000ED7066 /* PlainTextButton.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			files = (
 				59F5A85B2C14BB81009051FE /* Extension+String.swift in Sources */,
 				59F5A7FA2C10C027009051FE /* OnboardingView.swift in Sources */,
+				594577632C35C6D000ED7066 /* PlainTextButton.swift in Sources */,
 				59AFB30C2C189BBD0071CE2B /* CustomTabView_TabItem.swift in Sources */,
 				59F5A80B2C10C08B009051FE /* ViewBackgroundColor.swift in Sources */,
 				59201D812C348DA700581E7B /* NavigationBackButton.swift in Sources */,
