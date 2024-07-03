@@ -18,6 +18,7 @@
 		5945775E2C35B2BD00ED7066 /* AppLocalization.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5945775D2C35B2BD00ED7066 /* AppLocalization.xcstrings */; };
 		594577602C35C09300ED7066 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945775F2C35C09300ED7066 /* Localization.swift */; };
 		594577632C35C6D000ED7066 /* PlainTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594577622C35C6D000ED7066 /* PlainTextButton.swift */; };
+		594577652C35DDF100ED7066 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594577642C35DDF100ED7066 /* Extension+View.swift */; };
 		599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DA2C19F3BF00950A68 /* StartPointViewController.swift */; };
 		599897DD2C19F3F100950A68 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DC2C19F3F100950A68 /* DestinationViewController.swift */; };
 		599897DF2C19F43500950A68 /* RectangleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DE2C19F43500950A68 /* RectangleAnimator.swift */; };
@@ -55,6 +56,7 @@
 		5945775D2C35B2BD00ED7066 /* AppLocalization.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppLocalization.xcstrings; sourceTree = "<group>"; };
 		5945775F2C35C09300ED7066 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		594577622C35C6D000ED7066 /* PlainTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTextButton.swift; sourceTree = "<group>"; };
+		594577642C35DDF100ED7066 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		599897DA2C19F3BF00950A68 /* StartPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPointViewController.swift; sourceTree = "<group>"; };
 		599897DC2C19F3F100950A68 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 		599897DE2C19F43500950A68 /* RectangleAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleAnimator.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				59F5A80D2C10C3F9009051FE /* Extension+VStack.swift */,
 				59F5A80F2C10C418009051FE /* Extension+HStack.swift */,
 				59F5A85A2C14BB81009051FE /* Extension+String.swift */,
+				594577642C35DDF100ED7066 /* Extension+View.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				59F5A7F82C10C027009051FE /* WBChatApp.swift in Sources */,
 				59F5A83B2C13682A009051FE /* ContactDetailView.swift in Sources */,
 				59201D792C3488FA00581E7B /* PhoneInputView.swift in Sources */,
+				594577652C35DDF100ED7066 /* Extension+View.swift in Sources */,
 				59F5A8092C10C082009051FE /* CapsuleButton.swift in Sources */,
 				59201D7D2C348B8B00581E7B /* PhoneInput_PhoneCode.swift in Sources */,
 				59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */,
