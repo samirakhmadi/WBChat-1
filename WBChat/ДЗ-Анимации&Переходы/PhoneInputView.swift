@@ -38,7 +38,9 @@ struct PhoneInputView: View {
 private extension PhoneInputView {
     
     var textBlock: some View {
-        TextBlockView(title: "Введите номер телефона", subtitle: "Мы вышлем код подтверждения на указанный номер")
+        TextBlockView(
+            title: Localization.inputPhoneText.rawValue,
+            subtitle: Localization.inputPhoneDescriptionText.rawValue)
             .padding(.horizontal, 42)
             .padding(.top, 79)
             .offset(y: isPhoneNumberValid ? -400 : 0)
@@ -64,7 +66,7 @@ private extension PhoneInputView {
     }
     
     var continueButton: some View {
-        CapsuleButton(title: "Продолжить",
+        CapsuleButton(title: Localization.continueText.rawValue,
                       isDisabled: !isPhoneNumberValid)
         {}
             .padding(.horizontal, 24)
@@ -84,9 +86,30 @@ private extension PhoneInputView {
     }
 }
 
-#Preview {
+#Preview("Rus.ver") {
     NavigationStack {
         PhoneInputView()
+            .environment(\.locale, .init(identifier: "ru"))
     }
 }
 
+#Preview("Ang.ver") {
+    NavigationStack {
+        PhoneInputView()
+            .environment(\.locale, .init(identifier: "en"))
+    }
+}
+
+#Preview("Arm.ver") {
+    NavigationStack {
+        PhoneInputView()
+            .environment(\.locale, .init(identifier: "hy_AM"))
+    }
+}
+
+#Preview("Kaz.ver") {
+    NavigationStack {
+        PhoneInputView()
+            .environment(\.locale, .init(identifier: "kk_KZ"))
+    }
+}
