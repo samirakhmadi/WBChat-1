@@ -22,6 +22,7 @@ struct PhoneInputView: View {
             textBlock
             phoneInputField
             continueButton
+            progressView
             Spacer()
         }
         .toolbar {
@@ -33,11 +34,6 @@ struct PhoneInputView: View {
         .navigationBarTitleDisplayMode(.inline)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(ViewBackgroundColor())
-        .overlay {
-            if showProgress {
-                ProgressView()
-            }
-        }
         .onChange(of: combinedPhoneNumber) { _ in
             if isPhoneNumberValid {
                 hideKeyboard()
@@ -86,6 +82,11 @@ private extension PhoneInputView {
             .padding(.horizontal, 24)
             .padding(.top, 69)
             
+    }
+    
+    var progressView: some View {
+        LoadingProgress(showProgress: showProgress)
+            .padding(.vertical, 16)
     }
 }
 
