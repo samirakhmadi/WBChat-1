@@ -12,6 +12,7 @@ struct PhoneInput_PhoneNumber: View {
     var body: some View {
         TextField("000 000-00-00", text: $phoneNumber)
             .foregroundStyle(.neutralText)
+            .fontWeight(.semibold)
             .padding(.horizontal, 8)
             .padding(.vertical, 10)
             .keyboardType(.numberPad)

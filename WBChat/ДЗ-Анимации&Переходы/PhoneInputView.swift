@@ -10,8 +10,10 @@ import SwiftUI
 
 struct PhoneInputView: View {
     @Environment(\.dismiss) private var dismiss
+    
+    @State var selectedCountry: Countries = .russia
     @State var phoneNumber: String = ""
-    @State var phoneCode: String = "+7"
+    @State var showCodeMenu: Bool = false
     
     var body: some View {
         VStack{
@@ -44,8 +46,13 @@ private extension PhoneInputView {
     }
     
     var phoneInputField: some View {
-        HStack(spacing: 8) {
-            PhoneInput_PhoneCode(phoneCode: phoneCode, phoneNumber: $phoneNumber)
+        HStack(alignment: .top, spacing: 8) {
+            switch showCodeMenu {
+            case false:
+                PhoneInput_PhoneCode(selectedCountry: $selectedCountry, phoneNumber: $phoneNumber, showCodeMenu: $showCodeMenu)
+            case true:
+                PhoneInput_PhoneCodeMenu(selectedCountry: $selectedCountry, showCodeMenu: $showCodeMenu)
+            }
             PhoneInput_PhoneNumber(phoneNumber: $phoneNumber)
         }
         .padding(.horizontal, 24)
@@ -69,11 +76,11 @@ private extension PhoneInputView {
 //MARK: Calculated Values
 private extension PhoneInputView {
     var combinedPhoneNumber: String {
-        phoneCode + " " + phoneNumber
+        selectedCountry.phoneCode + " " + phoneNumber
     }
     
     var isPhoneNumberValid: Bool {
-        return combinedPhoneNumber.countDigits() == 11
+        return combinedPhoneNumber.countDigits() == selectedCountry.phoneNumberLength
     }
 }
 
