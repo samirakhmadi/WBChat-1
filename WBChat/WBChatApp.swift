@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct WBChatApp: App {
-        
+
+    @StateObject private var router = Router()
+    
     var body: some Scene {
         WindowGroup {
-            PhoneInputView()
+            OnboardingView()
+                .environmentObject(router)
         }
     }
 }

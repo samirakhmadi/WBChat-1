@@ -15,6 +15,8 @@ struct PhoneInputView: View {
     @State var phoneNumber: String = ""
     @State var showCodeMenu: Bool = false
     
+    @State private var showProgress: Bool = false
+    
     var body: some View {
         VStack{
             textBlock
@@ -31,6 +33,11 @@ struct PhoneInputView: View {
         .navigationBarTitleDisplayMode(.inline)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(ViewBackgroundColor())
+        .overlay {
+            if showProgress {
+                ProgressView()
+            }
+        }        
     }
 }
 
@@ -68,7 +75,9 @@ private extension PhoneInputView {
     var continueButton: some View {
         CapsuleButton(title: Localization.continueText.rawValue,
                       isDisabled: !isPhoneNumberValid)
-        {}
+        {
+            showProgress.toggle()
+        }
             .padding(.horizontal, 24)
             .padding(.top, 69)
             

@@ -10,9 +10,10 @@ import SwiftUI
 struct OnboardingView: View {
     @State private var showSheetView: Bool = false
     @Environment(\.dismiss) private var dismiss
-    
+    @EnvironmentObject var router: Router
+
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $router.onboardingRoutes) {
             VStack {
                 onboardingImage
                 onboardingTitle
@@ -21,8 +22,13 @@ struct OnboardingView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(ViewBackgroundColor())
-            .sheet(isPresented: $showSheetView){
-                OnboardingView_Sheet()
+            .navigationDestination(for: OnboardingRoutes.self) { routes in
+                switch routes {
+                case .phoneInputView:
+                     PhoneInputView()
+                case .termsOfUseView:
+                    EmptyView()
+                }
             }
         }
     }
@@ -47,13 +53,15 @@ private extension OnboardingView {
     }
     
     var termsOfUseButton: some View {
-        PlainTextButton(title: Localization.userAgreementText.rawValue, titleColor: .brand) {}
+        PlainTextButton(title: Localization.userAgreementText.rawValue, titleColor: .brand) {
+            router.onboardingRoutes.append(.termsOfUseView)
+        }
             .padding(.top, 158)
     }
     
     var startButton: some View {
         CapsuleButton(title: Localization.startChattingText.rawValue){
-            showSheetView = true
+            router.onboardingRoutes.append(.phoneInputView)
         }
         .padding(.top, 18)
         .padding(.bottom, 20)
@@ -64,4 +72,5 @@ private extension OnboardingView {
 
 #Preview {
     OnboardingView()
+        .environmentObject(Router())
 }

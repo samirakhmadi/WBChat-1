@@ -40,10 +40,17 @@ enum ContactsRoutes: Hashable {
     case addContact, contactDetail(Contact)
 }
 
+enum OnboardingRoutes: Hashable {
+    case phoneInputView, termsOfUseView
+}
+
 final class Router: ObservableObject {
     
     @Published  var selectedTab: Tab = .contacts
     
     @Published var homeRoutes: [ContactsRoutes] = []
+    
+    @Published var onboardingRoutes: [OnboardingRoutes] = []
+
 }
 
