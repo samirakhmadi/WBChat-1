@@ -37,7 +37,12 @@ struct PhoneInputView: View {
             if showProgress {
                 ProgressView()
             }
-        }        
+        }
+        .onChange(of: combinedPhoneNumber) { _ in
+            if isPhoneNumberValid {
+                hideKeyboard()
+            }
+        }
     }
 }
 
