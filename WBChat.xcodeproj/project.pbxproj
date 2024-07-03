@@ -15,6 +15,8 @@
 		59201D812C348DA700581E7B /* NavigationBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59201D802C348DA700581E7B /* NavigationBackButton.swift */; };
 		594577592C349F9300ED7066 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594577582C349F9300ED7066 /* Countries.swift */; };
 		5945775C2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945775B2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift */; };
+		5945775E2C35B2BD00ED7066 /* AppLocalization.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5945775D2C35B2BD00ED7066 /* AppLocalization.xcstrings */; };
+		594577602C35C09300ED7066 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945775F2C35C09300ED7066 /* Localization.swift */; };
 		599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DA2C19F3BF00950A68 /* StartPointViewController.swift */; };
 		599897DD2C19F3F100950A68 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DC2C19F3F100950A68 /* DestinationViewController.swift */; };
 		599897DF2C19F43500950A68 /* RectangleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DE2C19F43500950A68 /* RectangleAnimator.swift */; };
@@ -49,6 +51,8 @@
 		59201D802C348DA700581E7B /* NavigationBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBackButton.swift; sourceTree = "<group>"; };
 		594577582C349F9300ED7066 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		5945775B2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInput_PhoneCodeMenu.swift; sourceTree = "<group>"; };
+		5945775D2C35B2BD00ED7066 /* AppLocalization.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppLocalization.xcstrings; sourceTree = "<group>"; };
+		5945775F2C35C09300ED7066 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		599897DA2C19F3BF00950A68 /* StartPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPointViewController.swift; sourceTree = "<group>"; };
 		599897DC2C19F3F100950A68 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 		599897DE2C19F43500950A68 /* RectangleAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleAnimator.swift; sourceTree = "<group>"; };
@@ -104,6 +108,15 @@
 				594577582C349F9300ED7066 /* Countries.swift */,
 			);
 			path = "ДЗ-Анимации&Переходы";
+			sourceTree = "<group>";
+		};
+		594577612C35C15B00ED7066 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				5945775D2C35B2BD00ED7066 /* AppLocalization.xcstrings */,
+				5945775F2C35C09300ED7066 /* Localization.swift */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		599897D92C19F34200950A68 /* Дополнительно💻 */ = {
@@ -166,6 +179,7 @@
 		59F5A7F62C10C027009051FE /* WBChat */ = {
 			isa = PBXGroup;
 			children = (
+				594577612C35C15B00ED7066 /* Localization */,
 				59201D772C3488B100581E7B /* ДЗ-Анимации&Переходы */,
 				599897D92C19F34200950A68 /* Дополнительно💻 */,
 				59F5A7F72C10C027009051FE /* WBChatApp.swift */,
@@ -278,6 +292,9 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				hy,
+				kk,
 			);
 			mainGroup = 59F5A7EB2C10C027009051FE;
 			productRefGroup = 59F5A7F52C10C027009051FE /* Products */;
@@ -295,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				59F5A7FF2C10C029009051FE /* Preview Assets.xcassets in Resources */,
+				5945775E2C35B2BD00ED7066 /* AppLocalization.xcstrings in Resources */,
 				59F5A7FC2C10C029009051FE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +350,7 @@
 				599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */,
 				59E5794A2C173DC200641B7A /* Socials.swift in Sources */,
 				59F5A80E2C10C3F9009051FE /* Extension+VStack.swift in Sources */,
+				594577602C35C09300ED7066 /* Localization.swift in Sources */,
 				59F5A8392C1367E0009051FE /* ContactsView.swift in Sources */,
 				594577592C349F9300ED7066 /* Countries.swift in Sources */,
 				599897DD2C19F3F100950A68 /* DestinationViewController.swift in Sources */,
