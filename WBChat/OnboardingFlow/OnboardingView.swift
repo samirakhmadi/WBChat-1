@@ -39,7 +39,7 @@ private extension OnboardingView {
     }
     
     var onboardingTitle: some View {
-        Text("Общайтесь с друзьями и близкими легко")
+        Text(Localization.onboardingTitleText.rawValue, tableName: Localization.tableName)
             .foregroundStyle(.neutralText)
             .font(.system(size: 24).weight(.bold))
             .multilineTextAlignment(.center)
@@ -47,14 +47,12 @@ private extension OnboardingView {
     }
     
     var termsOfUseButton: some View {
-        Button("Пользовательское соглашение"){}
-            .foregroundStyle(.neutralText)
-            .font(.system(size: 14).weight(.semibold))
+        PlainTextButton(title: Localization.userAgreementText.rawValue, titleColor: .brand) {}
             .padding(.top, 158)
     }
     
     var startButton: some View {
-        CapsuleButton(title: "Начать общаться"){
+        CapsuleButton(title: Localization.startChattingText.rawValue){
             showSheetView = true
         }
         .padding(.top, 18)
