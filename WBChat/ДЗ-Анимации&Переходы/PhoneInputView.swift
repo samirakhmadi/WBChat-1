@@ -34,10 +34,8 @@ struct PhoneInputView: View {
         .navigationBarTitleDisplayMode(.inline)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(ViewBackgroundColor())
-        .onChange(of: combinedPhoneNumber) { _ in
-            if isPhoneNumberValid {
-                hideKeyboard()
-            }
+        .onChange(of: isPhoneNumberValid) { _ in
+           hideKeyboard()
         }
     }
 }
