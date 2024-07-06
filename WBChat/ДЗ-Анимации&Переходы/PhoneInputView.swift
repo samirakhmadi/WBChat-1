@@ -11,7 +11,7 @@ import SwiftUI
 struct PhoneInputView: View {
     @Environment(\.dismiss) private var dismiss
     
-    @State var selectedCountry: Countries = .russia
+    @State var selectedCountry: Country = .russia
     @State var phoneNumber: String = ""
     @State var showCodeMenu: Bool = false
     

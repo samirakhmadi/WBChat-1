@@ -1,5 +1,5 @@
 //
-//  Countries.swift
+//  Country.swift
 //  WBChat
 //
 //  Created by Александр on 03.07.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum Countries: CaseIterable, Identifiable {
+enum Country: CaseIterable, Identifiable {
     case russia, kazakhstan, armenia
     
     var id: Self { self }

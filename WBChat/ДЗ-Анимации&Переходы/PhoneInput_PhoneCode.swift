@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PhoneInput_PhoneCode: View {
     
-    @Binding var selectedCountry: Countries
+    @Binding var selectedCountry: Country
     @Binding var phoneNumber: String
     @Binding var showCodeMenu: Bool
     

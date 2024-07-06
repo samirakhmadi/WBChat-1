@@ -9,12 +9,12 @@ import SwiftUI
 
 struct PhoneInput_PhoneCodeMenu: View {
     
-    @Binding var selectedCountry: Countries
+    @Binding var selectedCountry: Country
     @Binding var showCodeMenu: Bool
     var body: some View {
         ScrollView {
             LazyVStack {
-                ForEach(Countries.allCases) { country in
+                ForEach(Country.allCases) { country in
                     Button {
                         withAnimation(.easeInOut) {
                             selectedCountry = country

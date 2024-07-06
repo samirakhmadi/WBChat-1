@@ -13,7 +13,7 @@
 		59201D7D2C348B8B00581E7B /* PhoneInput_PhoneCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59201D7C2C348B8B00581E7B /* PhoneInput_PhoneCode.swift */; };
 		59201D7F2C348CF300581E7B /* PhoneInput_PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59201D7E2C348CF300581E7B /* PhoneInput_PhoneNumber.swift */; };
 		59201D812C348DA700581E7B /* NavigationBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59201D802C348DA700581E7B /* NavigationBackButton.swift */; };
-		594577592C349F9300ED7066 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594577582C349F9300ED7066 /* Countries.swift */; };
+		594577592C349F9300ED7066 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594577582C349F9300ED7066 /* Country.swift */; };
 		5945775C2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945775B2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift */; };
 		5945775E2C35B2BD00ED7066 /* AppLocalization.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5945775D2C35B2BD00ED7066 /* AppLocalization.xcstrings */; };
 		594577602C35C09300ED7066 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945775F2C35C09300ED7066 /* Localization.swift */; };
@@ -52,7 +52,7 @@
 		59201D7C2C348B8B00581E7B /* PhoneInput_PhoneCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInput_PhoneCode.swift; sourceTree = "<group>"; };
 		59201D7E2C348CF300581E7B /* PhoneInput_PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInput_PhoneNumber.swift; sourceTree = "<group>"; };
 		59201D802C348DA700581E7B /* NavigationBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBackButton.swift; sourceTree = "<group>"; };
-		594577582C349F9300ED7066 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		594577582C349F9300ED7066 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		5945775B2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInput_PhoneCodeMenu.swift; sourceTree = "<group>"; };
 		5945775D2C35B2BD00ED7066 /* AppLocalization.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = AppLocalization.xcstrings; sourceTree = "<group>"; };
 		5945775F2C35C09300ED7066 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 				5945775B2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift */,
 				59201D7C2C348B8B00581E7B /* PhoneInput_PhoneCode.swift */,
 				59201D7E2C348CF300581E7B /* PhoneInput_PhoneNumber.swift */,
-				594577582C349F9300ED7066 /* Countries.swift */,
+				594577582C349F9300ED7066 /* Country.swift */,
 			);
 			path = "ДЗ-Анимации&Переходы";
 			sourceTree = "<group>";
@@ -363,7 +363,7 @@
 				59F5A80E2C10C3F9009051FE /* Extension+VStack.swift in Sources */,
 				594577602C35C09300ED7066 /* Localization.swift in Sources */,
 				59F5A8392C1367E0009051FE /* ContactsView.swift in Sources */,
-				594577592C349F9300ED7066 /* Countries.swift in Sources */,
+				594577592C349F9300ED7066 /* Country.swift in Sources */,
 				599897DD2C19F3F100950A68 /* DestinationViewController.swift in Sources */,
 				594577692C35E2CB00ED7066 /* LoadingProgress.swift in Sources */,
 			);
