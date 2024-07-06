@@ -97,7 +97,7 @@ private extension PhoneInputView {
     }
     
     var isPhoneNumberValid: Bool {
-        return combinedPhoneNumber.countDigits() == selectedCountry.phoneNumberLength
+        return phoneNumber.countDigits() == 10
     }
 }
 

@@ -34,18 +34,6 @@ enum Country: CaseIterable, Identifiable {
                 .Flags.am32X32
         }
     }
-    
-    var phoneNumberLength: Int {
-        switch self {
-        case .russia:
-            11
-        case .kazakhstan:
-            11
-        case .armenia:
-            13
-        }
-    }
-    
 }
 
 
