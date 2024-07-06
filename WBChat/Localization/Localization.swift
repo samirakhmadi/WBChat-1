@@ -16,6 +16,9 @@ enum Localization: LocalizedStringKey {
     case inputPhoneDescriptionText
     case continueText
     case searchPlaceholderText
+    case codeEntry
+    case codeEntryDescription
+    case requestCodeAgain
     
     static let tableName = "AppLocalization"
 }
