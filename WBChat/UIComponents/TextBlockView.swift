@@ -21,7 +21,7 @@ struct TextBlockView: View {
             case .some(let subtitleText):
                 Text(subtitleText, tableName: Localization.tableName)
                     .foregroundStyle(.neutralText)
-                    .font(.system(size: 13))
+                    .font(.system(size: 14))
                     .multilineTextAlignment(.center)
                     .lineSpacing(10.0)
             case .none:
