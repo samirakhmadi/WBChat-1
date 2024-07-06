@@ -37,6 +37,9 @@ struct PhoneInputView: View {
         .onChange(of: isPhoneNumberValid) { _ in
            hideKeyboard()
         }
+        .onTapGesture {
+            hideKeyboard()
+        }
     }
 }
 
