@@ -23,7 +23,6 @@ struct PhoneInputView: View {
             phoneInputField
             continueButton
             progressView
-            Spacer()
         }
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
@@ -32,7 +31,7 @@ struct PhoneInputView: View {
         }
         .navigationBarBackButtonHidden()
         .navigationBarTitleDisplayMode(.inline)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(ViewBackgroundColor())
         .onChange(of: isPhoneNumberValid) { _ in
            hideKeyboard()
