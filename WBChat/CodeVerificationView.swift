@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CodeVerificationView: View {
+    @Binding var phoneNumber: String
+    
     var body: some View {
         VStack {
             textBlock
@@ -28,10 +30,15 @@ private extension CodeVerificationView {
     }
     
     var textBlock: some View {
-        TextBlockView(
-            title: Localization.codeEntry.rawValue,
-            subtitle: Localization.codeEntryDescription.rawValue
-        )
+        VStack(spacing: 10) {
+            TextBlockView(
+                title: Localization.codeEntry.rawValue,
+                subtitle: Localization.codeEntryDescription.rawValue
+            )
+            Text(phoneNumber)
+                .font(.system(size: 14))
+        }
+        
         .padding(.horizontal, 42)
         .padding(.top, 79)
     }
@@ -39,6 +46,6 @@ private extension CodeVerificationView {
 
 #Preview {
     NavigationStack {
-        CodeVerificationView()
+        CodeVerificationView(phoneNumber: .constant("79999999999".formatCustomNumber(mask: "+X XXX XXX-XX-XX")))
     }
 }
