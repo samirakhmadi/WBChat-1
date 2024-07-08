@@ -22,6 +22,7 @@
 		594577692C35E2CB00ED7066 /* LoadingProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594577682C35E2CB00ED7066 /* LoadingProgress.swift */; };
 		5950BBDA2C39C50F005D218E /* CodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5950BBD92C39C50F005D218E /* CodeVerificationView.swift */; };
 		598AEC772C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AEC762C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift */; };
+		598AEC792C3C63D70091EA51 /* CodeVerificationView_CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AEC782C3C63D70091EA51 /* CodeVerificationView_CodeView.swift */; };
 		599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DA2C19F3BF00950A68 /* StartPointViewController.swift */; };
 		599897DD2C19F3F100950A68 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DC2C19F3F100950A68 /* DestinationViewController.swift */; };
 		599897DF2C19F43500950A68 /* RectangleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DE2C19F43500950A68 /* RectangleAnimator.swift */; };
@@ -63,6 +64,7 @@
 		594577682C35E2CB00ED7066 /* LoadingProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingProgress.swift; sourceTree = "<group>"; };
 		5950BBD92C39C50F005D218E /* CodeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CodeVerificationView.swift; path = WBChat/CodeVerificationView.swift; sourceTree = SOURCE_ROOT; };
 		598AEC762C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView_CodeField.swift; sourceTree = "<group>"; };
+		598AEC782C3C63D70091EA51 /* CodeVerificationView_CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView_CodeView.swift; sourceTree = "<group>"; };
 		599897DA2C19F3BF00950A68 /* StartPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPointViewController.swift; sourceTree = "<group>"; };
 		599897DC2C19F3F100950A68 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 		599897DE2C19F43500950A68 /* RectangleAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleAnimator.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 			children = (
 				5950BBD92C39C50F005D218E /* CodeVerificationView.swift */,
 				598AEC762C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift */,
+				598AEC782C3C63D70091EA51 /* CodeVerificationView_CodeView.swift */,
 			);
 			path = "ДЗ-Collection&Sequence";
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				59201D7D2C348B8B00581E7B /* PhoneInput_PhoneCode.swift in Sources */,
 				59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */,
 				5945775C2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift in Sources */,
+				598AEC792C3C63D70091EA51 /* CodeVerificationView_CodeView.swift in Sources */,
 				599897DF2C19F43500950A68 /* RectangleAnimator.swift in Sources */,
 				59F5A8422C137450009051FE /* ContactsView_ContactRow.swift in Sources */,
 				599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */,

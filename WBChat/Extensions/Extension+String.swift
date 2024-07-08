@@ -97,3 +97,19 @@ extension String {
         return matches.count
     }
 }
+
+extension String {
+    /// Позволяет получить символ строки на заданной позиции.
+    ///
+    /// - Parameter idx: Индекс символа, который нужно получить.
+    /// - Returns: Символ на позиции `idx`.
+    ///
+    /// # Пример использования:
+    /// ```
+    /// let text = "Hello"
+    /// let character = text[1] // "e"
+    /// ```
+    subscript(_ idx: Int) -> Character {
+        self[self.index(self.startIndex, offsetBy: idx)]
+    }
+}
