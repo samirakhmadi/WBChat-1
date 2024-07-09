@@ -9,10 +9,14 @@ import SwiftUI
 
 struct CodeVerificationView: View {
     @Binding var phoneNumber: String
-    
+    @FocusState private var isFocused: Bool
+    @State private var verificationCode = ""
+
     var body: some View {
         VStack {
             textBlock
+            codeView
+            resendCodeButton
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
@@ -38,9 +42,33 @@ private extension CodeVerificationView {
             Text(phoneNumber)
                 .font(.system(size: 14))
         }
-        
         .padding(.horizontal, 42)
         .padding(.top, 79)
+    }
+    
+    var codeView: some View {
+        CodeVerificationView_CodeView(verificationCode: $verificationCode)
+        .padding(.top, 49)
+    }
+    
+    var resendCodeButton: some View {
+        PlainTextButton(
+            title: Localization.requestCodeAgain.rawValue,
+            titleColor: .brand
+        ) {
+            resetPass()
+        }
+        .foregroundStyle(.brand)
+        .font(.system(size: 16).weight(.semibold))
+        .padding(.top, 77)
+    }
+}
+
+private extension CodeVerificationView {
+    func resetPass() {
+        withAnimation {
+            verificationCode = ""
+        }
     }
 }
 
