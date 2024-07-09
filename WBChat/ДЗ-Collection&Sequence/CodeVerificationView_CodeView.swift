@@ -25,18 +25,10 @@ private extension CodeVerificationView_CodeView {
     var codeView: some View {
         HStack {
             ForEach(0..<pinLength, id: \.self) { index in
-                Circle()
-                    .fill(.neutralLine)
-                    .frame(width: 24, height: 24)
-                    .padding(.horizontal)
+                let isFilled = verificationCode.count > index
+                codePlaceholder(isFilled: isFilled)
                     .overlay {
-                        if verificationCode.count > index {
-                            Text(getPin(at: index))
-                                .font(.system(size: 32).bold())
-                                .frame(width: 24, height: 24)
-                                .foregroundStyle(.neutralText)
-                                .padding(.vertical, 1)
-                        }
+                        if isFilled { codeSymbol(index: index) }
                     }
             }
         }
@@ -46,6 +38,25 @@ private extension CodeVerificationView_CodeView {
         CodeVerificationView_CodeField(
             isFocused: $isFocused,
             verificationCode: $verificationCode)
+    }
+}
+
+private extension CodeVerificationView_CodeView {
+    func codePlaceholder(isFilled: Bool) -> some View {
+        Circle()
+            .fill(.neutralLine)
+            .frame(width: 24, height: 24)
+            .padding(.horizontal)
+            .opacity(isFilled ? 0 : 1)
+            .animation(.easeInOut, value: isFilled)
+    }
+    
+    func codeSymbol(index: Int) -> some View {
+        Text(getPin(at: index))
+            .font(.system(size: 32).bold())
+            .frame(width: 24, height: 24)
+            .foregroundStyle(.neutralText)
+            .padding(.vertical, 1)
     }
 }
 
