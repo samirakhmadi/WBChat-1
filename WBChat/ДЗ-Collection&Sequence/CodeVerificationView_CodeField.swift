@@ -11,14 +11,14 @@ struct CodeVerificationView_CodeField: View {
     @FocusState.Binding var isFocused: Bool
     @Binding var verificationCode: String
     @State private var isAllNumbersFilled: Bool = false
-    
+
     var pinLength = 4
-    var onComplete: () -> ()
-    
+
     var body: some View {
         TextField("", text: $verificationCode)
-            .accentColor(.white)
-            .foregroundColor(.white)
+            .frame(width: 0, height: 0)
+            .accentColor(.neutral)
+            .foregroundColor(.neutral)
             .multilineTextAlignment(.center)
             .keyboardType(.numberPad)
             .focused($isFocused)
@@ -37,11 +37,9 @@ private extension CodeVerificationView_CodeField {
         if verificationCode.count > pinLength {
             verificationCode = String(verificationCode.prefix(pinLength))
         }
-        if verificationCode.count == pinLength && !isAllNumbersFilled {
-            onComplete()
-        } else if verificationCode.count < pinLength {
-            isAllNumbersFilled = false
-        }
+        
+        isAllNumbersFilled = (verificationCode.count == pinLength)
+        
     }
 }
 
@@ -52,9 +50,9 @@ private extension CodeVerificationView_CodeField {
         var body: some View {
             CodeVerificationView_CodeField(
                 isFocused: $isFocused,
-                verificationCode: .constant("1234")){}
+                verificationCode: .constant("1234"))
                 .padding(.horizontal)
-                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                .border(.primary, width: 1)
         }
     }
     return CodeVerificationView_CodeField_PreviewContainer()
