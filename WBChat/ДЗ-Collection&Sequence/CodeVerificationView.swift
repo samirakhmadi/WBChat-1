@@ -21,6 +21,7 @@ struct CodeVerificationView: View {
             resendCodeButton
         }
         .padding()
+        .navigationBarBackButtonHidden()
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
