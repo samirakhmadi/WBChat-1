@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct NavigationBackButton: View {
-    @Environment(\.dismiss) private var dismiss
-
+    
+    var action: () -> ()
+    
     var body: some View {
         Button{
-            dismiss()
+            action()
         } label: {
             Image(.backIcon)
                 .resizable()
@@ -24,5 +25,5 @@ struct NavigationBackButton: View {
 }
 
 #Preview {
-    NavigationBackButton()
+    NavigationBackButton {}
 }
