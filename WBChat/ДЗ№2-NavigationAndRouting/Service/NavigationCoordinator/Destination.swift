@@ -10,7 +10,7 @@ import SwiftUI
 enum Destination {
     case termsOfUse
     case phoneInput
-//    case codeVerification(Binding<PhoneNumberVerification>)
+    case codeVerification(Binding<VerificationModel>)
     
     @ViewBuilder
     var view: some View {
@@ -19,8 +19,8 @@ enum Destination {
             EmptyView()
         case .phoneInput:
             PhoneInputView()
-//        case .codeVerification(let verificationData):
-//            CodeVerificationView(verificationData: verificationData)
+        case .codeVerification(let verificationData):
+            CodeVerificationView(verificationData: verificationData)
         }
     }
 }
@@ -30,8 +30,8 @@ extension Destination: Hashable {
         switch (lhs, rhs) {
         case (.phoneInput, .phoneInput):
             return true
-//        case (.codeVerification(let lhsVerification), .codeVerification(let rhsVerification)):
-//            return lhsVerification.wrappedValue == rhsVerification.wrappedValue
+        case (.codeVerification(let lhsVerification), .codeVerification(let rhsVerification)):
+            return lhsVerification.wrappedValue == rhsVerification.wrappedValue
         default:
             return false
         }
@@ -43,9 +43,9 @@ extension Destination: Hashable {
             hasher.combine("termsOfUse")
         case .phoneInput:
             hasher.combine("phoneInput")
-//        case .codeVerification(let verificationData):
-//            hasher.combine("codeVerification")
-//            hasher.combine(verificationData.wrappedValue)
+        case .codeVerification(let verificationData):
+            hasher.combine("codeVerification")
+            hasher.combine(verificationData.wrappedValue)
         }
     }
 }

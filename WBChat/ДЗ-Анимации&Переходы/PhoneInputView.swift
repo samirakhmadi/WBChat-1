@@ -16,6 +16,7 @@ struct PhoneInputView: View {
     @State var showCodeMenu: Bool = false
     
     @State private var showProgress: Bool = false
+    @State private var verificationData: VerificationModel = .init(phoneNumber: "")
     
     @EnvironmentObject var coordinator: NavigationCoordinator
 
@@ -82,7 +83,8 @@ private extension PhoneInputView {
         CapsuleButton(title: Localization.continueText.rawValue,
                       isDisabled: !isPhoneNumberValid)
         {
-            showProgress.toggle()
+            verificationData.phoneNumber = combinedPhoneNumber
+            coordinator.navigate(to: .codeVerification($verificationData))
         }
             .padding(.horizontal, 24)
             .padding(.top, 69)
