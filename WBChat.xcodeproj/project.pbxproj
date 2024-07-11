@@ -26,6 +26,9 @@
 		599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DA2C19F3BF00950A68 /* StartPointViewController.swift */; };
 		599897DD2C19F3F100950A68 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DC2C19F3F100950A68 /* DestinationViewController.swift */; };
 		599897DF2C19F43500950A68 /* RectangleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DE2C19F43500950A68 /* RectangleAnimator.swift */; };
+		59AD9AAF2C40247400A7890A /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AAE2C40247400A7890A /* NavigationCoordinator.swift */; };
+		59AD9AB12C40248F00A7890A /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AB02C40248F00A7890A /* Destination.swift */; };
+		59AD9AB32C4024A000A7890A /* NavigationRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AB22C4024A000A7890A /* NavigationRoot.swift */; };
 		59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB3062C1891A80071CE2B /* CustomTabView.swift */; };
 		59AFB30C2C189BBD0071CE2B /* CustomTabView_TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */; };
 		59E579472C17265E00641B7A /* ContactDetailView_UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */; };
@@ -68,6 +71,9 @@
 		599897DA2C19F3BF00950A68 /* StartPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPointViewController.swift; sourceTree = "<group>"; };
 		599897DC2C19F3F100950A68 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 		599897DE2C19F43500950A68 /* RectangleAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleAnimator.swift; sourceTree = "<group>"; };
+		59AD9AAE2C40247400A7890A /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		59AD9AB02C40248F00A7890A /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		59AD9AB22C4024A000A7890A /* NavigationRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoot.swift; sourceTree = "<group>"; };
 		59AFB3062C1891A80071CE2B /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView_TabItem.swift; sourceTree = "<group>"; };
 		59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView_UserAvatar.swift; sourceTree = "<group>"; };
@@ -105,6 +111,7 @@
 		591E5A552C18D45400B73DAC /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				59AD9AAD2C40245700A7890A /* NavigationCoordinator */,
 				591E5A562C18D46A00B73DAC /* Router.swift */,
 			);
 			path = Service;
@@ -139,6 +146,16 @@
 				599897DE2C19F43500950A68 /* RectangleAnimator.swift */,
 			);
 			path = "Дополнительно💻";
+			sourceTree = "<group>";
+		};
+		59AD9AAD2C40245700A7890A /* NavigationCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				59AD9AAE2C40247400A7890A /* NavigationCoordinator.swift */,
+				59AD9AB02C40248F00A7890A /* Destination.swift */,
+				59AD9AB22C4024A000A7890A /* NavigationRoot.swift */,
+			);
+			path = NavigationCoordinator;
 			sourceTree = "<group>";
 		};
 		59AFB3052C1890E90071CE2B /* TabView */ = {
@@ -350,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59AD9AB32C4024A000A7890A /* NavigationRoot.swift in Sources */,
 				59F5A85B2C14BB81009051FE /* Extension+String.swift in Sources */,
 				59F5A7FA2C10C027009051FE /* OnboardingView.swift in Sources */,
 				594577632C35C6D000ED7066 /* PlainTextButton.swift in Sources */,
@@ -358,12 +376,14 @@
 				59201D812C348DA700581E7B /* NavigationBackButton.swift in Sources */,
 				5942674F2C3DCEE7000C7163 /* CodeVerificationView.swift in Sources */,
 				59F5A8402C136E57009051FE /* Contact.swift in Sources */,
+				59AD9AB12C40248F00A7890A /* Destination.swift in Sources */,
 				59E579472C17265E00641B7A /* ContactDetailView_UserAvatar.swift in Sources */,
 				591E5A572C18D46A00B73DAC /* Router.swift in Sources */,
 				59ED2D602C1E10B2007FC636 /* CustomSearchField.swift in Sources */,
 				59F5A8442C137756009051FE /* ContactRow_UserAvatar.swift in Sources */,
 				59201D7F2C348CF300581E7B /* PhoneInput_PhoneNumber.swift in Sources */,
 				59201D7B2C3489AD00581E7B /* TextBlockView.swift in Sources */,
+				59AD9AAF2C40247400A7890A /* NavigationCoordinator.swift in Sources */,
 				59F5A8102C10C418009051FE /* Extension+HStack.swift in Sources */,
 				59F5A8062C10C069009051FE /* OnboardingView_Sheet.swift in Sources */,
 				59F5A7F82C10C027009051FE /* WBChatApp.swift in Sources */,
