@@ -9,13 +9,13 @@ import SwiftUI
 
 struct CodeVerificationView_CodeField: View {
     @FocusState.Binding var isFocused: Bool
-    @Binding var verificationCode: String
+    @Binding var receivedCode: String
     @State private var isAllNumbersFilled: Bool = false
 
     var pinLength = 4
 
     var body: some View {
-        TextField("", text: $verificationCode)
+        TextField("", text: $receivedCode)
             .frame(width: 0, height: 0)
             .accentColor(.neutral)
             .foregroundColor(.neutral)
@@ -26,7 +26,7 @@ struct CodeVerificationView_CodeField: View {
             .onAppear {
                 isFocused = true
             }
-            .onChange(of: verificationCode) { _ in
+            .onChange(of: receivedCode) { _ in
                 handleVerificationCodeChange()
             }
     }
@@ -34,11 +34,11 @@ struct CodeVerificationView_CodeField: View {
 
 private extension CodeVerificationView_CodeField {
     func handleVerificationCodeChange() {
-        if verificationCode.count > pinLength {
-            verificationCode = String(verificationCode.prefix(pinLength))
+        if receivedCode.count > pinLength {
+            receivedCode = String(receivedCode.prefix(pinLength))
         }
         
-        isAllNumbersFilled = (verificationCode.count == pinLength)
+        isAllNumbersFilled = (receivedCode.count == pinLength)
         
     }
 }
@@ -50,7 +50,7 @@ private extension CodeVerificationView_CodeField {
         var body: some View {
             CodeVerificationView_CodeField(
                 isFocused: $isFocused,
-                verificationCode: .constant("1234"))
+                receivedCode: .constant("1234"))
                 .padding(.horizontal)
                 .border(.primary, width: 1)
         }

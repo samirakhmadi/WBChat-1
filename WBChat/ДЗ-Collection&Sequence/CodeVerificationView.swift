@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct CodeVerificationView: View {
-    @Binding var phoneNumber: String
+    @Binding var verificationData: VerificationModel
     @FocusState private var isFocused: Bool
-    @State private var verificationCode = ""
+    @State private var enteredCode = ""
 
     @EnvironmentObject var coordinator: NavigationCoordinator
-
     
     var body: some View {
         VStack {
@@ -44,7 +43,7 @@ private extension CodeVerificationView {
                 title: Localization.codeEntry.rawValue,
                 subtitle: Localization.codeEntryDescription.rawValue
             )
-            Text(phoneNumber)
+            Text(verificationData.phoneNumber)
                 .font(.system(size: 14))
         }
         .padding(.horizontal, 42)
@@ -52,7 +51,7 @@ private extension CodeVerificationView {
     }
     
     var codeView: some View {
-        CodeVerificationView_CodeView(verificationCode: $verificationCode)
+        CodeVerificationView_CodeView(enteredCode: $enteredCode)
         .padding(.top, 49)
     }
     
@@ -72,13 +71,13 @@ private extension CodeVerificationView {
 private extension CodeVerificationView {
     func resetPass() {
         withAnimation {
-            verificationCode = ""
+            enteredCode = ""
         }
     }
 }
 
 #Preview {
     NavigationStack {
-        CodeVerificationView(phoneNumber: .constant("79999999999".formatCustomNumber(mask: "+X XXX XXX-XX-XX")))
+        CodeVerificationView(verificationData: .constant(.init(phoneNumber: "77777777777")))
     }
 }

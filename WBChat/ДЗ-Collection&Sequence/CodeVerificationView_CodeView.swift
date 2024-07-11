@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CodeVerificationView_CodeView: View {
     @FocusState private var isFocused: Bool
-    @Binding var verificationCode: String
+    @Binding var enteredCode: String
     
     var pinLength = 4
     
@@ -25,7 +25,7 @@ private extension CodeVerificationView_CodeView {
     var codeView: some View {
         HStack {
             ForEach(0..<pinLength, id: \.self) { index in
-                let isFilled = verificationCode.count > index
+                let isFilled = enteredCode.count > index
                 codePlaceholder(isFilled: isFilled)
                     .overlay {
                         if isFilled { codeSymbol(index: index) }
@@ -37,7 +37,7 @@ private extension CodeVerificationView_CodeView {
     var codeField: some View {
         CodeVerificationView_CodeField(
             isFocused: $isFocused,
-            verificationCode: $verificationCode)
+            receivedCode: $enteredCode)
     }
 }
 
@@ -62,10 +62,10 @@ private extension CodeVerificationView_CodeView {
 
 private extension CodeVerificationView_CodeView {
     func getPin(at index: Int) -> String {
-        guard self.verificationCode.count > index else {
+        guard self.enteredCode.count > index else {
             return ""
         }
-        return String(verificationCode[index])
+        return String(enteredCode[index])
     }
 }
 
@@ -75,7 +75,7 @@ private extension CodeVerificationView_CodeView {
         @State private var verificationCode: String = "12"
         
         var body: some View {
-            CodeVerificationView_CodeView(verificationCode: $verificationCode)
+            CodeVerificationView_CodeView(enteredCode: $verificationCode)
                 .padding(.horizontal)
         }
     }
