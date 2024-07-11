@@ -29,6 +29,7 @@
 		59AD9AAF2C40247400A7890A /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AAE2C40247400A7890A /* NavigationCoordinator.swift */; };
 		59AD9AB12C40248F00A7890A /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AB02C40248F00A7890A /* Destination.swift */; };
 		59AD9AB32C4024A000A7890A /* NavigationRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AB22C4024A000A7890A /* NavigationRoot.swift */; };
+		59AD9AB52C4028DC00A7890A /* VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AB42C4028DC00A7890A /* VerificationModel.swift */; };
 		59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB3062C1891A80071CE2B /* CustomTabView.swift */; };
 		59AFB30C2C189BBD0071CE2B /* CustomTabView_TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */; };
 		59E579472C17265E00641B7A /* ContactDetailView_UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */; };
@@ -74,6 +75,7 @@
 		59AD9AAE2C40247400A7890A /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		59AD9AB02C40248F00A7890A /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		59AD9AB22C4024A000A7890A /* NavigationRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoot.swift; sourceTree = "<group>"; };
+		59AD9AB42C4028DC00A7890A /* VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationModel.swift; sourceTree = "<group>"; };
 		59AFB3062C1891A80071CE2B /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView_TabItem.swift; sourceTree = "<group>"; };
 		59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView_UserAvatar.swift; sourceTree = "<group>"; };
@@ -289,6 +291,7 @@
 				5942674E2C3DCEE7000C7163 /* CodeVerificationView.swift */,
 				598AEC762C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift */,
 				598AEC782C3C63D70091EA51 /* CodeVerificationView_CodeView.swift */,
+				59AD9AB42C4028DC00A7890A /* VerificationModel.swift */,
 			);
 			path = "ДЗ-Collection&Sequence";
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				591E5A572C18D46A00B73DAC /* Router.swift in Sources */,
 				59ED2D602C1E10B2007FC636 /* CustomSearchField.swift in Sources */,
 				59F5A8442C137756009051FE /* ContactRow_UserAvatar.swift in Sources */,
+				59AD9AB52C4028DC00A7890A /* VerificationModel.swift in Sources */,
 				59201D7F2C348CF300581E7B /* PhoneInput_PhoneNumber.swift in Sources */,
 				59201D7B2C3489AD00581E7B /* TextBlockView.swift in Sources */,
 				59AD9AAF2C40247400A7890A /* NavigationCoordinator.swift in Sources */,
