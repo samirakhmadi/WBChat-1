@@ -10,10 +10,11 @@ import SwiftUI
 struct OnboardingView: View {
     @State private var showSheetView: Bool = false
     @Environment(\.dismiss) private var dismiss
-    @EnvironmentObject var router: Router
 
+    @EnvironmentObject var coordinator: NavigationCoordinator
+    
     var body: some View {
-        NavigationStack(path: $router.onboardingRoutes) {
+        NavigationRoot(coordinator: coordinator) {
             VStack {
                 onboardingImage
                 onboardingTitle
@@ -22,14 +23,6 @@ struct OnboardingView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(ViewBackgroundColor())
-            .navigationDestination(for: OnboardingRoutes.self) { routes in
-                switch routes {
-                case .phoneInputView:
-                     PhoneInputView()
-                case .termsOfUseView:
-                    EmptyView()
-                }
-            }
         }
     }
 }
@@ -54,14 +47,17 @@ private extension OnboardingView {
     
     var termsOfUseButton: some View {
         PlainTextButton(title: Localization.userAgreementText.rawValue, titleColor: .brand) {
-            router.onboardingRoutes.append(.termsOfUseView)
+            coordinator.navigate(to: .termsOfUse)
+//            router.onboardingRoutes.append(.termsOfUseView)
         }
             .padding(.top, 158)
     }
     
     var startButton: some View {
         CapsuleButton(title: Localization.startChattingText.rawValue){
-            router.onboardingRoutes.append(.phoneInputView)
+//            router.onboardingRoutes.append(.phoneInputView)
+            coordinator.navigate(to: .phoneInput)
+
         }
         .padding(.top, 18)
         .padding(.bottom, 20)
@@ -72,5 +68,5 @@ private extension OnboardingView {
 
 #Preview {
     OnboardingView()
-        .environmentObject(Router())
+        .environmentObject(NavigationCoordinator())
 }

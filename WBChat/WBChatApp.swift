@@ -10,12 +10,12 @@ import SwiftUI
 @main
 struct WBChatApp: App {
 
-    @StateObject private var router = Router()
-    
+    @StateObject private var coordinator = NavigationCoordinator()
+
     var body: some Scene {
         WindowGroup {
             OnboardingView()
-                .environmentObject(router)
+                .environmentObject(coordinator)
         }
     }
 }

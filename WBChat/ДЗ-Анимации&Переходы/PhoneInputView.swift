@@ -17,6 +17,8 @@ struct PhoneInputView: View {
     
     @State private var showProgress: Bool = false
     
+    @EnvironmentObject var coordinator: NavigationCoordinator
+
     var body: some View {
         VStack{
             textBlock
@@ -71,7 +73,9 @@ private extension PhoneInputView {
     }
     
     var backButton: some View {
-        NavigationBackButton()
+        NavigationBackButton {
+            coordinator.pop()
+        }
     }
     
     var continueButton: some View {
@@ -106,26 +110,7 @@ private extension PhoneInputView {
     NavigationStack {
         PhoneInputView()
             .environment(\.locale, .init(identifier: "ru"))
+            .environmentObject(NavigationCoordinator())
     }
 }
 
-#Preview("Ang.ver") {
-    NavigationStack {
-        PhoneInputView()
-            .environment(\.locale, .init(identifier: "en"))
-    }
-}
-
-#Preview("Arm.ver") {
-    NavigationStack {
-        PhoneInputView()
-            .environment(\.locale, .init(identifier: "hy_AM"))
-    }
-}
-
-#Preview("Kaz.ver") {
-    NavigationStack {
-        PhoneInputView()
-            .environment(\.locale, .init(identifier: "kk_KZ"))
-    }
-}

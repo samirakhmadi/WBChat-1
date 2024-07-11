@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContactDetailView: View {
-    @Environment(\.dismiss) private var dismiss
     @Binding var isDetailShowing: Bool
+        
+    @EnvironmentObject var coordinator: NavigationCoordinator
+
+    
     let contact: Contact
     var body: some View {
         VStack {
@@ -47,7 +50,9 @@ struct ContactDetailView: View {
 //MARK: Toolbar item'ы
 private extension ContactDetailView {
     var backButton: some View {
-        NavigationBackButton()
+        NavigationBackButton {
+            coordinator.pop()
+        }
     }
     
     var title: some View {
@@ -126,6 +131,7 @@ private extension ContactDetailView {
                     )
                 )
             }
+            .environmentObject(NavigationCoordinator())
         }
     }
     return BindingViewPreviewContainer()

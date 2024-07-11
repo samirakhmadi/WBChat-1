@@ -12,6 +12,9 @@ struct CodeVerificationView: View {
     @FocusState private var isFocused: Bool
     @State private var verificationCode = ""
 
+    @EnvironmentObject var coordinator: NavigationCoordinator
+
+    
     var body: some View {
         VStack {
             textBlock
@@ -30,7 +33,9 @@ struct CodeVerificationView: View {
 
 private extension CodeVerificationView {
     var backButton: some View {
-        NavigationBackButton()
+        NavigationBackButton {
+            coordinator.pop()
+        }
     }
     
     var textBlock: some View {
