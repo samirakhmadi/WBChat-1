@@ -51,7 +51,10 @@ private extension PhoneInputView {
     var textBlock: some View {
         TextBlockView(
             title: Localization.inputPhoneText.rawValue,
-            subtitle: Localization.inputPhoneDescriptionText.rawValue)
+            subtitle: Localization.inputPhoneDescriptionText.rawValue,
+            localizationTableName: Localization.tableName,
+            textForegroundColor: .neutralText
+        )
             .padding(.horizontal, 42)
             .padding(.top, 79)
             .offset(y: isPhoneNumberValid ? -400 : 0)

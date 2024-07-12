@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIComponents
 
 struct CodeVerificationView: View {
     @Binding var verificationData: VerificationModel
@@ -42,7 +43,9 @@ private extension CodeVerificationView {
         VStack(spacing: 10) {
             TextBlockView(
                 title: Localization.codeEntry.rawValue,
-                subtitle: Localization.codeEntryDescription.rawValue
+                subtitle: Localization.codeEntryDescription.rawValue,
+                localizationTableName: Localization.tableName,
+                textForegroundColor: .neutralText
             )
             Text(verificationData.phoneNumber)
                 .font(.system(size: 14))
