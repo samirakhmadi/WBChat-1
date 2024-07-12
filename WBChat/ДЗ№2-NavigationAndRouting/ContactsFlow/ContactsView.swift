@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIComponents
 
 struct ContactsView: View {
     
@@ -46,7 +47,7 @@ struct ContactsView: View {
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(ViewBackgroundColor())
+            .background(ViewBackgroundColor(backgroundColor: .neutral))
         }
         .tint(.neutralText)
     }

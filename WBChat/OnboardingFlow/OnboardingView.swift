@@ -21,7 +21,7 @@ struct OnboardingView: View {
                 startButton
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(ViewBackgroundColor())
+            .background(ViewBackgroundColor(backgroundColor: .neutral))
         }
     }
 }

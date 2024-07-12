@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIComponents
 
 struct ContactDetailView: View {
     @Binding var isDetailShowing: Bool
@@ -23,7 +24,7 @@ struct ContactDetailView: View {
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(ViewBackgroundColor())
+        .background(ViewBackgroundColor(backgroundColor: .neutral))
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden()
         .toolbar {

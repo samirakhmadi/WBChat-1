@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIComponents
 
 struct ContactsView_ContactRow: View {
     let contact: Contact
@@ -90,7 +91,7 @@ private extension ContactsView_ContactRow {
                 }
             }
             .padding(.horizontal)
-            .background(ViewBackgroundColor())
+            .background(ViewBackgroundColor(backgroundColor: .neutral))
         }
     }
     return BindingViewPreviewContainer()

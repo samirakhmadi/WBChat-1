@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIComponents
 
 struct CustomTabView: View {
     
@@ -25,12 +26,12 @@ struct CustomTabView: View {
                 
                 Text("Чаты")
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(ViewBackgroundColor())
+                    .background(ViewBackgroundColor(backgroundColor: .neutral))
                     .tag(Tab.chats)
                     .toolbar(.hidden, for: .tabBar)
                 Text("Еще")
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(ViewBackgroundColor())
+                    .background(ViewBackgroundColor(backgroundColor: .neutral))
                     .tag(Tab.more)
                     .toolbar(.hidden, for: .tabBar)
             }
@@ -41,7 +42,7 @@ struct CustomTabView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(ViewBackgroundColor())
+        .background(ViewBackgroundColor(backgroundColor: .neutral))
     }
 }
 
@@ -58,7 +59,7 @@ private extension CustomTabView {
                     )
                 }
             }
-            .background(ViewBackgroundColor())
+            .background(ViewBackgroundColor(backgroundColor: .neutral))
             .shadow(color: .black.opacity(0.04), radius: 24, x: -1)
     }
 }

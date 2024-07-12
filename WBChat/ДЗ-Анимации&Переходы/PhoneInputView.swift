@@ -35,7 +35,7 @@ struct PhoneInputView: View {
         .navigationBarBackButtonHidden()
         .navigationBarTitleDisplayMode(.inline)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(ViewBackgroundColor())
+        .background(ViewBackgroundColor(backgroundColor: .neutral))
         .onChange(of: isPhoneNumberValid) { _ in
            hideKeyboard()
         }
