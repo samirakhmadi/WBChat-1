@@ -8,26 +8,38 @@
 import SwiftUI
 
 struct CodeVerificationView: View {
-    @Binding var verificationData: VerificationModel
-    @FocusState private var isFocused: Bool
-    @State private var enteredCode = ""
-
     @EnvironmentObject var coordinator: NavigationCoordinator
     
+    @Binding var verificationModel: VerificationModel
+    @FocusState private var isFocused: Bool
+    
+    @State private var enteredCode = ""
+    @State private var showHint: Bool = false
+    @State private var showVerificationResult: Bool = false
+    
     var body: some View {
-        VStack {
-            textBlock
-            codeView
-            resendCodeButton
+        ZStack(alignment: .top) {
+            VStack {
+                textBlock
+                codeView
+                resendCodeButton
+            }
+            .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+            .background(ViewBackgroundColor())
+            verificationCodeHint
         }
-        .padding()
         .navigationBarBackButtonHidden()
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        .background(ViewBackgroundColor())
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 backButton
             }
+        }
+        .onAppear {
+            animateVerificationCode()
+        }
+        .onChange(of: isCodeFilled) { _ in
+            showVerificationResult = verificationModel.validate(code: enteredCode)
         }
     }
 }
@@ -45,7 +57,7 @@ private extension CodeVerificationView {
                 title: Localization.codeEntry.rawValue,
                 subtitle: Localization.codeEntryDescription.rawValue
             )
-            Text(verificationData.phoneNumber)
+            Text(verificationModel.phoneNumber)
                 .font(.system(size: 14))
         }
         .padding(.horizontal, 42)
@@ -54,7 +66,7 @@ private extension CodeVerificationView {
     
     var codeView: some View {
         CodeVerificationView_CodeView(enteredCode: $enteredCode)
-        .padding(.top, 49)
+            .padding(.top, 49)
     }
     
     var resendCodeButton: some View {
@@ -62,11 +74,25 @@ private extension CodeVerificationView {
             title: Localization.requestCodeAgain.rawValue,
             titleColor: .brand
         ) {
+            verificationModel.regenerateVerificationCode()
             resetPass()
+            animateVerificationCode()
         }
         .foregroundStyle(.brand)
         .font(.system(size: 16).weight(.semibold))
         .padding(.top, 77)
+    }
+    
+    var verificationCodeHint: some View {
+        Text("\(hintCode) - никому не передавайте Ваш код доступа к сервису.")
+            .fontWeight(.semibold)
+            .padding()
+            .background(
+                .thinMaterial,
+                in: RoundedRectangle(cornerRadius: 25, style: .continuous)
+            )
+            .offset(y: showHint ? 0 : -250)
+            .transition(.slide.combined(with: .move(edge: .top)))
     }
 }
 
@@ -76,10 +102,40 @@ private extension CodeVerificationView {
             enteredCode = ""
         }
     }
+    
+    func animateVerificationCode() {
+        DispatchQueue.main.asyncAfter(deadline: .now()+3) {
+            withAnimation(.easeIn(duration: 1.5)) {
+                showHint = true
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now()+6) {
+                withAnimation(.easeOut(duration: 0.5)) {
+                    showHint = false
+                }
+            }
+        }
+    }
+}
+
+private extension CodeVerificationView {
+    var isCodeFilled: Bool {
+        enteredCode.count == 4
+    }
+    
+    var hintCode: String {
+        verificationModel.map { String(describing: $0) }.joined()
+    }
 }
 
 #Preview {
-    NavigationStack {
-        CodeVerificationView(verificationData: .constant(.init(phoneNumber: "77777777777")))
+    struct CodeVerificationViewPreviewContainer : View {
+        @State private var verificationData: VerificationModel = .init(phoneNumber: "77777777777777")
+        
+        var body: some View {
+            NavigationStack {
+                CodeVerificationView(verificationModel:  $verificationData)
+            }
+        }
     }
+    return CodeVerificationViewPreviewContainer()
 }
