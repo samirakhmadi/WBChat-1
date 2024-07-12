@@ -10,9 +10,8 @@ import UIComponents
 
 struct ContactDetailView: View {
     @Binding var isDetailShowing: Bool
-        
+    
     @EnvironmentObject var coordinator: NavigationCoordinator
-
     
     let contact: Contact
     var body: some View {
@@ -51,9 +50,11 @@ struct ContactDetailView: View {
 //MARK: Toolbar item'ы
 private extension ContactDetailView {
     var backButton: some View {
-        NavigationBackButton {
-            coordinator.pop()
-        }
+        NavigationBackButton(
+            image: "backIcon",
+            tintColor: .neutralText) {
+                coordinator.pop()
+            }
     }
     
     var title: some View {

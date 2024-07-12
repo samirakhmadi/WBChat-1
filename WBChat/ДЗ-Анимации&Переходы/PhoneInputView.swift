@@ -18,7 +18,7 @@ struct PhoneInputView: View {
     @State private var verificationData: VerificationModel = .init(phoneNumber: "")
     
     @EnvironmentObject var coordinator: NavigationCoordinator
-
+    
     var body: some View {
         VStack{
             textBlock
@@ -37,7 +37,7 @@ struct PhoneInputView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(ViewBackgroundColor(backgroundColor: .neutral))
         .onChange(of: isPhoneNumberValid) { _ in
-           hideKeyboard()
+            hideKeyboard()
         }
         .onTapGesture {
             hideKeyboard()
@@ -55,10 +55,10 @@ private extension PhoneInputView {
             localizationTableName: Localization.tableName,
             textForegroundColor: .neutralText
         )
-            .padding(.horizontal, 42)
-            .padding(.top, 79)
-            .offset(y: isPhoneNumberValid ? -400 : 0)
-            .animation(.easeInOut(duration: 1), value: isPhoneNumberValid)
+        .padding(.horizontal, 42)
+        .padding(.top, 79)
+        .offset(y: isPhoneNumberValid ? -400 : 0)
+        .animation(.easeInOut(duration: 1), value: isPhoneNumberValid)
     }
     
     var phoneInputField: some View {
@@ -76,9 +76,11 @@ private extension PhoneInputView {
     }
     
     var backButton: some View {
-        NavigationBackButton {
-            coordinator.pop()
-        }
+        NavigationBackButton(
+            image: "backIcon",
+            tintColor: .neutralText) {
+                coordinator.pop()
+            }
     }
     
     var continueButton: some View {        

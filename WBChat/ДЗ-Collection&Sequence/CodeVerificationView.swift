@@ -12,7 +12,7 @@ struct CodeVerificationView: View {
     @Binding var verificationData: VerificationModel
     @FocusState private var isFocused: Bool
     @State private var enteredCode = ""
-
+    
     @EnvironmentObject var coordinator: NavigationCoordinator
     
     var body: some View {
@@ -34,9 +34,11 @@ struct CodeVerificationView: View {
 
 private extension CodeVerificationView {
     var backButton: some View {
-        NavigationBackButton {
-            coordinator.pop()
-        }
+        NavigationBackButton(
+            image: "backIcon",
+            tintColor: .neutralText) {
+                coordinator.pop()
+            }
     }
     
     var textBlock: some View {
@@ -56,7 +58,7 @@ private extension CodeVerificationView {
     
     var codeView: some View {
         CodeVerificationView_CodeView(enteredCode: $enteredCode)
-        .padding(.top, 49)
+            .padding(.top, 49)
     }
     
     var resendCodeButton: some View {
