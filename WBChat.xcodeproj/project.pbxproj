@@ -28,7 +28,7 @@
 		59AD9AB52C4028DC00A7890A /* VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AB42C4028DC00A7890A /* VerificationModel.swift */; };
 		59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB3062C1891A80071CE2B /* CustomTabView.swift */; };
 		59AFB30C2C189BBD0071CE2B /* CustomTabView_TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */; };
-		59B505932C4065AB008D5B1F /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 59B505922C4065AB008D5B1F /* UIComponents */; };
+		59B8EDDF2C416BDC00DD7A93 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 59B8EDDE2C416BDC00DD7A93 /* UIComponents */; };
 		59E579472C17265E00641B7A /* ContactDetailView_UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */; };
 		59E5794A2C173DC200641B7A /* Socials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E579492C173DC200641B7A /* Socials.swift */; };
 		59F5A7F82C10C027009051FE /* WBChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A7F72C10C027009051FE /* WBChatApp.swift */; };
@@ -46,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		591871062C416B1200313010 /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UIComponents; path = Modules/UIComponents; sourceTree = "<group>"; };
 		591E5A562C18D46A00B73DAC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		59201D782C3488FA00581E7B /* PhoneInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInputView.swift; sourceTree = "<group>"; };
 		59201D7C2C348B8B00581E7B /* PhoneInput_PhoneCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInput_PhoneCode.swift; sourceTree = "<group>"; };
@@ -67,7 +68,6 @@
 		59AD9AB42C4028DC00A7890A /* VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationModel.swift; sourceTree = "<group>"; };
 		59AFB3062C1891A80071CE2B /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView_TabItem.swift; sourceTree = "<group>"; };
-		59B505902C4064B8008D5B1F /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UIComponents; path = ../UIComponents; sourceTree = "<group>"; };
 		59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView_UserAvatar.swift; sourceTree = "<group>"; };
 		59E579492C173DC200641B7A /* Socials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socials.swift; sourceTree = "<group>"; };
 		59F5A7F42C10C027009051FE /* WBChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59B505932C4065AB008D5B1F /* UIComponents in Frameworks */,
+				59B8EDDF2C416BDC00DD7A93 /* UIComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +188,7 @@
 		59F5A7EB2C10C027009051FE = {
 			isa = PBXGroup;
 			children = (
-				59B505902C4064B8008D5B1F /* UIComponents */,
+				591871062C416B1200313010 /* UIComponents */,
 				59F5A7F62C10C027009051FE /* WBChat */,
 				59F5A7F52C10C027009051FE /* Products */,
 				59B505912C4065AB008D5B1F /* Frameworks */,
@@ -293,7 +293,7 @@
 			);
 			name = WBChat;
 			packageProductDependencies = (
-				59B505922C4065AB008D5B1F /* UIComponents */,
+				59B8EDDE2C416BDC00DD7A93 /* UIComponents */,
 			);
 			productName = WBChat;
 			productReference = 59F5A7F42C10C027009051FE /* WBChat.app */;
@@ -596,7 +596,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		59B505922C4065AB008D5B1F /* UIComponents */ = {
+		59B8EDDE2C416BDC00DD7A93 /* UIComponents */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UIComponents;
 		};
