@@ -23,6 +23,7 @@ struct CodeVerificationView: View {
         .padding()
         .navigationBarBackButtonHidden()
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .background(ViewBackgroundColor())
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                 backButton
