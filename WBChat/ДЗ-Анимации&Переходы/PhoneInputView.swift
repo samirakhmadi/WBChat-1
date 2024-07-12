@@ -6,10 +6,9 @@
 //
 
 import SwiftUI
-
+import UIComponents
 
 struct PhoneInputView: View {
-    @Environment(\.dismiss) private var dismiss
     
     @State var selectedCountry: Country = .russia
     @State var phoneNumber: String = ""
@@ -79,16 +78,20 @@ private extension PhoneInputView {
         }
     }
     
-    var continueButton: some View {
-        CapsuleButton(title: Localization.continueText.rawValue,
-                      isDisabled: !isPhoneNumberValid)
-        {
-            verificationData.phoneNumber = combinedPhoneNumber
-            coordinator.navigate(to: .codeVerification($verificationData))
-        }
+    var continueButton: some View {        
+        CapsuleButton(
+            title: Localization.continueText.rawValue,
+            localizationTableName: Localization.tableName,
+            activeColor: Color.brand ,
+            disabledColor: Color.brand.opacity(0.5),
+            isDisabled: !isPhoneNumberValid) {
+                
+                verificationData.phoneNumber = combinedPhoneNumber
+                coordinator.navigate(to: .codeVerification($verificationData))
+                
+            }
             .padding(.horizontal, 24)
             .padding(.top, 69)
-            
     }
     
     var progressView: some View {

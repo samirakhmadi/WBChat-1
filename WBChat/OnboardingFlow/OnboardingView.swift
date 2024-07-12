@@ -6,11 +6,10 @@
 //
 
 import SwiftUI
+import UIComponents
 
 struct OnboardingView: View {
     @State private var showSheetView: Bool = false
-    @Environment(\.dismiss) private var dismiss
-
     @EnvironmentObject var coordinator: NavigationCoordinator
     
     var body: some View {
@@ -48,20 +47,21 @@ private extension OnboardingView {
     var termsOfUseButton: some View {
         PlainTextButton(title: Localization.userAgreementText.rawValue, titleColor: .brand) {
             coordinator.navigate(to: .termsOfUse)
-//            router.onboardingRoutes.append(.termsOfUseView)
         }
-            .padding(.top, 158)
+        .padding(.top, 158)
     }
     
     var startButton: some View {
-        CapsuleButton(title: Localization.startChattingText.rawValue){
-//            router.onboardingRoutes.append(.phoneInputView)
-            coordinator.navigate(to: .phoneInput)
-
-        }
-        .padding(.top, 18)
-        .padding(.bottom, 20)
-        .padding(.horizontal, 24)
+        CapsuleButton(
+            title: Localization.startChattingText.rawValue,
+            localizationTableName: Localization.tableName,
+            activeColor: Color.brand ,
+            disabledColor: Color.brand.opacity(0.5)) {
+                coordinator.navigate(to: .phoneInput)
+            }
+            .padding(.top, 18)
+            .padding(.bottom, 20)
+            .padding(.horizontal, 24)
     }
 }
 
