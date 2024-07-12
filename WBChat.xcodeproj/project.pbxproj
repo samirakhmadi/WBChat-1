@@ -40,7 +40,6 @@
 		59F5A7FA2C10C027009051FE /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A7F92C10C027009051FE /* OnboardingView.swift */; };
 		59F5A7FC2C10C029009051FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F5A7FB2C10C029009051FE /* Assets.xcassets */; };
 		59F5A7FF2C10C029009051FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F5A7FE2C10C029009051FE /* Preview Assets.xcassets */; };
-		59F5A8062C10C069009051FE /* OnboardingView_Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A8052C10C069009051FE /* OnboardingView_Sheet.swift */; };
 		59F5A8092C10C082009051FE /* CapsuleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A8082C10C082009051FE /* CapsuleButton.swift */; };
 		59F5A80B2C10C08B009051FE /* ViewBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A80A2C10C08B009051FE /* ViewBackgroundColor.swift */; };
 		59F5A80E2C10C3F9009051FE /* Extension+VStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F5A80D2C10C3F9009051FE /* Extension+VStack.swift */; };
@@ -88,7 +87,6 @@
 		59F5A7F92C10C027009051FE /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		59F5A7FB2C10C029009051FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59F5A7FE2C10C029009051FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		59F5A8052C10C069009051FE /* OnboardingView_Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView_Sheet.swift; sourceTree = "<group>"; };
 		59F5A8082C10C082009051FE /* CapsuleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleButton.swift; sourceTree = "<group>"; };
 		59F5A80A2C10C08B009051FE /* ViewBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBackgroundColor.swift; sourceTree = "<group>"; };
 		59F5A80D2C10C3F9009051FE /* Extension+VStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+VStack.swift"; sourceTree = "<group>"; };
@@ -274,7 +272,6 @@
 			isa = PBXGroup;
 			children = (
 				59F5A7F92C10C027009051FE /* OnboardingView.swift */,
-				59F5A8052C10C069009051FE /* OnboardingView_Sheet.swift */,
 			);
 			path = OnboardingFlow;
 			sourceTree = "<group>";
@@ -404,7 +401,6 @@
 				59201D7B2C3489AD00581E7B /* TextBlockView.swift in Sources */,
 				59AD9AAF2C40247400A7890A /* NavigationCoordinator.swift in Sources */,
 				59F5A8102C10C418009051FE /* Extension+HStack.swift in Sources */,
-				59F5A8062C10C069009051FE /* OnboardingView_Sheet.swift in Sources */,
 				59F5A7F82C10C027009051FE /* WBChatApp.swift in Sources */,
 				59F5A83B2C13682A009051FE /* ContactDetailView.swift in Sources */,
 				59201D792C3488FA00581E7B /* PhoneInputView.swift in Sources */,
