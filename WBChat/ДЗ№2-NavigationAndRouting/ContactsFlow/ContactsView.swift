@@ -56,7 +56,13 @@ struct ContactsView: View {
 private extension ContactsView {
     
     var searchField: some View {
-        CustomSearchField(text: $searchText, placeholder: "Search")
+        CustomSearchField(
+            text: $searchText,
+            placeholder: Localization.searchPlaceholderText.rawValue,
+            localizationTableName: Localization.tableName,
+            textFieldBackgroundColor: .textFieldBackground,
+            placeholderColor: .textFieldPlaceholder
+        )
             .padding(.horizontal, 24)
             .padding(.vertical, 16)
     }
