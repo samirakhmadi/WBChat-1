@@ -9,17 +9,16 @@ import SwiftUI
 
 
 struct PhoneInputView: View {
-    @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject var coordinator: NavigationCoordinator
     
-    @State var selectedCountry: Country = .russia
-    @State var phoneNumber: String = ""
-    @State var showCodeMenu: Bool = false
-    
-    @State private var showProgress: Bool = false
+    @State private var selectedCountry: Country = .russia
+    @State private var phoneNumber: String = ""
     @State private var verificationData: VerificationModel = .init(phoneNumber: "")
     
-    @EnvironmentObject var coordinator: NavigationCoordinator
-
+    @State private var showCodeMenu: Bool = false
+    @State private var showProgress: Bool = false
+    
+    
     var body: some View {
         VStack{
             textBlock
@@ -37,9 +36,6 @@ struct PhoneInputView: View {
         .navigationBarTitleDisplayMode(.inline)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(ViewBackgroundColor())
-        .onChange(of: isPhoneNumberValid) { _ in
-           hideKeyboard()
-        }
         .onTapGesture {
             hideKeyboard()
         }
@@ -53,10 +49,10 @@ private extension PhoneInputView {
         TextBlockView(
             title: Localization.inputPhoneText.rawValue,
             subtitle: Localization.inputPhoneDescriptionText.rawValue)
-            .padding(.horizontal, 42)
-            .padding(.top, 79)
-            .offset(y: isPhoneNumberValid ? -400 : 0)
-            .animation(.easeInOut(duration: 1), value: isPhoneNumberValid)
+        .padding(.horizontal, 42)
+        .padding(.top, 79)
+        .offset(y: isPhoneNumberValid ? -400 : 0)
+        .animation(.easeInOut(duration: 1), value: isPhoneNumberValid)
     }
     
     var phoneInputField: some View {
@@ -86,9 +82,8 @@ private extension PhoneInputView {
             verificationData.phoneNumber = combinedPhoneNumber
             coordinator.navigate(to: .codeVerification($verificationData))
         }
-            .padding(.horizontal, 24)
-            .padding(.top, 69)
-            
+        .padding(.horizontal, 24)
+        .padding(.top, 69)
     }
     
     var progressView: some View {

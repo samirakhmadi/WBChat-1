@@ -19,8 +19,8 @@ enum Destination {
             EmptyView()
         case .phoneInput:
             PhoneInputView()
-        case .codeVerification(let verificationData):
-            CodeVerificationView(verificationData: verificationData)
+        case .codeVerification(let verificationModel):
+            CodeVerificationView(verificationModel: verificationModel)
         }
     }
 }
