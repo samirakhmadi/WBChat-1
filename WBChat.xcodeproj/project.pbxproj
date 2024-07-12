@@ -32,6 +32,7 @@
 		59AD9AB52C4028DC00A7890A /* VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AB42C4028DC00A7890A /* VerificationModel.swift */; };
 		59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB3062C1891A80071CE2B /* CustomTabView.swift */; };
 		59AFB30C2C189BBD0071CE2B /* CustomTabView_TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */; };
+		59B505932C4065AB008D5B1F /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 59B505922C4065AB008D5B1F /* UIComponents */; };
 		59E579472C17265E00641B7A /* ContactDetailView_UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */; };
 		59E5794A2C173DC200641B7A /* Socials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59E579492C173DC200641B7A /* Socials.swift */; };
 		59ED2D602C1E10B2007FC636 /* CustomSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ED2D5F2C1E10B2007FC636 /* CustomSearchField.swift */; };
@@ -78,6 +79,7 @@
 		59AD9AB42C4028DC00A7890A /* VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationModel.swift; sourceTree = "<group>"; };
 		59AFB3062C1891A80071CE2B /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		59AFB30B2C189BBD0071CE2B /* CustomTabView_TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView_TabItem.swift; sourceTree = "<group>"; };
+		59B505902C4064B8008D5B1F /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UIComponents; path = ../UIComponents; sourceTree = "<group>"; };
 		59E579462C17265E00641B7A /* ContactDetailView_UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView_UserAvatar.swift; sourceTree = "<group>"; };
 		59E579492C173DC200641B7A /* Socials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socials.swift; sourceTree = "<group>"; };
 		59ED2D5F2C1E10B2007FC636 /* CustomSearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchField.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B505932C4065AB008D5B1F /* UIComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +172,13 @@
 			path = TabView;
 			sourceTree = "<group>";
 		};
+		59B505912C4065AB008D5B1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		59E3EBC92C23146C00897E6D /* ДЗ№2-NavigationAndRouting */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,8 +204,10 @@
 		59F5A7EB2C10C027009051FE = {
 			isa = PBXGroup;
 			children = (
+				59B505902C4064B8008D5B1F /* UIComponents */,
 				59F5A7F62C10C027009051FE /* WBChat */,
 				59F5A7F52C10C027009051FE /* Products */,
+				59B505912C4065AB008D5B1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -312,6 +324,9 @@
 			dependencies = (
 			);
 			name = WBChat;
+			packageProductDependencies = (
+				59B505922C4065AB008D5B1F /* UIComponents */,
+			);
 			productName = WBChat;
 			productReference = 59F5A7F42C10C027009051FE /* WBChat.app */;
 			productType = "com.apple.product-type.application";
@@ -323,7 +338,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1530;
+				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					59F5A7F32C10C027009051FE = {
@@ -619,6 +634,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		59B505922C4065AB008D5B1F /* UIComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UIComponents;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 59F5A7EC2C10C027009051FE /* Project object */;
 }
