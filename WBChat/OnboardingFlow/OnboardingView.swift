@@ -45,7 +45,11 @@ private extension OnboardingView {
     }
     
     var termsOfUseButton: some View {
-        PlainTextButton(title: Localization.userAgreementText.rawValue, titleColor: .brand) {
+        PlainTextButton(
+            title: Localization.userAgreementText.rawValue,
+            localizationTableName: Localization.tableName,
+            titleColor: .brand
+        ) {
             coordinator.navigate(to: .termsOfUse)
         }
         .padding(.top, 158)

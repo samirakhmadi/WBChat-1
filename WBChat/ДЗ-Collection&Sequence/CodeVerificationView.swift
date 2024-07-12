@@ -64,6 +64,7 @@ private extension CodeVerificationView {
     var resendCodeButton: some View {
         PlainTextButton(
             title: Localization.requestCodeAgain.rawValue,
+            localizationTableName: Localization.tableName,
             titleColor: .brand
         ) {
             resetPass()
