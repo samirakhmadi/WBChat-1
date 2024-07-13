@@ -1,6 +1,35 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "accessCodeHint" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "- do not share your access code with anyone."
+          }
+        },
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "- ոչ մեկին մի տվեք ձեր մուտքի կոդը:"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "- кіру кодын ешкіммен бөліспеңіз."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "- никому не передавайте Ваш код доступа к сервису."
+          }
+        }
+      }
+    },
     "closeText" : {
       "extractionState" : "manual",
       "localizations" : {

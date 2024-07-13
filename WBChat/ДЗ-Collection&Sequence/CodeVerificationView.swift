@@ -84,15 +84,17 @@ private extension CodeVerificationView {
     }
     
     var verificationCodeHint: some View {
-        Text("\(hintCode) - никому не передавайте Ваш код доступа к сервису.")
-            .fontWeight(.semibold)
-            .padding()
-            .background(
-                .thinMaterial,
-                in: RoundedRectangle(cornerRadius: 25, style: .continuous)
-            )
-            .offset(y: showHint ? 0 : -250)
-            .transition(.slide.combined(with: .move(edge: .top)))
+        Group{
+            Text("\(hintCode) ") + Text(Localization.accessCodeHint.rawValue, tableName: Localization.tableName)
+        }
+        .fontWeight(.semibold)
+        .padding()
+        .background(
+            .thinMaterial,
+            in: RoundedRectangle(cornerRadius: 25, style: .continuous)
+        )
+        .offset(y: showHint ? 0 : -250)
+        .transition(.slide.combined(with: .move(edge: .top)))
     }
 }
 
