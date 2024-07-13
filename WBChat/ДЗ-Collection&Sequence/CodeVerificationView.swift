@@ -18,15 +18,15 @@ struct CodeVerificationView: View {
     @State private var showVerificationResult: Bool = false
     
     var body: some View {
-        ZStack(alignment: .top) {
-            VStack {
-                textBlock
-                codeView
-                resendCodeButton
-            }
-            .padding()
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-            .background(ViewBackgroundColor())
+        VStack {
+            textBlock
+            codeView
+            resendCodeButton
+        }
+        .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .background(ViewBackgroundColor())
+        .overlay(alignment: .top) {
             verificationCodeHint
         }
         .navigationBarBackButtonHidden()
