@@ -140,6 +140,13 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		59852EEF2C4D34B8006061C9 /* ДЗ-Hash&Set&Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "ДЗ-Hash&Set&Others";
+			sourceTree = "<group>";
+		};
 		599897D92C19F34200950A68 /* Дополнительно💻 */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +217,7 @@
 		59F5A7F62C10C027009051FE /* WBChat */ = {
 			isa = PBXGroup;
 			children = (
+				59852EEF2C4D34B8006061C9 /* ДЗ-Hash&Set&Others */,
 				59F5C60B2C399E270022D7F9 /* ДЗ-Collection&Sequence */,
 				594577612C35C15B00ED7066 /* Localization */,
 				59201D772C3488B100581E7B /* ДЗ-Анимации&Переходы */,
