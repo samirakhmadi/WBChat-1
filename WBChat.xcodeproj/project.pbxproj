@@ -21,6 +21,10 @@
 		594577632C35C6D000ED7066 /* PlainTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594577622C35C6D000ED7066 /* PlainTextButton.swift */; };
 		594577652C35DDF100ED7066 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594577642C35DDF100ED7066 /* Extension+View.swift */; };
 		594577692C35E2CB00ED7066 /* LoadingProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594577682C35E2CB00ED7066 /* LoadingProgress.swift */; };
+		59852EF22C4D3C60006061C9 /* ApplesHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59852EF12C4D3C60006061C9 /* ApplesHash.swift */; };
+		59852EF42C4D3E6F006061C9 /* CustomHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59852EF32C4D3E6F006061C9 /* CustomHash.swift */; };
+		59852EF62C4D3F20006061C9 /* SetOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59852EF52C4D3F20006061C9 /* SetOperations.swift */; };
+		59852EF82C4D40A1006061C9 /* DictionaryOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59852EF72C4D40A1006061C9 /* DictionaryOperations.swift */; };
 		598AEC772C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AEC762C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift */; };
 		598AEC792C3C63D70091EA51 /* CodeVerificationView_CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AEC782C3C63D70091EA51 /* CodeVerificationView_CodeView.swift */; };
 		599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DA2C19F3BF00950A68 /* StartPointViewController.swift */; };
@@ -67,6 +71,10 @@
 		594577622C35C6D000ED7066 /* PlainTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTextButton.swift; sourceTree = "<group>"; };
 		594577642C35DDF100ED7066 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		594577682C35E2CB00ED7066 /* LoadingProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingProgress.swift; sourceTree = "<group>"; };
+		59852EF12C4D3C60006061C9 /* ApplesHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplesHash.swift; sourceTree = "<group>"; };
+		59852EF32C4D3E6F006061C9 /* CustomHash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHash.swift; sourceTree = "<group>"; };
+		59852EF52C4D3F20006061C9 /* SetOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetOperations.swift; sourceTree = "<group>"; };
+		59852EF72C4D40A1006061C9 /* DictionaryOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryOperations.swift; sourceTree = "<group>"; };
 		598AEC762C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView_CodeField.swift; sourceTree = "<group>"; };
 		598AEC782C3C63D70091EA51 /* CodeVerificationView_CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView_CodeView.swift; sourceTree = "<group>"; };
 		599897DA2C19F3BF00950A68 /* StartPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPointViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +151,10 @@
 		59852EEF2C4D34B8006061C9 /* ДЗ-Hash&Set&Others */ = {
 			isa = PBXGroup;
 			children = (
+				59852EF12C4D3C60006061C9 /* ApplesHash.swift */,
+				59852EF32C4D3E6F006061C9 /* CustomHash.swift */,
+				59852EF52C4D3F20006061C9 /* SetOperations.swift */,
+				59852EF72C4D40A1006061C9 /* DictionaryOperations.swift */,
 			);
 			path = "ДЗ-Hash&Set&Others";
 			sourceTree = "<group>";
@@ -378,13 +390,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59852EF42C4D3E6F006061C9 /* CustomHash.swift in Sources */,
 				59AD9AB32C4024A000A7890A /* NavigationRoot.swift in Sources */,
 				59F5A85B2C14BB81009051FE /* Extension+String.swift in Sources */,
 				59F5A7FA2C10C027009051FE /* OnboardingView.swift in Sources */,
 				594577632C35C6D000ED7066 /* PlainTextButton.swift in Sources */,
 				59AFB30C2C189BBD0071CE2B /* CustomTabView_TabItem.swift in Sources */,
 				59F5A80B2C10C08B009051FE /* ViewBackgroundColor.swift in Sources */,
+				59852EF82C4D40A1006061C9 /* DictionaryOperations.swift in Sources */,
 				59201D812C348DA700581E7B /* NavigationBackButton.swift in Sources */,
+				59852EF22C4D3C60006061C9 /* ApplesHash.swift in Sources */,
 				5942674F2C3DCEE7000C7163 /* CodeVerificationView.swift in Sources */,
 				59F5A8402C136E57009051FE /* Contact.swift in Sources */,
 				59AD9AB12C40248F00A7890A /* Destination.swift in Sources */,
@@ -417,6 +432,7 @@
 				598AEC772C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift in Sources */,
 				594577592C349F9300ED7066 /* Country.swift in Sources */,
 				599897DD2C19F3F100950A68 /* DestinationViewController.swift in Sources */,
+				59852EF62C4D3F20006061C9 /* SetOperations.swift in Sources */,
 				594577692C35E2CB00ED7066 /* LoadingProgress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
