@@ -14,13 +14,13 @@ struct ContactsView_ContactRow: View {
     var body: some View {
         VStack {
             HStack(alignment: .top, spacing: 12) {
-                ZStack(alignment: .topTrailing){
-                    userAvatar
-                    statusCircle
-                }
+                userAvatar(contact: contact)
+                    .overlay(alignment: .topTrailing) {
+                        statusCircle
+                    }
                 userInfo
-                Spacer()
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.top, isNeedTopPadding ? 12 : 0)
             .padding(.bottom, 12)
             Rectangle()
@@ -33,8 +33,16 @@ struct ContactsView_ContactRow: View {
 
 //MARK: Subviews
 private extension ContactsView_ContactRow {
-    var userAvatar: some View {
-        ContactRow_UserAvatar(contact: contact)
+    
+    func userAvatar(contact: Contact) -> some View {
+        ContactsRow_AsyncAvatar(url: contact.avatarURL)
+            .modifiedAvatar(
+                startGradientColor: contact.avatar == nil ? .GradientStyle2Colors.gradientPink : .GradientStyle1Colors.gradientLightBlue,
+                endGradientColor: contact.avatar == nil ?
+                    .GradientStyle2Colors.gradientPurple :
+                    .GradientStyle1Colors.gradientBlue,
+                hasNewStories: contact.hasNewStories
+            )
     }
     
     var userInfo: some View {
