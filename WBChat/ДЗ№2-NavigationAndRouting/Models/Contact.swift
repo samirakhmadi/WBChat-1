@@ -14,7 +14,25 @@ struct Contact: Identifiable {
     var status: String = ""
     var isOnline: Bool = false
     var hasNewStories: Bool = false
-    var avatar: ImageResource? = nil
+    var avatar: ImageResource?
+    var avatarURL: String
+    
+    init(
+        name: String,
+        phoneNumber: String,
+        status: String,
+        isOnline: Bool,
+        hasNewStories: Bool,
+        avatar: ImageResource? = nil
+    ) {
+        self.name = name
+        self.phoneNumber = phoneNumber
+        self.status = status
+        self.isOnline = isOnline
+        self.hasNewStories = hasNewStories
+        self.avatar = avatar
+        self.avatarURL = "https://ui-avatars.com/api/?color=ffffff&background=000000&name=\(name.replacingOccurrences(of: " ", with: "+"))"
+    }
 }
 
 extension Contact {

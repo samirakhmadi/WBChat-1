@@ -64,6 +64,7 @@ private extension ContactsView_ContactRow {
         var contacts: [Contact] = [
             .init(
                 name: "Анастасия Иванова",
+                phoneNumber: "",
                 status: "Last seen yesterday",
                 isOnline: false,
                 hasNewStories: false,
@@ -71,6 +72,7 @@ private extension ContactsView_ContactRow {
             ),
             .init(
                 name: "Петя",
+                phoneNumber: "",
                 status: "Онлайн",
                 isOnline: true,
                 hasNewStories: true,
@@ -78,6 +80,7 @@ private extension ContactsView_ContactRow {
             ),
             .init(
                 name: "Анастасия Иванова",
+                phoneNumber: "",
                 status: "Онлайн",
                 isOnline: true,
                 hasNewStories: true,

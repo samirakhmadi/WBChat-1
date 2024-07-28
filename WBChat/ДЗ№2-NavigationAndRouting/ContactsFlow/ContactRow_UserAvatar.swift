@@ -73,6 +73,7 @@ private extension ContactRow_UserAvatar {
     VStack {
         ContactRow_UserAvatar(contact: .init(
             name: "Анастасия Иванова",
+            phoneNumber: "",
             status: "Last seen yesterday",
             isOnline: false,
             hasNewStories: false,
@@ -81,6 +82,7 @@ private extension ContactRow_UserAvatar {
         .padding(.vertical, 16)
         ContactRow_UserAvatar(contact: .init(
             name: "Петя",
+            phoneNumber: "",
             status: "Онлайн",
             isOnline: true,
             hasNewStories: true,
@@ -89,6 +91,7 @@ private extension ContactRow_UserAvatar {
         .padding(.vertical, 16)
         ContactRow_UserAvatar(contact: .init(
             name: "Анастасия Иванова",
+            phoneNumber: "",
             status: "Онлайн",
             isOnline: true,
             hasNewStories: true,

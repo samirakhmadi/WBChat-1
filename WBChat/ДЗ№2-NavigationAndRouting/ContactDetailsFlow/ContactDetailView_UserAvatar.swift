@@ -48,6 +48,9 @@ private extension ContactDetailView_UserAvatar {
             contact: .init(
                 name: "Иванов Иван",
                 phoneNumber: "9999999999",
+                status: "",
+                isOnline: false,
+                hasNewStories: false,
                 avatar: .Avatars.petya
             )
         )
@@ -55,8 +58,11 @@ private extension ContactDetailView_UserAvatar {
             contact: .init(
                 name: "Иванов Иван",
                 phoneNumber: "9999999999",
-                avatar: nil
+                status: "",
+                isOnline: true,
+                hasNewStories: true
             )
         )
     }
 }
+
