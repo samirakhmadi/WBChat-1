@@ -58,10 +58,12 @@ private extension ContactsRow_AsyncAvatar {
                 // Отображаем загруженное изображение
                 Image(uiImage: image)
                     .resizable()
+                    
             case .failed:
                 // Отображаем изображение ошибки
                 Image(systemName: "network.slash")
                     .resizable()
+                    .background(.brand)
             }
         }
     }
@@ -71,6 +73,7 @@ private extension ContactsRow_AsyncAvatar {
     VStack {
         ContactsRow_AsyncAvatar(url: "www.example.com/icon")
             .frame(width: 50, height: 50)
+        
         ContactsRow_AsyncAvatar(url: "https://ui-avatars.com/api/?name=Aboba+Aboba")
             .frame(width: 50, height: 50)
     }
