@@ -49,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59064D102C5EB17C00EF2A00 /* DistributionSystem.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = DistributionSystem.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		591871062C416B1200313010 /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = UIComponents; path = Modules/UIComponents; sourceTree = "<group>"; };
 		591E5A562C18D46A00B73DAC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		59201D782C3488FA00581E7B /* PhoneInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInputView.swift; sourceTree = "<group>"; };
@@ -103,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59064D0E2C5EB08800EF2A00 /* ДЗ-SwiftConcurrency */ = {
+			isa = PBXGroup;
+			children = (
+				59064D102C5EB17C00EF2A00 /* DistributionSystem.playground */,
+			);
+			path = "ДЗ-SwiftConcurrency";
+			sourceTree = "<group>";
+		};
 		591E5A552C18D45400B73DAC /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,6 +244,7 @@
 				59201D772C3488B100581E7B /* ДЗ-Анимации&Переходы */,
 				599897D92C19F34200950A68 /* Дополнительно💻 */,
 				59F5A7F72C10C027009051FE /* WBChatApp.swift */,
+				59064D0E2C5EB08800EF2A00 /* ДЗ-SwiftConcurrency */,
 				59F5A8362C136711009051FE /* OnboardingFlow */,
 				59E3EBC92C23146C00897E6D /* ДЗ№2-NavigationAndRouting */,
 				59F5A80C2C10C3E5009051FE /* Extensions */,
