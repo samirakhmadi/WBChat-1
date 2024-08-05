@@ -27,6 +27,12 @@ struct ContactsChatView: View {
                     viewTitle
                 }
             }
+            ToolbarItem(placement: .topBarTrailing) {
+                HStack {
+                    searchButton
+                    menuButton
+                }
+            }
         }
         .toolbarBackground(.neutral, for: .navigationBar)
         .toolbarBackground(.visible, for: .navigationBar)
@@ -44,6 +50,19 @@ private extension ContactsChatView {
             image: "backIcon",
             tintColor: .neutralText) {}
             .padding(.leading, 6)
+    }
+    
+    var searchButton: some View {
+        ToolbarButton(
+            image: "searchIcon",
+            tintColor: .neutralText) {}
+    }
+    
+    var menuButton: some View {
+        ToolbarButton(
+            image: "burgerIcon",
+            tintColor: .neutralText) {}
+            .padding(.trailing, 6)
     }
 }
 
