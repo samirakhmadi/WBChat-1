@@ -11,6 +11,7 @@
 		59201D792C3488FA00581E7B /* PhoneInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59201D782C3488FA00581E7B /* PhoneInputView.swift */; };
 		59201D7D2C348B8B00581E7B /* PhoneInput_PhoneCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59201D7C2C348B8B00581E7B /* PhoneInput_PhoneCode.swift */; };
 		59201D7F2C348CF300581E7B /* PhoneInput_PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59201D7E2C348CF300581E7B /* PhoneInput_PhoneNumber.swift */; };
+		593F74D12C61416F00FA9B5A /* ExyteChat in Frameworks */ = {isa = PBXBuildFile; productRef = 593F74D02C61416F00FA9B5A /* ExyteChat */; };
 		5942674F2C3DCEE7000C7163 /* CodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5942674E2C3DCEE7000C7163 /* CodeVerificationView.swift */; };
 		594577592C349F9300ED7066 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594577582C349F9300ED7066 /* Country.swift */; };
 		5945775C2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945775B2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift */; };
@@ -90,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				593F74D12C61416F00FA9B5A /* ExyteChat in Frameworks */,
 				59B8EDDF2C416BDC00DD7A93 /* UIComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +296,7 @@
 			name = WBChat;
 			packageProductDependencies = (
 				59B8EDDE2C416BDC00DD7A93 /* UIComponents */,
+				593F74D02C61416F00FA9B5A /* ExyteChat */,
 			);
 			productName = WBChat;
 			productReference = 59F5A7F42C10C027009051FE /* WBChat.app */;
@@ -326,6 +329,9 @@
 				kk,
 			);
 			mainGroup = 59F5A7EB2C10C027009051FE;
+			packageReferences = (
+				593F74CF2C61416F00FA9B5A /* XCRemoteSwiftPackageReference "Chat" */,
+			);
 			productRefGroup = 59F5A7F52C10C027009051FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -595,7 +601,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		593F74CF2C61416F00FA9B5A /* XCRemoteSwiftPackageReference "Chat" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/Chat";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		593F74D02C61416F00FA9B5A /* ExyteChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 593F74CF2C61416F00FA9B5A /* XCRemoteSwiftPackageReference "Chat" */;
+			productName = ExyteChat;
+		};
 		59B8EDDE2C416BDC00DD7A93 /* UIComponents */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UIComponents;
