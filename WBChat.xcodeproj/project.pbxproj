@@ -12,6 +12,9 @@
 		59201D7D2C348B8B00581E7B /* PhoneInput_PhoneCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59201D7C2C348B8B00581E7B /* PhoneInput_PhoneCode.swift */; };
 		59201D7F2C348CF300581E7B /* PhoneInput_PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59201D7E2C348CF300581E7B /* PhoneInput_PhoneNumber.swift */; };
 		593F74D12C61416F00FA9B5A /* ExyteChat in Frameworks */ = {isa = PBXBuildFile; productRef = 593F74D02C61416F00FA9B5A /* ExyteChat */; };
+		593F74E82C61443E00FA9B5A /* ContactsChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F74E72C61443E00FA9B5A /* ContactsChatView.swift */; };
+		593F74EA2C61445A00FA9B5A /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F74E92C61445A00FA9B5A /* MessageView.swift */; };
+		593F74EC2C6144A300FA9B5A /* ContactsChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F74EB2C6144A300FA9B5A /* ContactsChatViewModel.swift */; };
 		5942674F2C3DCEE7000C7163 /* CodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5942674E2C3DCEE7000C7163 /* CodeVerificationView.swift */; };
 		594577592C349F9300ED7066 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594577582C349F9300ED7066 /* Country.swift */; };
 		5945775C2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945775B2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift */; };
@@ -52,6 +55,9 @@
 		59201D782C3488FA00581E7B /* PhoneInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInputView.swift; sourceTree = "<group>"; };
 		59201D7C2C348B8B00581E7B /* PhoneInput_PhoneCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInput_PhoneCode.swift; sourceTree = "<group>"; };
 		59201D7E2C348CF300581E7B /* PhoneInput_PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInput_PhoneNumber.swift; sourceTree = "<group>"; };
+		593F74E72C61443E00FA9B5A /* ContactsChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsChatView.swift; sourceTree = "<group>"; };
+		593F74E92C61445A00FA9B5A /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		593F74EB2C6144A300FA9B5A /* ContactsChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsChatViewModel.swift; sourceTree = "<group>"; };
 		5942674E2C3DCEE7000C7163 /* CodeVerificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeVerificationView.swift; sourceTree = "<group>"; };
 		594577582C349F9300ED7066 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		5945775B2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInput_PhoneCodeMenu.swift; sourceTree = "<group>"; };
@@ -118,6 +124,16 @@
 				594577582C349F9300ED7066 /* Country.swift */,
 			);
 			path = "ДЗ-Анимации&Переходы";
+			sourceTree = "<group>";
+		};
+		593F74D22C61419800FA9B5A /* ContactsChatFlow */ = {
+			isa = PBXGroup;
+			children = (
+				593F74E72C61443E00FA9B5A /* ContactsChatView.swift */,
+				593F74E92C61445A00FA9B5A /* MessageView.swift */,
+				593F74EB2C6144A300FA9B5A /* ContactsChatViewModel.swift */,
+			);
+			path = ContactsChatFlow;
 			sourceTree = "<group>";
 		};
 		594577612C35C15B00ED7066 /* Localization */ = {
@@ -208,6 +224,7 @@
 		59F5A7F62C10C027009051FE /* WBChat */ = {
 			isa = PBXGroup;
 			children = (
+				593F74D22C61419800FA9B5A /* ContactsChatFlow */,
 				59F5C60B2C399E270022D7F9 /* ДЗ-Collection&Sequence */,
 				594577612C35C15B00ED7066 /* Localization */,
 				59201D772C3488B100581E7B /* ДЗ-Анимации&Переходы */,
@@ -378,8 +395,11 @@
 				59201D792C3488FA00581E7B /* PhoneInputView.swift in Sources */,
 				594577652C35DDF100ED7066 /* Extension+View.swift in Sources */,
 				59201D7D2C348B8B00581E7B /* PhoneInput_PhoneCode.swift in Sources */,
+				593F74EC2C6144A300FA9B5A /* ContactsChatViewModel.swift in Sources */,
 				59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */,
 				5945775C2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift in Sources */,
+				593F74E82C61443E00FA9B5A /* ContactsChatView.swift in Sources */,
+				593F74EA2C61445A00FA9B5A /* MessageView.swift in Sources */,
 				598AEC792C3C63D70091EA51 /* CodeVerificationView_CodeView.swift in Sources */,
 				599897DF2C19F43500950A68 /* RectangleAnimator.swift in Sources */,
 				59F5A8422C137450009051FE /* ContactsView_ContactRow.swift in Sources */,
