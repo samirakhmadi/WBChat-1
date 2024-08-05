@@ -17,21 +17,15 @@ struct ContactsChatView: View {
         ChatView(messages: viewModel.messages, chatType: .conversation, replyMode: .answer) { draft in
             viewModel.sendMessage(draft: draft)
         } messageBuilder: { message, positionInUserGroup, positionInCommentsGroup, showContextMenu, messageAction, showAttachment in
-            MessageView()
+            MessageView(message: message)
         }
         .chatTheme(colors: .init(mainBackground: .chatBG))
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
-                HStack {
-                    backButton
-                    viewTitle
-                }
+               leadingToolbarStack
             }
             ToolbarItem(placement: .topBarTrailing) {
-                HStack {
-                    searchButton
-                    menuButton
-                }
+               trailingToolbarStack
             }
         }
         .toolbarBackground(.neutral, for: .navigationBar)
@@ -40,6 +34,21 @@ struct ContactsChatView: View {
 }
 
 private extension ContactsChatView {
+    
+    var leadingToolbarStack: some View {
+        HStack(spacing: 8) {
+            backButton
+            viewTitle
+        }
+    }
+    
+    var trailingToolbarStack: some View {
+        HStack(spacing: 8) {
+            searchButton
+            menuButton
+        }
+    }
+    
     var viewTitle: some View {
         Text(contact.name)
             .font(.system(size: 18, weight: .semibold))
