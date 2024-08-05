@@ -1,5 +1,5 @@
 //
-//  NavigationBackButton.swift
+//  ToolbarButton.swift
 //  
 //
 //  Created by Александр on 11.07.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct NavigationBackButton: View {
+public struct ToolbarButton: View {
     
     var image: String
     var tintColor: Color
@@ -38,5 +38,5 @@ public struct NavigationBackButton: View {
 
 @available(iOS 17.0, *)
 #Preview {
-    NavigationBackButton(image: "", tintColor: .black) {}
+    ToolbarButton(image: "", tintColor: .black) {}
 }

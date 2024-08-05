@@ -76,7 +76,7 @@ private extension PhoneInputView {
     }
     
     var backButton: some View {
-        NavigationBackButton(
+        ToolbarButton(
             image: "backIcon",
             tintColor: .neutralText) {
                 coordinator.pop()

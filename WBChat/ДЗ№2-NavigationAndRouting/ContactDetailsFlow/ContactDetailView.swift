@@ -50,7 +50,7 @@ struct ContactDetailView: View {
 //MARK: Toolbar item'ы
 private extension ContactDetailView {
     var backButton: some View {
-        NavigationBackButton(
+        ToolbarButton(
             image: "backIcon",
             tintColor: .neutralText) {
                 coordinator.pop()

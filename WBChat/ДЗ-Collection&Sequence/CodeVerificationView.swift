@@ -34,7 +34,7 @@ struct CodeVerificationView: View {
 
 private extension CodeVerificationView {
     var backButton: some View {
-        NavigationBackButton(
+        ToolbarButton(
             image: "backIcon",
             tintColor: .neutralText) {
                 coordinator.pop()

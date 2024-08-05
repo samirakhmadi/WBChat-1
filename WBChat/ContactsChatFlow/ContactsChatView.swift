@@ -40,7 +40,7 @@ private extension ContactsChatView {
     }
     
     var backButton: some View {
-        NavigationBackButton(
+        ToolbarButton(
             image: "backIcon",
             tintColor: .neutralText) {}
             .padding(.leading, 6)
