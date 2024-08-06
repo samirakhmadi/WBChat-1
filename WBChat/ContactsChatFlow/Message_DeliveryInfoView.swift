@@ -25,6 +25,7 @@ struct Message_DeliveryInfoView: View {
             }
         }
         .font(.system(size: 10))
+        .foregroundStyle(isCurrentUser ? .white  : .neutralText)
     }
 }
 
