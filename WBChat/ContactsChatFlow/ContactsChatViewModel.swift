@@ -59,7 +59,18 @@ struct ChatViewModel {
             createdAt: Date().addingTimeInterval(5),
             text: "Проверка отправки сообщения"
         ),
-        
+        Message(
+            id: "0",
+            user:
+                User(
+                    id: "current_user",
+                    name: "Me",
+                    avatarURL: URL(string: "https://example.com/me.jpg"),
+                    isCurrentUser: true
+                ),
+            createdAt: Date().addingTimeInterval(-120000),
+            text: "Купил годзиллу"
+        ),
         Message(
             id: "3",
             user: User(
@@ -78,11 +89,10 @@ struct ChatViewModel {
                         avatarURL: URL(string: "https://example.com/me.jpg"),
                         isCurrentUser: false
                     ),
-                createdAt: Date().addingTimeInterval(-86400),
+                createdAt: Date().addingTimeInterval(-96400),
                 text: "Купил годзиллу"
             ).toReplyMessage()
         ),
-        
         Message(
             id: "1",
             user:
@@ -117,7 +127,7 @@ struct ChatViewModel {
     mutating func sendMessage(draft: DraftMessage) {
         let newMessage = Message(
             id: UUID().uuidString,
-            user: User(id: "current_user", name: "Me", avatarURL: URL(string: "https://example.com/avatar.jpg"), isCurrentUser: false),
+            user: User(id: "current_user", name: "Me", avatarURL: URL(string: "https://example.com/avatar.jpg"), isCurrentUser: true),
             createdAt: .now + 2,
             text: draft.text
         )
