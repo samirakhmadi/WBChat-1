@@ -13,6 +13,8 @@
 		59201D7F2C348CF300581E7B /* PhoneInput_PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59201D7E2C348CF300581E7B /* PhoneInput_PhoneNumber.swift */; };
 		592A8D192C6277670018D920 /* ContactsChat_InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A8D182C6277670018D920 /* ContactsChat_InputView.swift */; };
 		592A8D1B2C627B650018D920 /* Message_ReplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A8D1A2C627B650018D920 /* Message_ReplyView.swift */; };
+		592A8D1F2C627EF20018D920 /* Message_StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A8D1E2C627EF20018D920 /* Message_StatusView.swift */; };
+		592A8D212C62818C0018D920 /* Message_DeliveryInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A8D202C62818C0018D920 /* Message_DeliveryInfoView.swift */; };
 		593F74E82C61443E00FA9B5A /* ContactsChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F74E72C61443E00FA9B5A /* ContactsChatView.swift */; };
 		593F74EA2C61445A00FA9B5A /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F74E92C61445A00FA9B5A /* MessageView.swift */; };
 		593F74EC2C6144A300FA9B5A /* ContactsChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F74EB2C6144A300FA9B5A /* ContactsChatViewModel.swift */; };
@@ -64,6 +66,8 @@
 		59201D7E2C348CF300581E7B /* PhoneInput_PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInput_PhoneNumber.swift; sourceTree = "<group>"; };
 		592A8D182C6277670018D920 /* ContactsChat_InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsChat_InputView.swift; sourceTree = "<group>"; };
 		592A8D1A2C627B650018D920 /* Message_ReplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_ReplyView.swift; sourceTree = "<group>"; };
+		592A8D1E2C627EF20018D920 /* Message_StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_StatusView.swift; sourceTree = "<group>"; };
+		592A8D202C62818C0018D920 /* Message_DeliveryInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_DeliveryInfoView.swift; sourceTree = "<group>"; };
 		593F74E72C61443E00FA9B5A /* ContactsChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsChatView.swift; sourceTree = "<group>"; };
 		593F74E92C61445A00FA9B5A /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		593F74EB2C6144A300FA9B5A /* ContactsChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsChatViewModel.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				593F74EB2C6144A300FA9B5A /* ContactsChatViewModel.swift */,
 				59506FAD2C62689D00871855 /* Message_WaveFormView.swift */,
 				592A8D1A2C627B650018D920 /* Message_ReplyView.swift */,
+				592A8D1E2C627EF20018D920 /* Message_StatusView.swift */,
+				592A8D202C62818C0018D920 /* Message_DeliveryInfoView.swift */,
 				59506FB12C626B2600871855 /* Message_AttachmentView.swift */,
 				59506FB32C626C1500871855 /* ContactsChat_DateHeaderView.swift */,
 			);
@@ -431,6 +437,7 @@
 				5945775C2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift in Sources */,
 				593F74E82C61443E00FA9B5A /* ContactsChatView.swift in Sources */,
 				593F74EA2C61445A00FA9B5A /* MessageView.swift in Sources */,
+				592A8D1F2C627EF20018D920 /* Message_StatusView.swift in Sources */,
 				598AEC792C3C63D70091EA51 /* CodeVerificationView_CodeView.swift in Sources */,
 				599897DF2C19F43500950A68 /* RectangleAnimator.swift in Sources */,
 				59F5A8422C137450009051FE /* ContactsView_ContactRow.swift in Sources */,
@@ -440,6 +447,7 @@
 				59F5A80E2C10C3F9009051FE /* Extension+VStack.swift in Sources */,
 				594577602C35C09300ED7066 /* Localization.swift in Sources */,
 				59F5A8392C1367E0009051FE /* ContactsView.swift in Sources */,
+				592A8D212C62818C0018D920 /* Message_DeliveryInfoView.swift in Sources */,
 				59506FAC2C6266DF00871855 /* MessageCorners.swift in Sources */,
 				59506FAE2C62689D00871855 /* Message_WaveFormView.swift in Sources */,
 				59506FB42C626C1500871855 /* ContactsChat_DateHeaderView.swift in Sources */,
