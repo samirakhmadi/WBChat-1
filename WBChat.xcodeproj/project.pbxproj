@@ -11,6 +11,7 @@
 		59201D792C3488FA00581E7B /* PhoneInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59201D782C3488FA00581E7B /* PhoneInputView.swift */; };
 		59201D7D2C348B8B00581E7B /* PhoneInput_PhoneCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59201D7C2C348B8B00581E7B /* PhoneInput_PhoneCode.swift */; };
 		59201D7F2C348CF300581E7B /* PhoneInput_PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59201D7E2C348CF300581E7B /* PhoneInput_PhoneNumber.swift */; };
+		592A8D192C6277670018D920 /* ContactsChat_InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A8D182C6277670018D920 /* ContactsChat_InputView.swift */; };
 		593F74E82C61443E00FA9B5A /* ContactsChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F74E72C61443E00FA9B5A /* ContactsChatView.swift */; };
 		593F74EA2C61445A00FA9B5A /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F74E92C61445A00FA9B5A /* MessageView.swift */; };
 		593F74EC2C6144A300FA9B5A /* ContactsChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F74EB2C6144A300FA9B5A /* ContactsChatViewModel.swift */; };
@@ -60,6 +61,7 @@
 		59201D782C3488FA00581E7B /* PhoneInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInputView.swift; sourceTree = "<group>"; };
 		59201D7C2C348B8B00581E7B /* PhoneInput_PhoneCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInput_PhoneCode.swift; sourceTree = "<group>"; };
 		59201D7E2C348CF300581E7B /* PhoneInput_PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInput_PhoneNumber.swift; sourceTree = "<group>"; };
+		592A8D182C6277670018D920 /* ContactsChat_InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsChat_InputView.swift; sourceTree = "<group>"; };
 		593F74E72C61443E00FA9B5A /* ContactsChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsChatView.swift; sourceTree = "<group>"; };
 		593F74E92C61445A00FA9B5A /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		593F74EB2C6144A300FA9B5A /* ContactsChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsChatViewModel.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				593F74E72C61443E00FA9B5A /* ContactsChatView.swift */,
+				592A8D182C6277670018D920 /* ContactsChat_InputView.swift */,
 				593F74E92C61445A00FA9B5A /* MessageView.swift */,
 				593F74EB2C6144A300FA9B5A /* ContactsChatViewModel.swift */,
 				59506FAD2C62689D00871855 /* Message_WaveFormView.swift */,
@@ -438,6 +441,7 @@
 				59506FB42C626C1500871855 /* ContactsChat_DateHeaderView.swift in Sources */,
 				598AEC772C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift in Sources */,
 				594577592C349F9300ED7066 /* Country.swift in Sources */,
+				592A8D192C6277670018D920 /* ContactsChat_InputView.swift in Sources */,
 				599897DD2C19F3F100950A68 /* DestinationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
