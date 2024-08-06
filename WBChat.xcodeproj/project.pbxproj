@@ -24,6 +24,7 @@
 		59506FAC2C6266DF00871855 /* MessageCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59506FAB2C6266DF00871855 /* MessageCorners.swift */; };
 		59506FAE2C62689D00871855 /* Message_WaveFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59506FAD2C62689D00871855 /* Message_WaveFormView.swift */; };
 		59506FB02C626A5200871855 /* Extension+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59506FAF2C626A5200871855 /* Extension+Double.swift */; };
+		59506FB22C626B2600871855 /* Message_AttachmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59506FB12C626B2600871855 /* Message_AttachmentView.swift */; };
 		598AEC772C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AEC762C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift */; };
 		598AEC792C3C63D70091EA51 /* CodeVerificationView_CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AEC782C3C63D70091EA51 /* CodeVerificationView_CodeView.swift */; };
 		599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DA2C19F3BF00950A68 /* StartPointViewController.swift */; };
@@ -70,6 +71,7 @@
 		59506FAB2C6266DF00871855 /* MessageCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCorners.swift; sourceTree = "<group>"; };
 		59506FAD2C62689D00871855 /* Message_WaveFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_WaveFormView.swift; sourceTree = "<group>"; };
 		59506FAF2C626A5200871855 /* Extension+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Double.swift"; sourceTree = "<group>"; };
+		59506FB12C626B2600871855 /* Message_AttachmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_AttachmentView.swift; sourceTree = "<group>"; };
 		598AEC762C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView_CodeField.swift; sourceTree = "<group>"; };
 		598AEC782C3C63D70091EA51 /* CodeVerificationView_CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView_CodeView.swift; sourceTree = "<group>"; };
 		599897DA2C19F3BF00950A68 /* StartPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPointViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				593F74E92C61445A00FA9B5A /* MessageView.swift */,
 				593F74EB2C6144A300FA9B5A /* ContactsChatViewModel.swift */,
 				59506FAD2C62689D00871855 /* Message_WaveFormView.swift */,
+				59506FB12C626B2600871855 /* Message_AttachmentView.swift */,
 			);
 			path = ContactsChatFlow;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				599897DF2C19F43500950A68 /* RectangleAnimator.swift in Sources */,
 				59F5A8422C137450009051FE /* ContactsView_ContactRow.swift in Sources */,
 				599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */,
+				59506FB22C626B2600871855 /* Message_AttachmentView.swift in Sources */,
 				59E5794A2C173DC200641B7A /* Socials.swift in Sources */,
 				59F5A80E2C10C3F9009051FE /* Extension+VStack.swift in Sources */,
 				594577602C35C09300ED7066 /* Localization.swift in Sources */,
