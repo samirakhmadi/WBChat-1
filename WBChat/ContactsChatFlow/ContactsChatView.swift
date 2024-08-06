@@ -18,6 +18,10 @@ struct ContactsChatView: View {
             viewModel.sendMessage(draft: draft)
         } messageBuilder: { message, positionInUserGroup, positionInCommentsGroup, showContextMenu, messageAction, showAttachment in
             MessageView(message: message)
+        } inputViewBuilder: { text, attachments, inputViewState, inputViewStyle, inputViewActionClosure, dismissKeyboardClosure in
+            ContactsChat_InputView(text: text, inputViewAction: inputViewActionClosure)
+        } .headerBuilder { date in
+            ContactsChat_DateHeaderView(date: date)
         }
         .chatTheme(colors: .init(mainBackground: .chatBG))
         .toolbar {
