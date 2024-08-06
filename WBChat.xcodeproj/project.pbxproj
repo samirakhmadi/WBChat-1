@@ -22,6 +22,8 @@
 		594577602C35C09300ED7066 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5945775F2C35C09300ED7066 /* Localization.swift */; };
 		594577652C35DDF100ED7066 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594577642C35DDF100ED7066 /* Extension+View.swift */; };
 		59506FAC2C6266DF00871855 /* MessageCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59506FAB2C6266DF00871855 /* MessageCorners.swift */; };
+		59506FAE2C62689D00871855 /* Message_WaveFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59506FAD2C62689D00871855 /* Message_WaveFormView.swift */; };
+		59506FB02C626A5200871855 /* Extension+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59506FAF2C626A5200871855 /* Extension+Double.swift */; };
 		598AEC772C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AEC762C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift */; };
 		598AEC792C3C63D70091EA51 /* CodeVerificationView_CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AEC782C3C63D70091EA51 /* CodeVerificationView_CodeView.swift */; };
 		599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DA2C19F3BF00950A68 /* StartPointViewController.swift */; };
@@ -66,6 +68,8 @@
 		5945775F2C35C09300ED7066 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		594577642C35DDF100ED7066 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		59506FAB2C6266DF00871855 /* MessageCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCorners.swift; sourceTree = "<group>"; };
+		59506FAD2C62689D00871855 /* Message_WaveFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_WaveFormView.swift; sourceTree = "<group>"; };
+		59506FAF2C626A5200871855 /* Extension+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Double.swift"; sourceTree = "<group>"; };
 		598AEC762C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView_CodeField.swift; sourceTree = "<group>"; };
 		598AEC782C3C63D70091EA51 /* CodeVerificationView_CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView_CodeView.swift; sourceTree = "<group>"; };
 		599897DA2C19F3BF00950A68 /* StartPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPointViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 				593F74E72C61443E00FA9B5A /* ContactsChatView.swift */,
 				593F74E92C61445A00FA9B5A /* MessageView.swift */,
 				593F74EB2C6144A300FA9B5A /* ContactsChatViewModel.swift */,
+				59506FAD2C62689D00871855 /* Message_WaveFormView.swift */,
 			);
 			path = ContactsChatFlow;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 				59F5A80F2C10C418009051FE /* Extension+HStack.swift */,
 				59F5A85A2C14BB81009051FE /* Extension+String.swift */,
 				594577642C35DDF100ED7066 /* Extension+View.swift */,
+				59506FAF2C626A5200871855 /* Extension+Double.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -391,6 +397,7 @@
 				59F5A85B2C14BB81009051FE /* Extension+String.swift in Sources */,
 				59F5A7FA2C10C027009051FE /* OnboardingView.swift in Sources */,
 				59AFB30C2C189BBD0071CE2B /* CustomTabView_TabItem.swift in Sources */,
+				59506FB02C626A5200871855 /* Extension+Double.swift in Sources */,
 				5942674F2C3DCEE7000C7163 /* CodeVerificationView.swift in Sources */,
 				59F5A8402C136E57009051FE /* Contact.swift in Sources */,
 				59AD9AB12C40248F00A7890A /* Destination.swift in Sources */,
@@ -420,6 +427,7 @@
 				594577602C35C09300ED7066 /* Localization.swift in Sources */,
 				59F5A8392C1367E0009051FE /* ContactsView.swift in Sources */,
 				59506FAC2C6266DF00871855 /* MessageCorners.swift in Sources */,
+				59506FAE2C62689D00871855 /* Message_WaveFormView.swift in Sources */,
 				598AEC772C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift in Sources */,
 				594577592C349F9300ED7066 /* Country.swift in Sources */,
 				599897DD2C19F3F100950A68 /* DestinationViewController.swift in Sources */,
