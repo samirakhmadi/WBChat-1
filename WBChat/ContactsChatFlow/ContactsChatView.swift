@@ -17,7 +17,7 @@ struct ContactsChatView: View {
         ChatView(messages: viewModel.messages, chatType: .conversation, replyMode: .answer) { draft in
             viewModel.sendMessage(draft: draft)
         } messageBuilder: { message, positionInUserGroup, positionInCommentsGroup, showContextMenu, messageAction, showAttachment in
-            MessageView(message: message)
+            MessageView(message: message, positionInUserGroup: positionInUserGroup)
         } inputViewBuilder: { text, attachments, inputViewState, inputViewStyle, inputViewActionClosure, dismissKeyboardClosure in
             ContactsChat_InputView(text: text, inputViewAction: inputViewActionClosure)
         } .headerBuilder { date in
