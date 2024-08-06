@@ -15,6 +15,7 @@
 		592A8D1B2C627B650018D920 /* Message_ReplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A8D1A2C627B650018D920 /* Message_ReplyView.swift */; };
 		592A8D1F2C627EF20018D920 /* Message_StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A8D1E2C627EF20018D920 /* Message_StatusView.swift */; };
 		592A8D212C62818C0018D920 /* Message_DeliveryInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A8D202C62818C0018D920 /* Message_DeliveryInfoView.swift */; };
+		592A8D232C62A8ED0018D920 /* Message_PureTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592A8D222C62A8ED0018D920 /* Message_PureTextView.swift */; };
 		593F74E82C61443E00FA9B5A /* ContactsChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F74E72C61443E00FA9B5A /* ContactsChatView.swift */; };
 		593F74EA2C61445A00FA9B5A /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F74E92C61445A00FA9B5A /* MessageView.swift */; };
 		593F74EC2C6144A300FA9B5A /* ContactsChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F74EB2C6144A300FA9B5A /* ContactsChatViewModel.swift */; };
@@ -68,6 +69,7 @@
 		592A8D1A2C627B650018D920 /* Message_ReplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_ReplyView.swift; sourceTree = "<group>"; };
 		592A8D1E2C627EF20018D920 /* Message_StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_StatusView.swift; sourceTree = "<group>"; };
 		592A8D202C62818C0018D920 /* Message_DeliveryInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_DeliveryInfoView.swift; sourceTree = "<group>"; };
+		592A8D222C62A8ED0018D920 /* Message_PureTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_PureTextView.swift; sourceTree = "<group>"; };
 		593F74E72C61443E00FA9B5A /* ContactsChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsChatView.swift; sourceTree = "<group>"; };
 		593F74E92C61445A00FA9B5A /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		593F74EB2C6144A300FA9B5A /* ContactsChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsChatViewModel.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				592A8D1E2C627EF20018D920 /* Message_StatusView.swift */,
 				592A8D202C62818C0018D920 /* Message_DeliveryInfoView.swift */,
 				59506FB12C626B2600871855 /* Message_AttachmentView.swift */,
+				592A8D222C62A8ED0018D920 /* Message_PureTextView.swift */,
 				59506FB32C626C1500871855 /* ContactsChat_DateHeaderView.swift */,
 			);
 			path = ContactsChatFlow;
@@ -413,6 +416,7 @@
 			files = (
 				59AD9AB32C4024A000A7890A /* NavigationRoot.swift in Sources */,
 				59F5A85B2C14BB81009051FE /* Extension+String.swift in Sources */,
+				592A8D232C62A8ED0018D920 /* Message_PureTextView.swift in Sources */,
 				59F5A7FA2C10C027009051FE /* OnboardingView.swift in Sources */,
 				59AFB30C2C189BBD0071CE2B /* CustomTabView_TabItem.swift in Sources */,
 				59506FB02C626A5200871855 /* Extension+Double.swift in Sources */,
