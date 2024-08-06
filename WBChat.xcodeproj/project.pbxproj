@@ -25,6 +25,7 @@
 		59506FAE2C62689D00871855 /* Message_WaveFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59506FAD2C62689D00871855 /* Message_WaveFormView.swift */; };
 		59506FB02C626A5200871855 /* Extension+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59506FAF2C626A5200871855 /* Extension+Double.swift */; };
 		59506FB22C626B2600871855 /* Message_AttachmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59506FB12C626B2600871855 /* Message_AttachmentView.swift */; };
+		59506FB42C626C1500871855 /* ContactsChat_DateHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59506FB32C626C1500871855 /* ContactsChat_DateHeaderView.swift */; };
 		598AEC772C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AEC762C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift */; };
 		598AEC792C3C63D70091EA51 /* CodeVerificationView_CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598AEC782C3C63D70091EA51 /* CodeVerificationView_CodeView.swift */; };
 		599897DB2C19F3BF00950A68 /* StartPointViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599897DA2C19F3BF00950A68 /* StartPointViewController.swift */; };
@@ -72,6 +73,7 @@
 		59506FAD2C62689D00871855 /* Message_WaveFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_WaveFormView.swift; sourceTree = "<group>"; };
 		59506FAF2C626A5200871855 /* Extension+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Double.swift"; sourceTree = "<group>"; };
 		59506FB12C626B2600871855 /* Message_AttachmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message_AttachmentView.swift; sourceTree = "<group>"; };
+		59506FB32C626C1500871855 /* ContactsChat_DateHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsChat_DateHeaderView.swift; sourceTree = "<group>"; };
 		598AEC762C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView_CodeField.swift; sourceTree = "<group>"; };
 		598AEC782C3C63D70091EA51 /* CodeVerificationView_CodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView_CodeView.swift; sourceTree = "<group>"; };
 		599897DA2C19F3BF00950A68 /* StartPointViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPointViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				593F74EB2C6144A300FA9B5A /* ContactsChatViewModel.swift */,
 				59506FAD2C62689D00871855 /* Message_WaveFormView.swift */,
 				59506FB12C626B2600871855 /* Message_AttachmentView.swift */,
+				59506FB32C626C1500871855 /* ContactsChat_DateHeaderView.swift */,
 			);
 			path = ContactsChatFlow;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				59F5A8392C1367E0009051FE /* ContactsView.swift in Sources */,
 				59506FAC2C6266DF00871855 /* MessageCorners.swift in Sources */,
 				59506FAE2C62689D00871855 /* Message_WaveFormView.swift in Sources */,
+				59506FB42C626C1500871855 /* ContactsChat_DateHeaderView.swift in Sources */,
 				598AEC772C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift in Sources */,
 				594577592C349F9300ED7066 /* Country.swift in Sources */,
 				599897DD2C19F3F100950A68 /* DestinationViewController.swift in Sources */,
