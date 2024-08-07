@@ -146,20 +146,44 @@
 			path = "ДЗ-Анимации&Переходы";
 			sourceTree = "<group>";
 		};
-		593F74D22C61419800FA9B5A /* ContactsChatFlow */ = {
+		592A8D242C63F6450018D920 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				593F74EB2C6144A300FA9B5A /* ContactsChatViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		592A8D252C63F65B0018D920 /* MessageView */ = {
+			isa = PBXGroup;
+			children = (
+				593F74E92C61445A00FA9B5A /* MessageView.swift */,
+				59506FB12C626B2600871855 /* Message_AttachmentView.swift */,
+				592A8D1A2C627B650018D920 /* Message_ReplyView.swift */,
+				592A8D222C62A8ED0018D920 /* Message_PureTextView.swift */,
+				59506FAD2C62689D00871855 /* Message_WaveFormView.swift */,
+				592A8D1E2C627EF20018D920 /* Message_StatusView.swift */,
+				592A8D202C62818C0018D920 /* Message_DeliveryInfoView.swift */,
+			);
+			path = MessageView;
+			sourceTree = "<group>";
+		};
+		592A8D262C63F6700018D920 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				593F74E72C61443E00FA9B5A /* ContactsChatView.swift */,
 				592A8D182C6277670018D920 /* ContactsChat_InputView.swift */,
-				593F74E92C61445A00FA9B5A /* MessageView.swift */,
-				593F74EB2C6144A300FA9B5A /* ContactsChatViewModel.swift */,
-				59506FAD2C62689D00871855 /* Message_WaveFormView.swift */,
-				592A8D1A2C627B650018D920 /* Message_ReplyView.swift */,
-				592A8D1E2C627EF20018D920 /* Message_StatusView.swift */,
-				592A8D202C62818C0018D920 /* Message_DeliveryInfoView.swift */,
-				59506FB12C626B2600871855 /* Message_AttachmentView.swift */,
-				592A8D222C62A8ED0018D920 /* Message_PureTextView.swift */,
 				59506FB32C626C1500871855 /* ContactsChat_DateHeaderView.swift */,
+				592A8D252C63F65B0018D920 /* MessageView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		593F74D22C61419800FA9B5A /* ContactsChatFlow */ = {
+			isa = PBXGroup;
+			children = (
+				592A8D262C63F6700018D920 /* View */,
+				592A8D242C63F6450018D920 /* ViewModel */,
 			);
 			path = ContactsChatFlow;
 			sourceTree = "<group>";
