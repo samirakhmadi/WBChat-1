@@ -113,3 +113,19 @@ extension String {
         self[self.index(self.startIndex, offsetBy: idx)]
     }
 }
+
+
+extension String {
+    func trimmedSurname() -> String {
+        let words = self.split(separator: " ")
+        guard words.count > 1 else {
+            return self
+        }
+        
+        if let firstWord = words.first, let secondWord = words.dropFirst().first {
+            return "\(firstWord) \(secondWord.prefix(1))."
+        }
+        
+        return self
+    }
+}

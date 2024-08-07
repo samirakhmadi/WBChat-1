@@ -54,7 +54,7 @@ private extension ContactsChatView {
     }
     
     var viewTitle: some View {
-        Text(contact.name)
+        Text(contact.name.trimmedSurname())
             .font(.system(size: 18, weight: .semibold))
     }
     
@@ -81,6 +81,6 @@ private extension ContactsChatView {
 
 #Preview {
     NavigationStack {
-        ContactsChatView(contact: .init(name: "Mock User"))
+        ContactsChatView(contact: .init(name: "Анастасия Иванова"))
     }
 }
