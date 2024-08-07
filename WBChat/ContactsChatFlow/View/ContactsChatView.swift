@@ -23,7 +23,7 @@ struct ContactsChatView: View {
         } .headerBuilder { date in
             ContactsChat_DateHeaderView(date: date)
         }
-        .chatTheme(colors: .init(mainBackground: .chatBG))
+        .chatTheme(colors: .init(mainBackground: .commonView))
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
                leadingToolbarStack

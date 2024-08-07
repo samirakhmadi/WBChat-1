@@ -19,6 +19,7 @@ struct Message_ReplyView: View {
                     .foregroundStyle(.replyAccent)
                     .font(.system(size: 10, weight: .semibold))
                 Text(message.replyMessage?.text ?? "")
+                    .foregroundStyle(.neutralText)
             }
             .padding(.horizontal, 12)
             .padding(.vertical, 12)

@@ -60,8 +60,8 @@ private extension ContactsView {
             text: $searchText,
             placeholder: Localization.searchPlaceholderText.rawValue,
             localizationTableName: Localization.tableName,
-            textFieldBackgroundColor: .textFieldBackground,
-            placeholderColor: .textFieldPlaceholder
+            textFieldBackgroundColor: .commonView,
+            placeholderColor: .neutralGray
         )
             .padding(.horizontal, 24)
             .padding(.vertical, 16)

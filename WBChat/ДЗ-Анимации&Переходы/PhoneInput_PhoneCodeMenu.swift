@@ -44,7 +44,7 @@ struct PhoneInput_PhoneCodeMenu: View {
         .padding(8)
         .background(
             RoundedRectangle(cornerRadius: 10)
-                .fill(.textFieldBackground)
+                .fill(.commonView)
         )
         .frame(width: 100, height: 150)
     }

@@ -21,7 +21,7 @@ struct Message_DeliveryInfoView: View {
                 }
             } else {
                 Text(message.createdAt, format: .dateTime.hour().minute())
-                    .foregroundStyle(.senderDate)
+                    .foregroundStyle(.neutralGray)
             }
         }
         .font(.system(size: 10))

@@ -28,7 +28,7 @@ struct ContactsChat_InputView: View {
                 .foregroundStyle(.purple)
                 .padding(.vertical, 6)
                 .padding(.leading, 8)
-                .background(RoundedRectangle(cornerRadius: 4).fill(.textFieldBackground))
+                .background(RoundedRectangle(cornerRadius: 4).fill(.commonView))
             
             Button(action: {
                 inputViewAction(.send)

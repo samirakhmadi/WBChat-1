@@ -18,7 +18,7 @@ struct PhoneInput_PhoneNumber: View {
             .keyboardType(.numberPad)
             .background(
                 RoundedRectangle(cornerRadius: 10)
-                    .fill(.textFieldBackground)
+                    .fill(.commonView)
             )
             .onChange(of: phoneNumber) { newValue in
                 if !newValue.isEmpty {
