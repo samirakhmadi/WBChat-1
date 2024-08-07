@@ -36,30 +36,6 @@ struct ChatViewModel {
             text: "Че каво"
         ),
         Message(
-            id: "6",
-            user: User(
-                id: "current_user",
-                name: "Me",
-                avatarURL: URL(string: "https://example.com/avatar.jpg"),
-                isCurrentUser: true
-            ),
-            status: .sent,
-            createdAt: Date().addingTimeInterval(3),
-            text: "Проверка отправленного, не прочитанного сообщения"
-        ),
-        Message(
-            id: "7",
-            user: User(
-                id: "current_user",
-                name: "Me",
-                avatarURL: URL(string: "https://example.com/avatar.jpg"),
-                isCurrentUser: true
-            ),
-            status: .sending,
-            createdAt: Date().addingTimeInterval(5),
-            text: "Проверка отправки сообщения"
-        ),
-        Message(
             id: "0",
             user:
                 User(
