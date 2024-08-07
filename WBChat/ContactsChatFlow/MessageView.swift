@@ -16,17 +16,9 @@ struct MessageView: View {
         message.user.isCurrentUser
     }
     
-    private var topPadding: CGFloat {
-         positionInUserGroup == .single || positionInUserGroup == .first ? 12 : 6
-    }
-
-    private var bottomPadding: CGFloat {
-        positionInUserGroup != .single && positionInUserGroup != .last ? 6 : 12
-    }
-    
     var body: some View {
         VStack(alignment: isCurrentUser ? .trailing : .leading, spacing: 4) {
-            if let _ = message.replyMessage {
+            if message.replyMessage != nil {
                 Message_ReplyView(message: message, isCurrentUser: isCurrentUser)
                 Message_PureTextView(message: message, isCurrentUser: isCurrentUser)
             }
@@ -49,8 +41,8 @@ struct MessageView: View {
         .background(isCurrentUser ? .brand : .neutral)
         .messageShape(16, isCurrentUser: isCurrentUser)
         .padding(isCurrentUser ? .leading : .trailing, 77)
-        .padding(.top, topPadding)
-        .padding(.bottom, bottomPadding)
+        .padding(.top, 6)
+        .padding(.bottom, 6)
         .frame(maxWidth: .infinity, alignment: isCurrentUser ? .trailing : .leading)
         .padding(.horizontal)
     }

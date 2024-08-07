@@ -19,7 +19,7 @@ struct ContactsChat_DateHeaderView: View {
         }
         .foregroundStyle(.chatDividerLine)
         .padding(.horizontal, 16)
-//        .padding(.bottom, 12)
+        .padding(.vertical, 6)
     }
 }
 
