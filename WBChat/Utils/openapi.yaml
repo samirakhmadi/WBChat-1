@@ -1,0 +1,197 @@
+openapi: 3.1.0
+info:
+  title: TheMealDB API
+  description: TheMealDB API provides information about meals and recipes.
+  version: 1.0.0
+servers:
+- url: https://www.themealdb.com/api/json/v1/1
+tags:
+- name: meals
+  description: Information about meals and recipes
+paths:
+  /random.php:
+    get:
+      tags:
+      - meals
+      summary: Lookup a single random meal
+      operationId: getRandomMeal
+      responses:
+        "200":
+          description: Details of a random meal
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MealResponse'
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+  /search.php:
+    get:
+      tags:
+      - meals
+      summary: Search meal by name
+      operationId: searchMealByName
+      parameters:
+      - name: s
+        in: query
+        description: The name of the meal to search for
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: List of meals matching the search term
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MealListResponse'
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+  /lookup.php:
+    get:
+      tags:
+      - meals
+      summary: Lookup full meal details by id
+      operationId: getMealById
+      parameters:
+      - name: i
+        in: query
+        description: The id of the meal to retrieve
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Details of the specified meal
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MealResponse'
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+  /categories.php:
+    get:
+      tags:
+      - meals
+      summary: List all meal categories
+      operationId: getAllCategories
+      responses:
+        "200":
+          description: List of all meal categories
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CategoryListResponse'
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+  /filter.php:
+    get:
+      tags:
+      - meals
+      summary: Filter by MealCategory
+      operationId: filterByCategory
+      parameters:
+      - name: c
+        in: query
+        description: The category to filter by
+        required: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: List of meals in the specified category
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MealListResponse'
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+components:
+  schemas:
+    MealResponse:
+      type: object
+      properties:
+        meals:
+          type: array
+          items:
+            $ref: '#/components/schemas/Meal'
+    MealListResponse:
+      type: object
+      properties:
+        meals:
+          type: array
+          items:
+            $ref: '#/components/schemas/Meal'
+    CategoryListResponse:
+      type: object
+      properties:
+        categories:
+          type: array
+          items:
+            $ref: '#/components/schemas/MealCategory'
+    Meal:
+      type: object
+      required: 
+        - idMeal
+        - strMeal
+        - strMealThumb
+      properties:
+        idMeal:
+          type: string
+        strMeal:
+          type: string
+        strCategory:
+          type: string
+        strArea:
+          type: string
+        strInstructions:
+          type: string
+        strMealThumb:
+          type: string
+        strTags:
+          type: string
+        strYoutube:
+          type: string
+    MealCategory:
+      type: object
+      required: 
+        - idCategory
+        - strCategory
+        - strCategoryThumb
+      properties:
+        idCategory:
+          type: string
+        strCategory:
+          type: string
+        strCategoryThumb:
+          type: string
+        strCategoryDescription:
+          type: string
+    ErrorModel:
+      type: object
+      properties:
+        code:
+          type: integer
+          minimum: 100
+          maximum: 600
+        message:
+          type: string
