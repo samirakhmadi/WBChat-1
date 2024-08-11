@@ -20,6 +20,18 @@ struct MealsViewModel {
         self.client = client
     }
     
+    var randomMeal: Meal?
+    
+    var selectedMeal: Meal?
+    
+    var meals: [Meal]?
+    
+    var categories: [MealCategory]?
+    
+    var isShowingSearchResult: Bool = false
+    
+    var isShowingDetail: Bool = false
+    
     init() {
         do {
             let serverURL = try Servers.server1()
@@ -32,73 +44,73 @@ struct MealsViewModel {
         }
     }
     
-    func fetchRandomMeal() async throws -> Meal? {
+    mutating func fetchRandomMeal() async throws {
         let mealResponse = try await client.getRandomMeal(Operations.getRandomMeal.Input())
         
         switch mealResponse {
         case let .ok(response):
             switch response.body {
             case .json(let mealData):
-                return mealData.meals.first
+                randomMeal = mealData.meals.first
             }
-        case .default(statusCode: _, _):
-            return nil
+        case .default(statusCode: let code, _):
+            print("\(code)")
         }
     }
     
-    func filterByCategory(category: String) async throws -> [Meal]? {
+    mutating func filterByCategory(category: String) async throws {
         let mealResponse = try await client.filterByCategory(Operations.filterByCategory.Input(query: .init(c: category)))
         
         switch mealResponse {
         case let .ok(response):
             switch response.body {
             case .json(let mealData):
-                return mealData.meals
+                meals = mealData.meals
             }
-        case .default(statusCode: _, _):
-            return nil
+        case .default(statusCode: let code, _):
+            print("\(code)")
         }
     }
     
-    func getAllCategories() async throws -> [MealCategory]?  {
+    mutating func getAllCategories() async throws {
         let categoriesResponse = try await client.getAllCategories(Operations.getAllCategories.Input())
         
         switch categoriesResponse {
         case let .ok(response):
             switch response.body {
             case .json(let categoriesData):
-                return categoriesData.categories
+                categories = categoriesData.categories
             }
-        case .default(statusCode:  _, _):
-            return nil
+        case .default(statusCode: let code, _):
+            print("\(code)")
         }
     }
     
-    func searchMeals(mealQuery: String)  async throws -> [Meal]? {
+    mutating func searchMeals(mealQuery: String)  async throws  {
         let mealResponse = try await client.searchMealByName(Operations.searchMealByName.Input(query: .init(s: mealQuery)))
         
         switch mealResponse {
         case let .ok(response):
             switch response.body {
             case .json(let mealsData):
-                return mealsData.meals
+                meals = mealsData.meals
             }
-        case .default(statusCode: _, _):
-            return nil
+        case .default(statusCode: let code, _):
+            print("\(code)")
         }
     }
 
-    func getMealById(id: String) async throws -> Meal? {
+    mutating func getMealById(id: String) async throws  {
         let mealResponse =  try await client.getMealById(Operations.getMealById.Input(query: .init(i: id)))
         
         switch mealResponse {
         case let .ok(response):
             switch response.body {
             case .json(let mealsData):
-                return mealsData.meals.first
+                selectedMeal = mealsData.meals.first
             }
-        case .default(statusCode: _, _):
-            return nil
+        case .default(statusCode: let code, _):
+            print("\(code)")
         }
     }
 }
