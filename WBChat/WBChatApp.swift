@@ -14,8 +14,9 @@ struct WBChatApp: App {
 
     var body: some Scene {
         WindowGroup {
-            OnboardingView()
-                .environmentObject(coordinator)
+            MealsView(viewModel: MealsViewModel(client: MockClient()))
+//            OnboardingView()
+//                .environmentObject(coordinator)
         }
     }
 }

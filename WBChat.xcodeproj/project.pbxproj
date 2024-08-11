@@ -38,7 +38,7 @@
 		59ABCC222C68E49F00C28576 /* openapi-generator-config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 59ABCC202C68E49F00C28576 /* openapi-generator-config.yaml */; };
 		59ABCC232C68E49F00C28576 /* openapi.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 59ABCC212C68E49F00C28576 /* openapi.yaml */; };
 		59ABCC382C68EAB500C28576 /* MealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC372C68EAB500C28576 /* MealsView.swift */; };
-		59ABCC3A2C68EACC00C28576 /* MealsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC392C68EACC00C28576 /* MealsModel.swift */; };
+		59ABCC3A2C68EACC00C28576 /* MealsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC392C68EACC00C28576 /* MealsViewModel.swift */; };
 		59ABCC3D2C68EB8100C28576 /* MockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC3C2C68EB8100C28576 /* MockClient.swift */; };
 		59ABCC482C690C4800C28576 /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC472C690C4800C28576 /* MealListView.swift */; };
 		59ABCC4D2C69154000C28576 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC4B2C69154000C28576 /* SearchBar.swift */; };
@@ -49,6 +49,10 @@
 		59ABCC562C69157A00C28576 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC552C69157A00C28576 /* FavoritesView.swift */; };
 		59ABCC592C6915B300C28576 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC582C6915B300C28576 /* FavoritesViewModel.swift */; };
 		59ABCC602C691D1500C28576 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC5F2C691D1500C28576 /* Modifiers.swift */; };
+		59ABCC682C69262900C28576 /* MealsView_SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC672C69262900C28576 /* MealsView_SearchView.swift */; };
+		59ABCC6B2C692A4300C28576 /* MealsView_RandomMeal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC6A2C692A4300C28576 /* MealsView_RandomMeal.swift */; };
+		59ABCC6E2C693A2D00C28576 /* MealsView_CategoryGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC6D2C693A2D00C28576 /* MealsView_CategoryGrid.swift */; };
+		59ABCC712C6943AF00C28576 /* MealsView_ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC702C6943AF00C28576 /* MealsView_ProgressView.swift */; };
 		59AD9AAF2C40247400A7890A /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AAE2C40247400A7890A /* NavigationCoordinator.swift */; };
 		59AD9AB12C40248F00A7890A /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AB02C40248F00A7890A /* Destination.swift */; };
 		59AD9AB32C4024A000A7890A /* NavigationRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AB22C4024A000A7890A /* NavigationRoot.swift */; };
@@ -102,7 +106,7 @@
 		59ABCC202C68E49F00C28576 /* openapi-generator-config.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "openapi-generator-config.yaml"; sourceTree = "<group>"; };
 		59ABCC212C68E49F00C28576 /* openapi.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = openapi.yaml; sourceTree = "<group>"; };
 		59ABCC372C68EAB500C28576 /* MealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView.swift; sourceTree = "<group>"; };
-		59ABCC392C68EACC00C28576 /* MealsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsModel.swift; sourceTree = "<group>"; };
+		59ABCC392C68EACC00C28576 /* MealsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewModel.swift; sourceTree = "<group>"; };
 		59ABCC3C2C68EB8100C28576 /* MockClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockClient.swift; sourceTree = "<group>"; };
 		59ABCC472C690C4800C28576 /* MealListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListView.swift; sourceTree = "<group>"; };
 		59ABCC4B2C69154000C28576 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
@@ -113,6 +117,10 @@
 		59ABCC552C69157A00C28576 /* FavoritesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		59ABCC582C6915B300C28576 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
 		59ABCC5F2C691D1500C28576 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		59ABCC672C69262900C28576 /* MealsView_SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView_SearchView.swift; sourceTree = "<group>"; };
+		59ABCC6A2C692A4300C28576 /* MealsView_RandomMeal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView_RandomMeal.swift; sourceTree = "<group>"; };
+		59ABCC6D2C693A2D00C28576 /* MealsView_CategoryGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView_CategoryGrid.swift; sourceTree = "<group>"; };
+		59ABCC702C6943AF00C28576 /* MealsView_ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView_ProgressView.swift; sourceTree = "<group>"; };
 		59AD9AAE2C40247400A7890A /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		59AD9AB02C40248F00A7890A /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		59AD9AB22C4024A000A7890A /* NavigationRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoot.swift; sourceTree = "<group>"; };
@@ -257,11 +265,11 @@
 		59ABCC352C68EA4D00C28576 /* MealsFlow */ = {
 			isa = PBXGroup;
 			children = (
+				59ABCC732C69448B00C28576 /* MealsView */,
 				59ABCC5D2C691D0A00C28576 /* Modifiers */,
 				59ABCC572C6915A800C28576 /* ViewModels */,
 				59ABCC452C690BD100C28576 /* Views */,
-				59ABCC372C68EAB500C28576 /* MealsView.swift */,
-				59ABCC392C68EACC00C28576 /* MealsModel.swift */,
+				59ABCC392C68EACC00C28576 /* MealsViewModel.swift */,
 				59ABCC3C2C68EB8100C28576 /* MockClient.swift */,
 			);
 			path = MealsFlow;
@@ -295,6 +303,18 @@
 				59ABCC5F2C691D1500C28576 /* Modifiers.swift */,
 			);
 			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		59ABCC732C69448B00C28576 /* MealsView */ = {
+			isa = PBXGroup;
+			children = (
+				59ABCC372C68EAB500C28576 /* MealsView.swift */,
+				59ABCC702C6943AF00C28576 /* MealsView_ProgressView.swift */,
+				59ABCC6D2C693A2D00C28576 /* MealsView_CategoryGrid.swift */,
+				59ABCC6A2C692A4300C28576 /* MealsView_RandomMeal.swift */,
+				59ABCC672C69262900C28576 /* MealsView_SearchView.swift */,
+			);
+			path = MealsView;
 			sourceTree = "<group>";
 		};
 		59AD9AAD2C40245700A7890A /* NavigationCoordinator */ = {
@@ -528,15 +548,17 @@
 				59E579472C17265E00641B7A /* ContactDetailView_UserAvatar.swift in Sources */,
 				591E5A572C18D46A00B73DAC /* Router.swift in Sources */,
 				59F5A8442C137756009051FE /* ContactRow_UserAvatar.swift in Sources */,
+				59ABCC712C6943AF00C28576 /* MealsView_ProgressView.swift in Sources */,
 				592A8D1B2C627B650018D920 /* Message_ReplyView.swift in Sources */,
 				59AD9AB52C4028DC00A7890A /* VerificationModel.swift in Sources */,
 				59201D7F2C348CF300581E7B /* PhoneInput_PhoneNumber.swift in Sources */,
 				59ABCC602C691D1500C28576 /* Modifiers.swift in Sources */,
 				59AD9AAF2C40247400A7890A /* NavigationCoordinator.swift in Sources */,
 				59F5A8102C10C418009051FE /* Extension+HStack.swift in Sources */,
+				59ABCC682C69262900C28576 /* MealsView_SearchView.swift in Sources */,
 				59F5A7F82C10C027009051FE /* WBChatApp.swift in Sources */,
 				59ABCC542C69156F00C28576 /* ListRecipeCell.swift in Sources */,
-				59ABCC3A2C68EACC00C28576 /* MealsModel.swift in Sources */,
+				59ABCC3A2C68EACC00C28576 /* MealsViewModel.swift in Sources */,
 				59F5A83B2C13682A009051FE /* ContactDetailView.swift in Sources */,
 				59201D792C3488FA00581E7B /* PhoneInputView.swift in Sources */,
 				594577652C35DDF100ED7066 /* Extension+View.swift in Sources */,
@@ -547,6 +569,7 @@
 				59ABCC562C69157A00C28576 /* FavoritesView.swift in Sources */,
 				593F74E82C61443E00FA9B5A /* ContactsChatView.swift in Sources */,
 				593F74EA2C61445A00FA9B5A /* MessageView.swift in Sources */,
+				59ABCC6B2C692A4300C28576 /* MealsView_RandomMeal.swift in Sources */,
 				59ABCC4D2C69154000C28576 /* SearchBar.swift in Sources */,
 				592A8D1F2C627EF20018D920 /* Message_StatusView.swift in Sources */,
 				59ABCC382C68EAB500C28576 /* MealsView.swift in Sources */,
@@ -567,6 +590,7 @@
 				598AEC772C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift in Sources */,
 				59ABCC592C6915B300C28576 /* FavoritesViewModel.swift in Sources */,
 				594577592C349F9300ED7066 /* Country.swift in Sources */,
+				59ABCC6E2C693A2D00C28576 /* MealsView_CategoryGrid.swift in Sources */,
 				59ABCC522C69155800C28576 /* MealDetailView.swift in Sources */,
 				592A8D192C6277670018D920 /* ContactsChat_InputView.swift in Sources */,
 			);

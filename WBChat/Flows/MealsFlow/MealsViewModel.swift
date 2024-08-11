@@ -1,5 +1,5 @@
 //
-//  MealsModel.swift
+//  MealsViewModel.swift
 //  WBChat
 //
 //  Created by Александр on 11.08.2024.
@@ -27,6 +27,8 @@ struct MealsViewModel {
     var meals: [Meal]?
     
     var categories: [MealCategory]?
+    
+    var isLoading: Bool = false
     
     var isShowingSearchResult: Bool = false
     
