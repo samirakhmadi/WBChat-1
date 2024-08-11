@@ -39,6 +39,7 @@
 		59ABCC232C68E49F00C28576 /* openapi.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 59ABCC212C68E49F00C28576 /* openapi.yaml */; };
 		59ABCC382C68EAB500C28576 /* MealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC372C68EAB500C28576 /* MealsView.swift */; };
 		59ABCC3A2C68EACC00C28576 /* MealsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC392C68EACC00C28576 /* MealsModel.swift */; };
+		59ABCC3D2C68EB8100C28576 /* MockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC3C2C68EB8100C28576 /* MockClient.swift */; };
 		59AD9AAF2C40247400A7890A /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AAE2C40247400A7890A /* NavigationCoordinator.swift */; };
 		59AD9AB12C40248F00A7890A /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AB02C40248F00A7890A /* Destination.swift */; };
 		59AD9AB32C4024A000A7890A /* NavigationRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AB22C4024A000A7890A /* NavigationRoot.swift */; };
@@ -93,6 +94,7 @@
 		59ABCC212C68E49F00C28576 /* openapi.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = openapi.yaml; sourceTree = "<group>"; };
 		59ABCC372C68EAB500C28576 /* MealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView.swift; sourceTree = "<group>"; };
 		59ABCC392C68EACC00C28576 /* MealsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsModel.swift; sourceTree = "<group>"; };
+		59ABCC3C2C68EB8100C28576 /* MockClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockClient.swift; sourceTree = "<group>"; };
 		59AD9AAE2C40247400A7890A /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		59AD9AB02C40248F00A7890A /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		59AD9AB22C4024A000A7890A /* NavigationRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoot.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 			children = (
 				59ABCC372C68EAB500C28576 /* MealsView.swift */,
 				59ABCC392C68EACC00C28576 /* MealsModel.swift */,
+				59ABCC3C2C68EB8100C28576 /* MockClient.swift */,
 			);
 			path = MealsFlow;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				59F5A8392C1367E0009051FE /* ContactsView.swift in Sources */,
 				592A8D212C62818C0018D920 /* Message_DeliveryInfoView.swift in Sources */,
 				59506FAC2C6266DF00871855 /* MessageCorners.swift in Sources */,
+				59ABCC3D2C68EB8100C28576 /* MockClient.swift in Sources */,
 				59506FAE2C62689D00871855 /* Message_WaveFormView.swift in Sources */,
 				59506FB42C626C1500871855 /* ContactsChat_DateHeaderView.swift in Sources */,
 				598AEC772C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift in Sources */,
