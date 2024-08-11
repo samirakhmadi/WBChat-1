@@ -40,6 +40,15 @@
 		59ABCC382C68EAB500C28576 /* MealsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC372C68EAB500C28576 /* MealsView.swift */; };
 		59ABCC3A2C68EACC00C28576 /* MealsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC392C68EACC00C28576 /* MealsModel.swift */; };
 		59ABCC3D2C68EB8100C28576 /* MockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC3C2C68EB8100C28576 /* MockClient.swift */; };
+		59ABCC482C690C4800C28576 /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC472C690C4800C28576 /* MealListView.swift */; };
+		59ABCC4D2C69154000C28576 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC4B2C69154000C28576 /* SearchBar.swift */; };
+		59ABCC4E2C69154000C28576 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC4C2C69154000C28576 /* SettingsView.swift */; };
+		59ABCC502C69154E00C28576 /* MealResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC4F2C69154E00C28576 /* MealResponse.swift */; };
+		59ABCC522C69155800C28576 /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC512C69155800C28576 /* MealDetailView.swift */; };
+		59ABCC542C69156F00C28576 /* ListRecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC532C69156F00C28576 /* ListRecipeCell.swift */; };
+		59ABCC562C69157A00C28576 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC552C69157A00C28576 /* FavoritesView.swift */; };
+		59ABCC592C6915B300C28576 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC582C6915B300C28576 /* FavoritesViewModel.swift */; };
+		59ABCC602C691D1500C28576 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ABCC5F2C691D1500C28576 /* Modifiers.swift */; };
 		59AD9AAF2C40247400A7890A /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AAE2C40247400A7890A /* NavigationCoordinator.swift */; };
 		59AD9AB12C40248F00A7890A /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AB02C40248F00A7890A /* Destination.swift */; };
 		59AD9AB32C4024A000A7890A /* NavigationRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AD9AB22C4024A000A7890A /* NavigationRoot.swift */; };
@@ -95,6 +104,15 @@
 		59ABCC372C68EAB500C28576 /* MealsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsView.swift; sourceTree = "<group>"; };
 		59ABCC392C68EACC00C28576 /* MealsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsModel.swift; sourceTree = "<group>"; };
 		59ABCC3C2C68EB8100C28576 /* MockClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockClient.swift; sourceTree = "<group>"; };
+		59ABCC472C690C4800C28576 /* MealListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListView.swift; sourceTree = "<group>"; };
+		59ABCC4B2C69154000C28576 /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		59ABCC4C2C69154000C28576 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		59ABCC4F2C69154E00C28576 /* MealResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealResponse.swift; sourceTree = "<group>"; };
+		59ABCC512C69155800C28576 /* MealDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
+		59ABCC532C69156F00C28576 /* ListRecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRecipeCell.swift; sourceTree = "<group>"; };
+		59ABCC552C69157A00C28576 /* FavoritesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		59ABCC582C6915B300C28576 /* FavoritesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		59ABCC5F2C691D1500C28576 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 		59AD9AAE2C40247400A7890A /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 		59AD9AB02C40248F00A7890A /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		59AD9AB22C4024A000A7890A /* NavigationRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRoot.swift; sourceTree = "<group>"; };
@@ -239,11 +257,44 @@
 		59ABCC352C68EA4D00C28576 /* MealsFlow */ = {
 			isa = PBXGroup;
 			children = (
+				59ABCC5D2C691D0A00C28576 /* Modifiers */,
+				59ABCC572C6915A800C28576 /* ViewModels */,
+				59ABCC452C690BD100C28576 /* Views */,
 				59ABCC372C68EAB500C28576 /* MealsView.swift */,
 				59ABCC392C68EACC00C28576 /* MealsModel.swift */,
 				59ABCC3C2C68EB8100C28576 /* MockClient.swift */,
 			);
 			path = MealsFlow;
+			sourceTree = "<group>";
+		};
+		59ABCC452C690BD100C28576 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59ABCC552C69157A00C28576 /* FavoritesView.swift */,
+				59ABCC532C69156F00C28576 /* ListRecipeCell.swift */,
+				59ABCC512C69155800C28576 /* MealDetailView.swift */,
+				59ABCC4F2C69154E00C28576 /* MealResponse.swift */,
+				59ABCC4B2C69154000C28576 /* SearchBar.swift */,
+				59ABCC4C2C69154000C28576 /* SettingsView.swift */,
+				59ABCC472C690C4800C28576 /* MealListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		59ABCC572C6915A800C28576 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				59ABCC582C6915B300C28576 /* FavoritesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		59ABCC5D2C691D0A00C28576 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				59ABCC5F2C691D1500C28576 /* Modifiers.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		59AD9AAD2C40245700A7890A /* NavigationCoordinator */ = {
@@ -473,15 +524,18 @@
 				5942674F2C3DCEE7000C7163 /* CodeVerificationView.swift in Sources */,
 				59F5A8402C136E57009051FE /* Contact.swift in Sources */,
 				59AD9AB12C40248F00A7890A /* Destination.swift in Sources */,
+				59ABCC4E2C69154000C28576 /* SettingsView.swift in Sources */,
 				59E579472C17265E00641B7A /* ContactDetailView_UserAvatar.swift in Sources */,
 				591E5A572C18D46A00B73DAC /* Router.swift in Sources */,
 				59F5A8442C137756009051FE /* ContactRow_UserAvatar.swift in Sources */,
 				592A8D1B2C627B650018D920 /* Message_ReplyView.swift in Sources */,
 				59AD9AB52C4028DC00A7890A /* VerificationModel.swift in Sources */,
 				59201D7F2C348CF300581E7B /* PhoneInput_PhoneNumber.swift in Sources */,
+				59ABCC602C691D1500C28576 /* Modifiers.swift in Sources */,
 				59AD9AAF2C40247400A7890A /* NavigationCoordinator.swift in Sources */,
 				59F5A8102C10C418009051FE /* Extension+HStack.swift in Sources */,
 				59F5A7F82C10C027009051FE /* WBChatApp.swift in Sources */,
+				59ABCC542C69156F00C28576 /* ListRecipeCell.swift in Sources */,
 				59ABCC3A2C68EACC00C28576 /* MealsModel.swift in Sources */,
 				59F5A83B2C13682A009051FE /* ContactDetailView.swift in Sources */,
 				59201D792C3488FA00581E7B /* PhoneInputView.swift in Sources */,
@@ -490,14 +544,18 @@
 				593F74EC2C6144A300FA9B5A /* ContactsChatViewModel.swift in Sources */,
 				59AFB3072C1891A80071CE2B /* CustomTabView.swift in Sources */,
 				5945775C2C35A4A800ED7066 /* PhoneInput_PhoneCodeMenu.swift in Sources */,
+				59ABCC562C69157A00C28576 /* FavoritesView.swift in Sources */,
 				593F74E82C61443E00FA9B5A /* ContactsChatView.swift in Sources */,
 				593F74EA2C61445A00FA9B5A /* MessageView.swift in Sources */,
+				59ABCC4D2C69154000C28576 /* SearchBar.swift in Sources */,
 				592A8D1F2C627EF20018D920 /* Message_StatusView.swift in Sources */,
 				59ABCC382C68EAB500C28576 /* MealsView.swift in Sources */,
 				598AEC792C3C63D70091EA51 /* CodeVerificationView_CodeView.swift in Sources */,
 				59F5A8422C137450009051FE /* ContactsView_ContactRow.swift in Sources */,
 				59506FB22C626B2600871855 /* Message_AttachmentView.swift in Sources */,
+				59ABCC482C690C4800C28576 /* MealListView.swift in Sources */,
 				59E5794A2C173DC200641B7A /* Socials.swift in Sources */,
+				59ABCC502C69154E00C28576 /* MealResponse.swift in Sources */,
 				59F5A80E2C10C3F9009051FE /* Extension+VStack.swift in Sources */,
 				594577602C35C09300ED7066 /* Localization.swift in Sources */,
 				59F5A8392C1367E0009051FE /* ContactsView.swift in Sources */,
@@ -507,7 +565,9 @@
 				59506FAE2C62689D00871855 /* Message_WaveFormView.swift in Sources */,
 				59506FB42C626C1500871855 /* ContactsChat_DateHeaderView.swift in Sources */,
 				598AEC772C3C5FF00091EA51 /* CodeVerificationView_CodeField.swift in Sources */,
+				59ABCC592C6915B300C28576 /* FavoritesViewModel.swift in Sources */,
 				594577592C349F9300ED7066 /* Country.swift in Sources */,
+				59ABCC522C69155800C28576 /* MealDetailView.swift in Sources */,
 				592A8D192C6277670018D920 /* ContactsChat_InputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
